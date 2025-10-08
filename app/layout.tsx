@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Hours From Now Calculator',
-  description: 'Calculate future times instantly',
+  description: 'Time Calculator',
 };
 
 export default function RootLayout({

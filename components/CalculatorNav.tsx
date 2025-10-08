@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Clock, Calculator, Calendar, Globe } from 'lucide-react';
 
+
 const calculators = [
   {
     name: 'Hours From Now',
@@ -25,6 +26,7 @@ const calculators = [
     href: '/world-clock',
     icon: Globe,
   },
+
 ];
 
 export default function CalculatorNav() {

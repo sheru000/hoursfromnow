@@ -93,13 +93,13 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-center text-gray-400">
           <p>&copy; {currentYear} Hours Calculator. All rights reserved.</p>
           <div className="flex justify-center space-x-6 mt-4">
-            <Link href="/" className="hover:text-blue-400 transition-colors">
+            <Link href="/private-policy" className="hover:text-blue-400 transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/" className="hover:text-blue-400 transition-colors">
+            <Link href="/terms-of-service" className="hover:text-blue-400 transition-colors">
               Terms of Service
             </Link>
-            <Link href="/" className="hover:text-blue-400 transition-colors">
+            <Link href="/contact-us" className="hover:text-blue-400 transition-colors">
               Contact Us
             </Link>
           </div>
