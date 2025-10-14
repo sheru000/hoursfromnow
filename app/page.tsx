@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     url: 'https://hoursfromnow.tech',
     type: 'website',
     siteName: 'HoursFromNow.tech',
-   images: [
-      {
-        url: 'https://hoursfromnow.tech/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Hours From Now Calculator Preview',
-      },
-    ],
+  //  images: [
+  //     {
+  //       url: 'https://hoursfromnow.tech/og-image.png',
+  //       width: 1200,
+  //       height: 630,
+  //       alt: 'Hours From Now Calculator Preview',
+  //     },
+  //   ],
   },
 
   twitter: {
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: 'Hours From Now Calculator',
     description:
       'Instantly calculate what time it will be any number of hours from now, like 72 hours from now. Fast and accurate hours-from-now calculator.',
-    images: ['https://hoursfromnow.tech/og-image.png'],
+    //images: ['https://hoursfromnow.tech/og-image.png'],
   },
 
 robots: {

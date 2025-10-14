@@ -5,7 +5,7 @@ import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Clock, Calendar, Calculator } from 'lucide-react';
-
+import HoursFromNowPage from '@/components/content/HoursFromNowPage';
 interface TimeEntry {
   hours: number;
   futureTime: Date;
@@ -227,21 +227,10 @@ export default function TimeCalculator() {
               <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">
                 About Hours From Now Calculator
               </h2>
-              <div className="prose prose-blue max-w-none">
-                <div className="text-gray-700 leading-relaxed space-y-4">
-                  <p className="text-lg">
-                    Content section - Ready for your custom content to be added here.
-                  </p>
-                  <p>
-                    This powerful time calculator helps you determine what the time will be in the future.
-                    Simply enter the number of hours and minutes, and instantly see the exact time and date.
-                  </p>
-                  <p>
-                    All calculations are performed in your local timezone ({timezone}) and update automatically
-                    to ensure accuracy. Perfect for scheduling meetings, planning events, or calculating deadlines.
-                  </p>
-                </div>
-              </div>
+
+              <HoursFromNowPage/>             
+
+              
             </div>
           </Card>
         </div>
