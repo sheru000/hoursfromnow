@@ -8,8 +8,11 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "postbuild": "next-sitemap",
-     "ping": "curl https://www.bing.com/ping?sitemap=https://hoursfromnow.tech/sitemap.xml"
+    "postbuild": "next-sitemap npm run ping",
+   "ping": "curl https://www.bing.com/ping?sitemap=https://hoursfromnow.tech/sitemap.xml && curl -X POST -H 'Content-Type: application/json' -d '{\"url\": \"https://hoursfromnow.tech/sitemap.xml\"}' https://api.indexnow.org/indexnow"
+
+   
+
     
   },
   "dependencies": {
