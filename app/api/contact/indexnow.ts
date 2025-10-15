@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { submitToIndexNow } from '@/lib/utils/IndexNow';
+import { submitToIndexNow } from '@/lib/utils/indexNow';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
