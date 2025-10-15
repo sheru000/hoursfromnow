@@ -5,7 +5,11 @@ export const metadata: Metadata = {
   title: "Terms and Conditions | Hours From Now",
   description:
     "Read the Terms and Conditions for HoursFromNow.tech, outlining the use of our website, services, and your rights and responsibilities.",
+     alternates: {
+    canonical: 'https://hoursfromnow.tech/terms-and-conditions',
+  },
 };
+
 
 export default function TermsPage() {
   return (

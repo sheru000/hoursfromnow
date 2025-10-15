@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+     "ping": "curl https://www.bing.com/ping?sitemap=https://hoursfromnow.tech/sitemap.xml"
     
   },
   "dependencies": {

@@ -4,6 +4,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact Us | Hours From Now",
   description: "Contact HoursFromNow.tech for inquiries, support, or feedback. We'd love to hear from you.",
+   alternates: {
+    canonical: 'https://hoursfromnow.tech/contact-us',
+  },
 };
 
 export default function ContactPage() {
