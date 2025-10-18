@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Clock, Calendar, Calculator } from 'lucide-react';
 import HoursFromNowPage from '@/components/content/HoursFromNowPage';
+import HoursFromNowTable from '@/components/content/HourafromnowTable';
 interface TimeEntry {
   hours: number;
   futureTime: Date;
@@ -179,8 +180,8 @@ export default function TimeCalculator() {
             <p className="text-blue-50 text-sm mt-1 text-center">Below X hours added to current time </p>
             
           </div>
-
-          <div className="overflow-x-auto">
+<HoursFromNowTable/>
+          {/* <div className="overflow-x-auto">
             <div className="max-h-[600px] overflow-y-auto">
               <table className="w-full">
                 <thead className="bg-gray-50 sticky top-0 z-10">
@@ -218,27 +219,25 @@ export default function TimeCalculator() {
                 </tbody>
               </table>
             </div>
-          </div>
+          </div> */}
+
         </div>
 
         <div className="mt-12">
-          <Card className="bg-gradient-to-br from-blue-50 to-cyan-50 border-2 border-blue-200 shadow-lg">
-            <div className="p-8">
-              <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">
-                About Hours From Now Calculator
-              </h2>
-
+          <Card className="bg-gradient-to-br from-blue-50 to-cyan-50 border-2 border-blue-200 shadow-sm">
+           
+                  
               <HoursFromNowPage/>             
 
               
-            </div>
+           
           </Card>
         </div>
 
         <div className="mt-8 text-center">
           <Card className="inline-block p-4 bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-200">
             <p className="text-sm text-gray-600">
-              <span className="font-semibold text-gray-800">Live Updates:</span> This calculator refreshes every second to show accurate times.
+              <span className="font-semibold text-gray-800">Live Updates:</span> This Hours from now calculator refreshes every second to show accurate times.
               <br />
               All times are displayed in your local timezone: <span className="font-semibold text-blue-600">{timezone}</span>
             </p>
