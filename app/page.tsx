@@ -1,6 +1,7 @@
-import TimeCalculator from '@/components/TimeCalculator';
+import TimeCalculator from '@/components/HoursFromNow';
 import Script from 'next/script';
 import type { Metadata } from 'next';
+import HoursFromNow from '@/components/HoursFromNow';
 
 export const metadata: Metadata = {
   title: 'Hours From Now | Time Calculator',
@@ -178,7 +179,7 @@ export default function Home() {
 
       
        {/* Your main calculator component */}
-  <TimeCalculator />
+  <HoursFromNow />
   </>
   );
 }

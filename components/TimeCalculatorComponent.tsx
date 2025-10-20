@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { Calculator, Plus, Minus } from 'lucide-react';
+import TimeCalculatorContent from '@/components/content/TimeCalculatorContent';
 
 export default function TimeCalculatorComponent() {
   const [operation, setOperation] = useState<'add' | 'subtract'>('add');
@@ -257,26 +258,7 @@ export default function TimeCalculatorComponent() {
 
         <Card className="bg-gradient-to-br from-blue-50 to-cyan-50 border-2 border-blue-200 shadow-lg">
           <div className="p-8">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">
-              How to Use the Time Calculator
-            </h2>
-            <div className="prose prose-blue max-w-none">
-              <div className="text-gray-700 leading-relaxed space-y-4">
-                <p className="text-lg">
-                  This time calculator makes it easy to add or subtract time values.
-                </p>
-                <ul className="list-disc list-inside space-y-2">
-                  <li>Choose whether you want to add or subtract time</li>
-                  <li>Enter the first time value in days, hours, minutes, and seconds</li>
-                  <li>Enter the second time value</li>
-                  <li>Click Calculate to see the result</li>
-                  <li>All fields default to 0 if left blank</li>
-                </ul>
-                <p>
-                  Perfect for calculating work hours, project timelines, time tracking, and any other time-based calculations you need.
-                </p>
-              </div>
-            </div>
+           <TimeCalculatorContent/>
           </div>
         </Card>
       </div>

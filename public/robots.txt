@@ -7,3 +7,5 @@ Host: https://hoursfromnow.tech
 
 # Sitemaps
 Sitemap: https://hoursfromnow.tech/sitemap.xml
+Sitemap: https://hoursfromnow.tech/sitemap-0.xml
+

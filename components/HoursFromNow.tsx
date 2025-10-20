@@ -13,7 +13,7 @@ interface TimeEntry {
   label: string;
 }
 
-export default function TimeCalculator() {
+export default function HoursFromNow() {
   const [currentTime, setCurrentTime] = useState<Date>(new Date());
   const [timeEntries, setTimeEntries] = useState<TimeEntry[]>([]);
   const [timezone, setTimezone] = useState<string>('');
