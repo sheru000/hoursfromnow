@@ -112,66 +112,66 @@ export default function Home() {
                   }
                 ]
               },
-              {
-                "@type": "FAQPage",
-                "mainEntity": [
-                  {
-                    "@type": "Question",
-                    "name": "What is the Hours From Now calculator?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text":
-                        "The Hours From Now calculator instantly tells you what the time will be after adding any number of hours to the current time. It automatically adjusts for AM/PM and even crosses midnight or into the next day when needed."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "How can I calculate what time it will be in 2 hours?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text":
-                        "Simply enter '2' in the calculator, and it will display the exact time two hours from now, including AM/PM and date if it passes midnight."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name":
-                      "Can I use the calculator to find the time for any number of hours from now?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text":
-                        "Yes. You can enter any number — 1 hour, 5 hours, 12 hours, or even 100 hours — and the calculator will show the precise future time. It’s designed to work for all hour values, large or small."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Does the calculator adjust for different time zones?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text":
-                        "Yes. The Hours From Now calculator detects your local time automatically based on your device and gives results accurate to your timezone."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Can I use the Hours From Now calculator on mobile?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text":
-                        "Absolutely. The calculator is fully responsive and optimized for smartphones, tablets, and desktop devices."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Does the Hours From Now calculator show dates too?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text":
-                        "Yes. If the number of hours you enter extends into the next day or later, the calculator will also display the correct date along with the time."
-                    }
-                  }
-                ]
-              }
+              // {
+              //   "@type": "FAQPage",
+              //   "mainEntity": [
+              //     {
+              //       "@type": "Question",
+              //       "name": "What is the Hours From Now calculator?",
+              //       "acceptedAnswer": {
+              //         "@type": "Answer",
+              //         "text":
+              //           "The Hours From Now calculator instantly tells you what the time will be after adding any number of hours to the current time. It automatically adjusts for AM/PM and even crosses midnight or into the next day when needed."
+              //       }
+              //     },
+              //     {
+              //       "@type": "Question",
+              //       "name": "How can I calculate what time it will be in 2 hours?",
+              //       "acceptedAnswer": {
+              //         "@type": "Answer",
+              //         "text":
+              //           "Simply enter '2' in the calculator, and it will display the exact time two hours from now, including AM/PM and date if it passes midnight."
+              //       }
+              //     },
+              //     {
+              //       "@type": "Question",
+              //       "name":
+              //         "Can I use the calculator to find the time for any number of hours from now?",
+              //       "acceptedAnswer": {
+              //         "@type": "Answer",
+              //         "text":
+              //           "Yes. You can enter any number — 1 hour, 5 hours, 12 hours, or even 100 hours — and the calculator will show the precise future time. It’s designed to work for all hour values, large or small."
+              //       }
+              //     },
+              //     {
+              //       "@type": "Question",
+              //       "name": "Does the calculator adjust for different time zones?",
+              //       "acceptedAnswer": {
+              //         "@type": "Answer",
+              //         "text":
+              //           "Yes. The Hours From Now calculator detects your local time automatically based on your device and gives results accurate to your timezone."
+              //       }
+              //     },
+              //     {
+              //       "@type": "Question",
+              //       "name": "Can I use the Hours From Now calculator on mobile?",
+              //       "acceptedAnswer": {
+              //         "@type": "Answer",
+              //         "text":
+              //           "Absolutely. The calculator is fully responsive and optimized for smartphones, tablets, and desktop devices."
+              //       }
+              //     },
+              //     {
+              //       "@type": "Question",
+              //       "name": "Does the Hours From Now calculator show dates too?",
+              //       "acceptedAnswer": {
+              //         "@type": "Answer",
+              //         "text":
+              //           "Yes. If the number of hours you enter extends into the next day or later, the calculator will also display the correct date along with the time."
+              //       }
+              //     }
+              //   ]
+              // }
             ]
           })
         }}

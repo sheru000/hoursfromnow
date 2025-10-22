@@ -14,7 +14,7 @@ export default function Footer() {
                 <Clock className="w-6 h-6 text-white" />
               </div>
               <span className="text-xl font-bold text-white">
-                Hours Calculator
+                Hours From Now
               </span>
             </div>
             <p className="text-sm text-gray-400">
