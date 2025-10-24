@@ -1,7 +1,15 @@
-import TimeCalculator from '@/components/HoursFromNow';
 import Script from 'next/script';
 import type { Metadata } from 'next';
-import HoursFromNow from '@/components/HoursFromNow';
+import dynamic from 'next/dynamic';
+
+const HoursFromNow = dynamic(() => import('@/components/HoursFromNow'), {
+  loading: () => (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-cyan-50 flex items-center justify-center">
+      <div className="animate-pulse text-blue-600">Loading calculator...</div>
+    </div>
+  ),
+  ssr: false
+});
 
 export const metadata: Metadata = {
   title: 'Hours From Now | Time Calculator',
@@ -59,6 +67,7 @@ export default function Home() {
   <Script
         id="schema-hoursfromnow"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
@@ -95,8 +104,10 @@ export default function Home() {
         }}
       />
 
- <script
+ <Script
+        id="schema-breadcrumb"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",

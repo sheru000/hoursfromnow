@@ -2,7 +2,7 @@ import React from 'react';
 
 const MonthsFromNowContent: React.FC = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8 md:py-12">
+    <div className="max-w-4xl mx-auto px-4 py-8 md:py-12 content-visibility-auto">
 
       <section className="mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">

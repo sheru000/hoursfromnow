@@ -1,6 +1,6 @@
 export default function TimeCalculatorContent() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8 md:py-12">
+    <div className="max-w-4xl mx-auto px-4 py-8 md:py-12 content-visibility-auto">
       
       {/* Hero Section */}
       <section className="mb-12">

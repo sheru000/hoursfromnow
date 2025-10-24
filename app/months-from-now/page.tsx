@@ -1,6 +1,15 @@
-import MonthsFromNowComponent from '@/components/MonthsFromNow';
 import type { Metadata } from 'next';
 import Script from 'next/script';
+import dynamic from 'next/dynamic';
+
+const MonthsFromNowComponent = dynamic(() => import('@/components/MonthsFromNow'), {
+  loading: () => (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-cyan-50 flex items-center justify-center">
+      <div className="animate-pulse text-blue-600">Loading calculator...</div>
+    </div>
+  ),
+  ssr: false
+});
 
 export const metadata: Metadata = {
   title: 'Months From Now Calculator | Calculate Future Dates by Months',
@@ -43,6 +52,7 @@ export default function MonthsFromNowPage() {
       <Script
         id="schema-months-from-now"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
@@ -78,6 +88,7 @@ export default function MonthsFromNowPage() {
       <Script
         id="schema-months-from-now-breadcrumb"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',

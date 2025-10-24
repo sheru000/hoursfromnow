@@ -1,6 +1,15 @@
-import TimeCalculatorComponent from '@/components/TimeCalculatorComponent';
 import type { Metadata } from 'next';
 import Script from 'next/script';
+import dynamic from 'next/dynamic';
+
+const TimeCalculatorComponent = dynamic(() => import('@/components/TimeCalculatorComponent'), {
+  loading: () => (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-cyan-50 flex items-center justify-center">
+      <div className="animate-pulse text-blue-600">Loading calculator...</div>
+    </div>
+  ),
+  ssr: false
+});
 
 export const metadata: Metadata = {
   title: 'Time Calculator, Add and Subtract Time',
@@ -44,6 +53,7 @@ export default function TimeCalculatorPage() {
       <Script
         id="schema-time-calculator"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
@@ -81,6 +91,7 @@ export default function TimeCalculatorPage() {
       <Script
         id="schema-time-calculator-faq-breadcrumb"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
