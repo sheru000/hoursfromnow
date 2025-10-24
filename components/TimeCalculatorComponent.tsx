@@ -5,8 +5,10 @@ import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
-import { Calculator, Plus, Minus } from 'lucide-react';
+import { Calendar } from '@/components/ui/calendar';
+import { Calculator, Plus, Minus, CalendarIcon } from 'lucide-react';
 import TimeCalculatorContent from '@/components/content/TimeCalculatorContent';
+import { format } from 'date-fns';
 
 export default function TimeCalculatorComponent() {
   const [operation, setOperation] = useState<'add' | 'subtract'>('add');
@@ -19,6 +21,11 @@ export default function TimeCalculatorComponent() {
   const [time2Minutes, setTime2Minutes] = useState<string>('');
   const [time2Seconds, setTime2Seconds] = useState<string>('');
   const [result, setResult] = useState<string>('');
+  const [selectedDate, setSelectedDate] = useState<Date | undefined>(new Date());
+  const [targetHours, setTargetHours] = useState<string>('0');
+  const [targetMinutes, setTargetMinutes] = useState<string>('0');
+  const [targetSeconds, setTargetSeconds] = useState<string>('0');
+  const [calculatedResult, setCalculatedResult] = useState<Date | null>(null);
 
   const calculateTime = () => {
     const days1 = parseInt(time1Days) || 0;
@@ -68,6 +75,45 @@ export default function TimeCalculatorComponent() {
     setResult('');
   };
 
+  const calculateFromDate = () => {
+    if (!selectedDate) return;
+
+    const hours = parseInt(targetHours) || 0;
+    const minutes = parseInt(targetMinutes) || 0;
+    const seconds = parseInt(targetSeconds) || 0;
+
+    const targetDate = new Date(selectedDate);
+    targetDate.setHours(hours, minutes, seconds, 0);
+
+    const now = new Date();
+    const diffMs = targetDate.getTime() - now.getTime();
+
+    setCalculatedResult(targetDate);
+
+    const absDiff = Math.abs(diffMs);
+    const days = Math.floor(absDiff / (1000 * 60 * 60 * 24));
+    const hrs = Math.floor((absDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const mins = Math.floor((absDiff % (1000 * 60 * 60)) / (1000 * 60));
+    const secs = Math.floor((absDiff % (1000 * 60)) / 1000);
+
+    const parts = [];
+    if (days > 0) parts.push(`${days} day${days !== 1 ? 's' : ''}`);
+    if (hrs > 0) parts.push(`${hrs} hour${hrs !== 1 ? 's' : ''}`);
+    if (mins > 0) parts.push(`${mins} minute${mins !== 1 ? 's' : ''}`);
+    if (secs > 0) parts.push(`${secs} second${secs !== 1 ? 's' : ''}`);
+
+    const resultText = parts.length > 0 ? parts.join(', ') : '0 seconds';
+    const prefix = diffMs < 0 ? 'was ' : 'is in ';
+    setResult(`${prefix}${resultText}`);
+  };
+
+  const formatDateTime = (date: Date) => {
+    return {
+      date: format(date, 'MMMM dd, yyyy'),
+      time: format(date, 'hh:mm:ss a')
+    };
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-cyan-50 py-12">
       <div className="container mx-auto px-4 max-w-5xl">
@@ -85,6 +131,106 @@ export default function TimeCalculatorComponent() {
 
         <Card className="bg-white border-2 border-blue-100 shadow-xl mb-8">
           <div className="p-8">
+            <div className="mb-8 pb-8 border-b border-gray-200">
+              <div className="flex items-center space-x-2 mb-6">
+                <CalendarIcon className="w-6 h-6 text-blue-500" />
+                <h2 className="text-2xl font-bold text-gray-800">Calculate Time From/To Specific Date</h2>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                  <Label className="text-base font-semibold text-gray-800 mb-3 block">
+                    Select Target Date
+                  </Label>
+                  <div className="border-2 border-blue-100 rounded-lg p-2 bg-gray-50">
+                    <Calendar
+                      mode="single"
+                      selected={selectedDate}
+                      onSelect={setSelectedDate}
+                      className="rounded-md"
+                    />
+                  </div>
+                </div>
+
+                <div className="flex flex-col justify-between">
+                  <div>
+                    <Label className="text-base font-semibold text-gray-800 mb-3 block">
+                      Select Target Time
+                    </Label>
+                    <div className="grid grid-cols-3 gap-4 mb-6">
+                      <div>
+                        <Label className="text-sm text-gray-600 mb-1 block">Hours (0-23)</Label>
+                        <Input
+                          type="number"
+                          min="0"
+                          max="23"
+                          placeholder="0"
+                          value={targetHours}
+                          onChange={(e) => setTargetHours(e.target.value)}
+                          className="text-center text-lg"
+                        />
+                      </div>
+                      <div>
+                        <Label className="text-sm text-gray-600 mb-1 block">Minutes (0-59)</Label>
+                        <Input
+                          type="number"
+                          min="0"
+                          max="59"
+                          placeholder="0"
+                          value={targetMinutes}
+                          onChange={(e) => setTargetMinutes(e.target.value)}
+                          className="text-center text-lg"
+                        />
+                      </div>
+                      <div>
+                        <Label className="text-sm text-gray-600 mb-1 block">Seconds (0-59)</Label>
+                        <Input
+                          type="number"
+                          min="0"
+                          max="59"
+                          placeholder="0"
+                          value={targetSeconds}
+                          onChange={(e) => setTargetSeconds(e.target.value)}
+                          className="text-center text-lg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <Button
+                      onClick={calculateFromDate}
+                      className="w-full h-12 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white text-lg font-semibold mb-4"
+                    >
+                      <Calculator className="w-5 h-5 mr-2" />
+                      Calculate Duration
+                    </Button>
+
+                    {calculatedResult && (
+                      <div className="p-6 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg border-2 border-blue-200">
+                        <div className="text-center">
+                          <p className="text-sm text-gray-600 mb-2 font-medium">Target Date & Time:</p>
+                          <p className="text-2xl font-bold text-blue-600 mb-1">
+                            {formatDateTime(calculatedResult).time}
+                          </p>
+                          <p className="text-lg text-gray-700 mb-3">
+                            {formatDateTime(calculatedResult).date}
+                          </p>
+                          {result && (
+                            <div className="pt-3 border-t border-blue-200">
+                              <p className="text-sm text-gray-600 mb-1">Duration:</p>
+                              <p className="text-lg font-semibold text-gray-800">
+                                {result}
+                              </p>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="mb-6">
               <Label className="text-lg font-semibold text-gray-800 mb-3 block">
                 Select Operation
