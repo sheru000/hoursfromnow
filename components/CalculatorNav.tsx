@@ -31,17 +31,6 @@ const calculators = [
     href: '/holiday-countdown',
     icon: CalendarDays,
   },
-  {
-    name: 'Date Calculator',
-    href: '/date-calculator',
-    icon: Calendar,
-  },
-  {
-    name: 'World Clock',
-    href: '/world-clock',
-    icon: Globe,
-  },
-
 ];
 
 export default function CalculatorNav() {

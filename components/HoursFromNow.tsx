@@ -19,6 +19,7 @@ export default function HoursFromNow() {
   const [timezone, setTimezone] = useState<string>('');
   const [manualHours, setManualHours] = useState<string>('');
   const [manualMinutes, setManualMinutes] = useState<string>('');
+  const [manualSeconds, setManualSeconds] = useState<string>('');
   const [calculatedTime, setCalculatedTime] = useState<Date | null>(null);
 
   useEffect(() => {
@@ -84,7 +85,8 @@ export default function HoursFromNow() {
   const handleCalculate = () => {
     const hours = parseInt(manualHours) || 0;
     const minutes = parseInt(manualMinutes) || 0;
-    const totalMilliseconds = (hours * 60 * 60 * 1000) + (minutes * 60 * 1000);
+    const seconds = parseInt(manualSeconds) || 0;
+    const totalMilliseconds = (hours * 60 * 60 * 1000) + (minutes * 60 * 1000) + (seconds * 1000);
     const result = new Date(currentTime.getTime() + totalMilliseconds);
     setCalculatedTime(result);
   };
@@ -130,7 +132,7 @@ export default function HoursFromNow() {
               <h2 className="text-2xl font-bold text-gray-800">Calculate Hours From Now</h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-end">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Hours
@@ -156,6 +158,21 @@ export default function HoursFromNow() {
                   placeholder="Enter minutes"
                   value={manualMinutes}
                   onChange={(e) => setManualMinutes(e.target.value)}
+                  className="text-lg"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Seconds
+                </label>
+                <Input
+                  type="number"
+                  min="0"
+                  max="59"
+                  placeholder="Enter seconds"
+                  value={manualSeconds}
+                  onChange={(e) => setManualSeconds(e.target.value)}
                   className="text-lg"
                 />
               </div>

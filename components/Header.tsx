@@ -52,22 +52,6 @@ export default function Header() {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" className="flex items-center space-x-1">
-                  <Globe className="w-4 h-4" />
-                  <span>Language</span>
-                  <ChevronDown className="w-4 h-4" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem>English</DropdownMenuItem>
-                <DropdownMenuItem>Spanish</DropdownMenuItem>
-                <DropdownMenuItem>French</DropdownMenuItem>
-                <DropdownMenuItem>German</DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="flex items-center space-x-1">
                   <Menu className="w-4 h-4" />
                   <span>Categories</span>
                   <ChevronDown className="w-4 h-4" />
@@ -77,9 +61,6 @@ export default function Header() {
                 <DropdownMenuItem>
                   <Link href="/">Time Calculators</Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem>Date Calculators</DropdownMenuItem>
-                <DropdownMenuItem>Math Calculators</DropdownMenuItem>
-                <DropdownMenuItem>Unit Converters</DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </nav>
