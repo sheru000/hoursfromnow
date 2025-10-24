@@ -30,11 +30,21 @@ export default function MonthsFromNow() {
     const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
     setTimezone(tz);
 
-    const timer = setInterval(() => {
-      setCurrentTime(new Date());
-    }, 1000);
+    let rafId: number;
+    let lastUpdate = Date.now();
 
-    return () => clearInterval(timer);
+    const updateTime = () => {
+      const now = Date.now();
+      if (now - lastUpdate >= 1000) {
+        setCurrentTime(new Date());
+        lastUpdate = now;
+      }
+      rafId = requestAnimationFrame(updateTime);
+    };
+
+    rafId = requestAnimationFrame(updateTime);
+
+    return () => cancelAnimationFrame(rafId);
   }, []);
 
   const formatTime = (date: Date) => {

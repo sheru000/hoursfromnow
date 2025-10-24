@@ -29,7 +29,7 @@ export default  function HoursFromNowTable() {
   });
 
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto content-visibility-auto">
       <div className="max-h-[600px] overflow-y-auto">
         <table className="w-full">
           <thead className="bg-gray-50 sticky top-0 z-10">

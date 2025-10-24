@@ -5,7 +5,12 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CalculatorNav from '@/components/CalculatorNav';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  preload: true,
+  fallback: ['system-ui', 'arial']
+});
 
 export const metadata: Metadata = {
   title: 'Hours From Now Calculator',
