@@ -1,5 +1,7 @@
 {
-  "/not-found": "app/not-found.js",
   "/page": "app/page.js",
-  "/time-calculators/page": "app/time-calculators/page.js"
+  "/time-calculators/page": "app/time-calculators/page.js",
+  "/hours-calculator/page": "app/hours-calculator/page.js",
+  "/days-from-now/page": "app/days-from-now/page.js",
+  "/hours-ago/page": "app/hours-ago/page.js"
 }

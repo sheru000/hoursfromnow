@@ -10,21 +10,31 @@
       "static/chunks/main-app.js",
       "static/chunks/app/loading.js"
     ],
-    "/time-calculators/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/time-calculators/page.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/not-found": [
+    "/time-calculators/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/not-found.js"
+      "static/chunks/app/time-calculators/page.js"
+    ],
+    "/hours-calculator/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/hours-calculator/page.js"
+    ],
+    "/hours-ago/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/hours-ago/page.js"
+    ],
+    "/days-from-now/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/days-from-now/page.js"
     ]
   }
 }

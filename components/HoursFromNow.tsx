@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Clock, Calendar, Calculator } from 'lucide-react';
 import HoursFromNowPage from '@/components/content/HoursFromNowPage';
-import HoursFromNowTable from '@/components/content/HourafromnowTable';
+import HoursFromNowTable from '@/components/content/HoursfromnowTable';
 interface TimeEntry {
   hours: number;
   futureTime: Date;

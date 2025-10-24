@@ -6,7 +6,7 @@ const TimeDurationPage: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 py-8 md:py-12">
         <section className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Time Duration Calculator: Master Time Interval Calculations
+            Time Duration Calculator:Time Between Dates
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
             Whether you're tracking work hours, planning events, or calculating project timelines, understanding time duration between two points is essential. This comprehensive guide explains everything you need to know about calculating time intervals accurately and efficiently for all your personal and professional needs.
