@@ -22,11 +22,6 @@ const calculators = [
     icon: Timer,
   },
   {
-    name: 'Months From Now',
-    href: '/months-from-now',
-    icon: Calendar,
-  },
-  {
     name: 'Holiday Countdown',
     href: '/holiday-countdown',
     icon: CalendarDays,

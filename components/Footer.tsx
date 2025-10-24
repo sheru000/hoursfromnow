@@ -42,11 +42,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/months-from-now" className="hover:text-blue-400 transition-colors">
-                  Months From Now
-                </Link>
-              </li>
-              <li>
                 <Link href="/holiday-countdown" className="hover:text-blue-400 transition-colors">
                   Holiday Countdown
                 </Link>
@@ -73,8 +68,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/months-from-now" className="hover:text-blue-400 transition-colors">
-                  Months From Now
+                <Link href="/holiday-countdown" className="hover:text-blue-400 transition-colors">
+                  Holiday Countdown
                 </Link>
               </li>
             </ul>

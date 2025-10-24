@@ -9,6 +9,9 @@ export interface Holiday {
 }
 
 export function getHolidays(year: number): Holiday[] {
+  const now = new Date();
+  const currentYear = now.getFullYear();
+
   const holidays: Holiday[] = [
     {
       id: 'new-years-day',
@@ -183,7 +186,16 @@ export function getHolidays(year: number): Holiday[] {
     }
   ];
 
-  return holidays.sort((a, b) => a.date.getTime() - b.date.getTime());
+  const adjustedHolidays = holidays.map(holiday => {
+    if (holiday.date < now) {
+      const nextYearDate = new Date(holiday.date);
+      nextYearDate.setFullYear(currentYear + 1);
+      return { ...holiday, date: nextYearDate };
+    }
+    return holiday;
+  });
+
+  return adjustedHolidays.sort((a, b) => a.date.getTime() - b.date.getTime());
 }
 
 function getNthWeekdayOfMonth(year: number, month: number, weekday: number, n: number): Date {
