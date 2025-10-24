@@ -1,0 +1,8 @@
+{
+  "/page": "app/page.js",
+  "/hours-ago/page": "app/hours-ago/page.js",
+  "/time-calculators/page": "app/time-calculators/page.js",
+  "/time-duration-calculator/page": "app/time-duration-calculator/page.js",
+  "/time-calculator/page": "app/time-calculator/page.js",
+  "/days-from-now/page": "app/days-from-now/page.js"
+}
