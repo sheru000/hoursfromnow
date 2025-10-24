@@ -17,6 +17,11 @@ const calculators = [
     icon: Calculator,
   },
   {
+    name: 'Months From Now',
+    href: '/months-from-now',
+    icon: Calendar,
+  },
+  {
     name: 'Date Calculator',
     href: '/date-calculator',
     icon: Calendar,
