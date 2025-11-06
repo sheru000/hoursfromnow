@@ -2,15 +2,8 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Clock, Search, Menu, ChevronDown, Globe } from 'lucide-react';
+import { Clock, Search, Menu } from 'lucide-react';
 import { Input } from '@/components/ui/input';
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
-import { Button } from '@/components/ui/button';
 
 export default function Header() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -49,39 +42,12 @@ export default function Header() {
               Home
             </Link>
 
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="flex items-center space-x-1">
-                  <Globe className="w-4 h-4" />
-                  <span>Language</span>
-                  <ChevronDown className="w-4 h-4" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem>English</DropdownMenuItem>
-                <DropdownMenuItem>Spanish</DropdownMenuItem>
-                <DropdownMenuItem>French</DropdownMenuItem>
-                <DropdownMenuItem>German</DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="flex items-center space-x-1">
-                  <Menu className="w-4 h-4" />
-                  <span>Categories</span>
-                  <ChevronDown className="w-4 h-4" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem>
-                  <Link href="/time-calculators">Time Calculators</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>Date Calculators</DropdownMenuItem>
-                <DropdownMenuItem>Math Calculators</DropdownMenuItem>
-                <DropdownMenuItem>Unit Converters</DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <Link
+              href="/time-calculators"
+              className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+            >
+              Time Calculators
+            </Link>
           </nav>
 
           <button className="md:hidden">

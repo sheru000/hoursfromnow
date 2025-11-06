@@ -19,6 +19,7 @@ export default function HoursFromNow() {
   const [timezone, setTimezone] = useState<string>('');
   const [manualHours, setManualHours] = useState<string>('');
   const [manualMinutes, setManualMinutes] = useState<string>('');
+  const [manualSeconds, setManualSeconds] = useState<string>('');
   const [calculatedTime, setCalculatedTime] = useState<Date | null>(null);
 
   useEffect(() => {
@@ -74,7 +75,8 @@ export default function HoursFromNow() {
   const handleCalculate = () => {
     const hours = parseInt(manualHours) || 0;
     const minutes = parseInt(manualMinutes) || 0;
-    const totalMilliseconds = (hours * 60 * 60 * 1000) + (minutes * 60 * 1000);
+    const seconds = parseInt(manualSeconds) || 0;
+    const totalMilliseconds = (hours * 60 * 60 * 1000) + (minutes * 60 * 1000) + (seconds * 1000);
     const result = new Date(currentTime.getTime() + totalMilliseconds);
     setCalculatedTime(result);
   };
@@ -120,7 +122,7 @@ export default function HoursFromNow() {
               <h2 className="text-2xl font-bold text-gray-800">Calculate Hours From Now</h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-end">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Hours
@@ -146,6 +148,21 @@ export default function HoursFromNow() {
                   placeholder="Enter minutes"
                   value={manualMinutes}
                   onChange={(e) => setManualMinutes(e.target.value)}
+                  className="text-lg"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Seconds
+                </label>
+                <Input
+                  type="number"
+                  min="0"
+                  max="59"
+                  placeholder="Enter seconds"
+                  value={manualSeconds}
+                  onChange={(e) => setManualSeconds(e.target.value)}
                   className="text-lg"
                 />
               </div>
@@ -223,14 +240,47 @@ export default function HoursFromNow() {
 
         </div>
 
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <Card className="bg-white border-2 border-blue-100 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-gray-800 mb-3 flex items-center">
+                <Calendar className="w-6 h-6 text-blue-500 mr-2" />
+                Days From Now Calculator
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Calculate what the date will be any number of days from now. Perfect for planning future events and deadlines.
+              </p>
+              <a
+                href="/days-from-now"
+                className="inline-block px-6 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-medium rounded-lg hover:from-blue-600 hover:to-cyan-600 transition-all"
+              >
+                Try Days Calculator
+              </a>
+            </div>
+          </Card>
+
+          <Card className="bg-white border-2 border-blue-100 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-gray-800 mb-3 flex items-center">
+                <Clock className="w-6 h-6 text-blue-500 mr-2" />
+                Time Duration Calculator
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Calculate the duration between two dates and times. Get precise time differences in days, hours, and minutes.
+              </p>
+              <a
+                href="/time-duration-calculator"
+                className="inline-block px-6 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-medium rounded-lg hover:from-blue-600 hover:to-cyan-600 transition-all"
+              >
+                Try Duration Calculator
+              </a>
+            </div>
+          </Card>
+        </div>
+
         <div className="mt-12">
           <Card className="bg-gradient-to-br from-blue-50 to-cyan-50 border-2 border-blue-200 shadow-sm">
-           
-                  
-              <HoursFromNowPage/>             
-
-              
-           
+              <HoursFromNowPage/>
           </Card>
         </div>
 

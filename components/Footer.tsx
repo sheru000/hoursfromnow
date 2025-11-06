@@ -32,44 +32,44 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/hours-ago" className="hover:text-blue-400 transition-colors">
+                  Hours Ago
+                </Link>
+              </li>
+              <li>
+                <Link href="/days-from-now" className="hover:text-blue-400 transition-colors">
+                  Days From Now
+                </Link>
+              </li>
+              <li>
                 <Link href="/time-calculator" className="hover:text-blue-400 transition-colors">
                   Time Calculator
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="hover:text-blue-400 transition-colors">
-                  Date Calculator
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="hover:text-blue-400 transition-colors">
-                  World Clock
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4">Categories</h3>
+            <h3 className="text-white font-semibold mb-4">Time Calculators</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/" className="hover:text-blue-400 transition-colors">
-                  Time Calculators
+                <Link href="/hours-calculator" className="hover:text-blue-400 transition-colors">
+                  Hours Calculator
                 </Link>
               </li>
               <li>
-                <Link href="/" className="hover:text-blue-400 transition-colors">
-                  Date Calculators
+                <Link href="/time-duration-calculator" className="hover:text-blue-400 transition-colors">
+                  Time Duration Calculator
                 </Link>
               </li>
               <li>
-                <Link href="/" className="hover:text-blue-400 transition-colors">
-                  Math Tools
+                <Link href="/months-from-now" className="hover:text-blue-400 transition-colors">
+                  Months From Now
                 </Link>
               </li>
               <li>
-                <Link href="/" className="hover:text-blue-400 transition-colors">
-                  Unit Converters
+                <Link href="/holiday-countdown" className="hover:text-blue-400 transition-colors">
+                  Holiday Countdown
                 </Link>
               </li>
             </ul>
