@@ -9,7 +9,6 @@ import Script from 'next/script';
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
-  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -28,6 +27,11 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/manifest.json',
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -51,9 +55,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  verification: {
-    google: 'your-google-site-verification-code',
   },
 };
 
@@ -91,18 +92,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#3b82f6" />
+      <body className={inter.className}>
         <Script
           id="organization-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(organizationSchema),
           }}
+          strategy="beforeInteractive"
         />
         <Script
           id="website-schema"
@@ -110,9 +107,8 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(websiteSchema),
           }}
+          strategy="beforeInteractive"
         />
-      </head>
-      <body className={inter.className}>
         <Header />
         <CalculatorNav />
         <main id="main-content">
