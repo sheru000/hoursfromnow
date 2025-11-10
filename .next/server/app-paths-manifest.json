@@ -1,6 +1,0 @@
-{
-  "/not-found": "app/not-found.js",
-  "/weeks-from-today/page": "app/weeks-from-today/page.js",
-  "/days-from-now/page": "app/days-from-now/page.js",
-  "/days-from-now/[slug]/page": "app/days-from-now/[slug]/page.js"
-}
