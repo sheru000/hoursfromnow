@@ -1,4 +1,4 @@
-import TermsContent from "@/components/TermsCondition";
+import TermsCondition from "@/components/TermsCondition";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export default function TermsPage() {
         <h1 className="text-3xl font-semibold mb-6 text-gray-900">
           Terms and Conditions
         </h1>
-        <TermsContent />
+        <TermsCondition/>
       </div>
     </main>
   );
