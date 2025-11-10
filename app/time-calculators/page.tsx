@@ -36,6 +36,16 @@ const timeCalculators: Calculator[] = [
     url: '/hours-ago',
   },
   {
+    name: 'Days From Now Calculator',
+    description: 'Calculate what the date will be any number of days from now.',
+    url: '/days-from-now',
+  },
+  {
+    name: 'Months From Now Calculator',
+    description: 'Calculate what the date will be any number of months from now.',
+    url: '/months-from-now',
+  },
+  {
     name: 'Time Calculator',
     description: 'Add or subtract time values including hours, minutes, and seconds.',
     url: '/time-calculator',
@@ -46,64 +56,14 @@ const timeCalculators: Calculator[] = [
     url: '/hours-calculator',
   },
   {
-    name: 'Minutes Calculator',
-    description: 'Calculate time differences in minutes and convert between time units.',
-    url: '/minutes-calculator',
-  },
-  {
     name: 'Time Duration Calculator',
     description: 'Calculate the duration between two dates and times.',
     url: '/time-duration-calculator',
   },
   {
-    name: 'Time Zone Converter',
-    description: 'Convert time between different time zones worldwide.',
-    url: '/time-zone-converter',
-  },
-  {
-    name: 'Work Hours Calculator',
-    description: 'Calculate total work hours including breaks and overtime.',
-    url: '/work-hours-calculator',
-  },
-  {
-    name: 'Time Card Calculator',
-    description: 'Calculate hours worked from time card entries.',
-    url: '/time-card-calculator',
-  },
-  {
-    name: 'Military Time Converter',
-    description: 'Convert between 12-hour and 24-hour military time formats.',
-    url: '/military-time-converter',
-  },
-  {
-    name: 'Days From Now Calculator',
-    description: 'Calculate what the date will be any number of days from now.',
-    url: '/days-from-now',
-  },
-  {
-    name: 'Decimal Time Converter',
-    description: 'Convert time to decimal format and vice versa.',
-    url: '/decimal-time-converter',
-  },
-  {
-    name: 'Weeks From Now Calculator',
-    description: 'Calculate what the date will be any number of weeks from now.',
-    url: '/weeks-from-now',
-  },
-  {
-    name: 'Time Ago Calculator',
-    description: 'Calculate what time it was a certain number of hours ago.',
-    url: '/time-ago',
-  },
-  {
-    name: 'Sleep Calculator',
-    description: 'Calculate optimal sleep and wake times based on sleep cycles.',
-    url: '/sleep-calculator',
-  },
-  {
-    name: 'Countdown Timer',
-    description: 'Count down to a specific date and time.',
-    url: '/countdown-timer',
+    name: 'Holiday Countdown',
+    description: 'Count down to major holidays and special occasions.',
+    url: '/holiday-countdown',
   },
 ];
 

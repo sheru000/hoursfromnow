@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://hoursfromnow.tech/days-from-now/</loc><lastmod>2025-10-24T12:13:08.118Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://hoursfromnow.tech/</loc><lastmod>2025-10-24T12:13:08.118Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://hoursfromnow.tech/terms-and-conditions/</loc><lastmod>2025-10-24T12:13:08.118Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://hoursfromnow.tech/private-policy/</loc><lastmod>2025-10-24T12:13:08.118Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://hoursfromnow.tech/time-calculators/</loc><lastmod>2025-10-24T12:13:08.118Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://hoursfromnow.tech/time-duration-calculator/</loc><lastmod>2025-10-24T12:13:08.118Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://hoursfromnow.tech/hours-ago/</loc><lastmod>2025-10-24T12:13:08.118Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://hoursfromnow.tech/contact-us/</loc><lastmod>2025-10-24T12:13:08.118Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://hoursfromnow.tech/time-calculator/</loc><lastmod>2025-10-24T12:13:08.118Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+
+<url><loc>https://hoursfromnow.tech/hours-ago/</loc><lastmod>2025-11-09T13:46:00.682Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://hoursfromnow.tech/hours-calculator/</loc><lastmod>2025-11-09T13:46:00.683Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://hoursfromnow.tech/contact-us/</loc><lastmod>2025-11-09T13:46:00.683Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://hoursfromnow.tech/holiday-countdown/</loc><lastmod>2025-11-09T13:46:00.683Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://hoursfromnow.tech/</loc><lastmod>2025-11-09T13:46:00.683Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://hoursfromnow.tech/terms-and-conditions/</loc><lastmod>2025-11-09T13:46:00.683Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://hoursfromnow.tech/days-from-now/</loc><lastmod>2025-11-09T13:46:00.683Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://hoursfromnow.tech/private-policy/</loc><lastmod>2025-11-09T13:46:00.683Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://hoursfromnow.tech/time-calculators/</loc><lastmod>2025-11-09T13:46:00.683Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://hoursfromnow.tech/time-calculator/</loc><lastmod>2025-11-09T13:46:00.683Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://hoursfromnow.tech/weeks-from-today/</loc><lastmod>2025-11-09T13:46:00.683Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://hoursfromnow.tech/days-from-now/daysContent/</loc><lastmod>2025-11-09T13:46:00.683Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://hoursfromnow.tech/weeks-from-today/weeksContent/</loc><lastmod>2025-11-09T13:46:00.683Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://hoursfromnow.tech/time-duration-calculator/</loc><lastmod>2025-11-09T13:46:00.684Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://hoursfromnow.tech/months-from-now/</loc><lastmod>2025-11-09T13:46:00.684Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://hoursfromnow.tech/days-from-now/14-days-from-today/</loc><lastmod>2025-11-09T13:46:00.684Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://hoursfromnow.tech/days-from-now/35-days-from-today/</loc><lastmod>2025-11-09T13:46:00.684Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://hoursfromnow.tech/days-from-now/45-days-from-today/</loc><lastmod>2025-11-09T13:46:00.684Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://hoursfromnow.tech/days-from-now/40-days-from-today/</loc><lastmod>2025-11-09T13:46:00.684Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://hoursfromnow.tech/days-from-now/30-days-from-today/</loc><lastmod>2025-11-09T13:46:00.684Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://hoursfromnow.tech/days-from-now/60-days-from-today/</loc><lastmod>2025-11-09T13:46:00.684Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://hoursfromnow.tech/days-from-now/90-days-from-today/</loc><lastmod>2025-11-09T13:46:00.684Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://hoursfromnow.tech/days-from-now/180-days-from-today/</loc><lastmod>2025-11-09T13:46:00.684Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+
 </urlset>

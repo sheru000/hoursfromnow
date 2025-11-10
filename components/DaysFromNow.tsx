@@ -19,6 +19,8 @@ export default function DaysFromNow() {
   const [dateEntries, setDateEntries] = useState<DateEntry[]>([]);
   const [timezone, setTimezone] = useState<string>('');
   const [manualDays, setManualDays] = useState<string>('');
+  const [manualHours, setManualHours] = useState<string>('');
+  const [manualMinutes, setManualMinutes] = useState<string>('');
   const [calculatedDate, setCalculatedDate] = useState<Date | null>(null);
 
   useEffect(() => {
@@ -80,8 +82,12 @@ export default function DaysFromNow() {
 
   const handleCalculate = () => {
     const days = parseInt(manualDays) || 0;
+    const hours = parseInt(manualHours) || 0;
+    const minutes = parseInt(manualMinutes) || 0;
     const result = new Date(currentTime);
     result.setDate(result.getDate() + days);
+    result.setHours(result.getHours() + hours);
+    result.setMinutes(result.getMinutes() + minutes);
     setCalculatedDate(result);
   };
 
@@ -126,17 +132,47 @@ export default function DaysFromNow() {
               <h2 className="text-2xl font-bold text-gray-800">Calculate Days From Now</h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-end">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Number of Days
+                  Days
                 </label>
                 <Input
                   type="number"
                   min="0"
-                  placeholder="Enter number of days"
+                  placeholder="Enter days"
                   value={manualDays}
                   onChange={(e) => setManualDays(e.target.value)}
+                  className="text-lg"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Hours
+                </label>
+                <Input
+                  type="number"
+                  min="0"
+                  max="23"
+                  placeholder="Enter hours"
+                  value={manualHours}
+                  onChange={(e) => setManualHours(e.target.value)}
+                  className="text-lg"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Minutes
+                </label>
+                <Input
+                  type="number"
+                  min="0"
+                  max="59"
+                  placeholder="Enter minutes"
+                  value={manualMinutes}
+                  onChange={(e) => setManualMinutes(e.target.value)}
                   className="text-lg"
                 />
               </div>
