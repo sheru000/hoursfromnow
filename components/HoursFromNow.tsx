@@ -92,7 +92,7 @@ export default function HoursFromNow() {
             Hours From Now Calculator
           </h1>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Calculate future times instantly with our live updating time calculator. Perfect for scheduling and planning.
+            Calculate future times instantly with our live updating hour from now calculator. Perfect for scheduling and planning for time in future.
           </p>
         </div>
 
