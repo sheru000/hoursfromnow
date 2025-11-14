@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Clock, Calculator, Calendar, Globe } from 'lucide-react';
+import { Clock, Calculator, Calendar, CalendarDays } from 'lucide-react';
 
 
 const calculators = [
@@ -17,14 +17,19 @@ const calculators = [
     icon: Calculator,
   },
   {
-    name: 'Date Calculator',
-    href: '/date-calculator',
+    name: 'Time Duration Calculator',
+    href: '/time-duration-calculator',
+    icon: Calculator,
+  },
+  {
+    name: 'Days From Now',
+    href: '/days-from-now',
     icon: Calendar,
   },
   {
-    name: 'World Clock',
-    href: '/world-clock',
-    icon: Globe,
+    name: 'Holidays Countdown',
+    href: '/holiday-countdown',
+    icon: CalendarDays,
   },
 
 ];
