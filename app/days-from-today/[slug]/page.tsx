@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
-  const canonicalUrl = `https://hoursfromnow.tech/days-from-now/${params.slug}`;
+  const canonicalUrl = `https://hoursfromnow.tech/days-from-today/${params.slug}`;
 
   return {
     title: content.title,
@@ -72,7 +72,7 @@ export default function DaysFromNowPage({ params }: PageProps) {
     notFound();
   }
 
-  const canonicalUrl = `https://hoursfromnow.tech/days-from-now/${params.slug}`;
+  const canonicalUrl = `https://hoursfromnow.tech/days-from-today/${params.slug}`;
 
   const calculatorSchema = generateCalculatorSchema({
     name: content.title,
@@ -82,7 +82,7 @@ export default function DaysFromNowPage({ params }: PageProps) {
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: 'https://hoursfromnow.tech' },
-    { name: 'Days From Now', url: 'https://hoursfromnow.tech/days-from-now' },
+    { name: 'Days From Today', url: 'https://hoursfromnow.tech/days-from-today' },
     { name: content.title, url: canonicalUrl },
   ]);
 
@@ -194,7 +194,7 @@ export default function DaysFromNowPage({ params }: PageProps) {
           {/* Calculator Component */}
           <div className="bg-white rounded-xl shadow-lg border border-green-100 p-6 mb-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-              Interactive Days From Now Calculator
+              Interactive Days From Today Calculator
             </h2>
             <DaysFromNow />
           </div>
@@ -207,10 +207,10 @@ export default function DaysFromNowPage({ params }: PageProps) {
               </h3>
               <div className="flex flex-wrap justify-center gap-4">
                 <a
-                  href="/days-from-now"
+                  href="/days-from-today"
                   className="px-4 py-2 bg-gradient-to-r from-green-500 to-emerald-500 text-white font-medium rounded-lg hover:from-green-600 hover:to-emerald-600 transition-all"
                 >
-                  Days From Now Calculator
+                  Days From Today Calculator
                 </a>
                 <a
                   href="/hours-from-now"
@@ -219,10 +219,10 @@ export default function DaysFromNowPage({ params }: PageProps) {
                   Hours From Now
                 </a>
                 <a
-                  href="/months-from-now"
+                  href="/months-from-today"
                   className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all"
                 >
-                  Months From Now
+                  Months From Today
                 </a>
               </div>
             </div>

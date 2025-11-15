@@ -12,24 +12,24 @@ const MonthsFromNowComponent = dynamic(() => import('@/components/MonthsFromNow'
 });
 
 export const metadata: Metadata = {
-  title: 'Months From Now Calculator | Calculate Future Dates by Months',
-  description: 'Calculate any number of months from now with our precise months-from-now calculator. Find out what date it will be 1, 3, 6, or 12 months from today. Perfect for planning, pregnancy tracking, and scheduling.',
+  title: 'Months From Today Calculator | Calculate Future Dates by Months',
+  description: 'Calculate any number of months from today with our precise months-from-today calculator. Find out what date it will be 1, 3, 6, or 12 months from today. Perfect for planning, pregnancy tracking, and scheduling.',
   alternates: {
-    canonical: 'https://hoursfromnow.tech/months-from-now',
+    canonical: 'https://hoursfromnow.tech/months-from-today',
   },
-  keywords: 'months from now, months calculator, future date calculator, date calculator, 1 month from now, 2 months from now, 3 months from now, 6 months from now, 12 months from now, pregnancy calculator, planning tool, months from today, what date will it be, calculate months ahead, months from now calculator, date planning tool',
+  keywords: 'months from today, months calculator, future date calculator, date calculator, 1 month from today, 2 months from today, 3 months from today, 6 months from today, 12 months from today, pregnancy calculator, planning tool, months from today, what date will it be, calculate months ahead, months from today calculator, date planning tool',
 
   openGraph: {
-    title: 'Months From Now Calculator - Calculate Future Dates',
-    description: 'Instantly calculate what date it will be any number of months from now. Fast, accurate, and mobile-friendly months-from-now calculator.',
-    url: 'https://hoursfromnow.tech/months-from-now',
+    title: 'Months From today Calculator - Calculate Future Dates',
+    description: 'Instantly calculate what date it will be any number of months from today. Fast, accurate, and mobile-friendly months-from-today calculator.',
+    url: 'https://hoursfromnow.tech/months-from-today',
     type: 'website',
     siteName: 'HoursFromNow.tech',
   },
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Months From Now Calculator',
+    title: 'Months From today Calculator',
     description: 'Calculate future dates by adding months to today. Perfect for planning and scheduling.',
   },
 
@@ -50,21 +50,21 @@ export default function MonthsFromNowPage() {
   return (
     <>
       <Script
-        id="schema-months-from-now"
+        id="schema-months-from-today"
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'WebApplication',
-            name: 'Months From Now Calculator',
-            url: 'https://hoursfromnow.tech/months-from-now',
+            name: 'Months From today Calculator',
+            url: 'https://hoursfromnow.tech/months-from-today',
             description: 'Calculate what date it will be any number of months from now. Simple, fast, and accurate free online date calculator.',
             applicationCategory: 'Utility',
             operatingSystem: 'All',
             mainEntityOfPage: {
               '@type': 'WebPage',
-              '@id': 'https://hoursfromnow.tech/months-from-now',
+              '@id': 'https://hoursfromnow.tech/months-from-today',
             },
             creator: {
               '@type': 'Organization',
@@ -78,15 +78,15 @@ export default function MonthsFromNowPage() {
             },
             potentialAction: {
               '@type': 'ViewAction',
-              name: 'Calculate Months From Now',
-              target: 'https://hoursfromnow.tech/months-from-now',
+              name: 'Calculate Months From Today',
+              target: 'https://hoursfromnow.tech/months-from-today',
             },
           }),
         }}
       />
 
       <Script
-        id="schema-months-from-now-breadcrumb"
+        id="schema-months-from-today-breadcrumb"
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -105,8 +105,8 @@ export default function MonthsFromNowPage() {
                   {
                     '@type': 'ListItem',
                     position: 2,
-                    name: 'Months From Now',
-                    item: 'https://hoursfromnow.tech/months-from-now',
+                    name: 'Months From Today',
+                    item: 'https://hoursfromnow.tech/months-from-today',
                   },
                 ],
               },

@@ -123,7 +123,7 @@ export default function MonthsFromNow() {
             <CalendarIcon className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-3">
-            Months From Now Calculator
+            Months From Today Calculator
           </h1>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Calculate future dates by adding months to today. Perfect for planning, pregnancy tracking, and long-term scheduling.
@@ -153,7 +153,7 @@ export default function MonthsFromNow() {
           <div className="p-6">
             <div className="flex items-center space-x-2 mb-6">
               <Calculator className="w-6 h-6 text-blue-500" />
-              <h2 className="text-2xl font-bold text-gray-800">Calculate Months From Now</h2>
+              <h2 className="text-2xl font-bold text-gray-800">Calculate Months From Today</h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-end">
@@ -353,7 +353,7 @@ export default function MonthsFromNow() {
 
         <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden mb-8">
           <div className="bg-gradient-to-r from-blue-500 to-cyan-500 px-6 py-4">
-            <h2 className="text-2xl font-bold text-white text-center">Months From Now Table</h2>
+            <h2 className="text-2xl font-bold text-white text-center">Months From Today Table</h2>
             <p className="text-blue-50 text-sm mt-1 text-center">Quick reference for common month calculations</p>
           </div>
           <MonthsFromNowTable />

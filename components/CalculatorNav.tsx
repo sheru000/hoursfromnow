@@ -22,8 +22,8 @@ const calculators = [
     icon: Calculator,
   },
   {
-    name: 'Days From Now',
-    href: '/days-from-now',
+    name: 'Days From Today',
+    href: '/days-from-Today',
     icon: Calendar,
   },
   {

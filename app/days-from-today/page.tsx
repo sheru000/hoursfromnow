@@ -3,25 +3,25 @@ import Script from 'next/script';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Days From Now Calculator | Calculate Future Dates From Today',
-  description: 'Calculate what date it will be any number of days from now with our free days from now calculator. Find future dates from 1 day to 365 days from now instantly.',
+  title: 'Days From Today Calculator | Calculate Future Dates From Today',
+  description: 'Calculate what date it will be any number of days from today with our free days from today calculator. Find future dates from 1 day to 365 days from today instantly.',
   alternates: {
-    canonical: 'https://hoursfromnow.tech/days-from-now',
+    canonical: 'https://hoursfromnow.tech/days-from-today',
   },
-  keywords: 'days from now, days from now calculator, days from today calculator, what date will it be, future date calculator, date calculator, 30 days from now, 60 days from now, 90 days from now, 7 days from now, days ahead calculator',
+  keywords: 'days from today, days from today calculator, days from today calculator, what date will it be, future date calculator, date calculator, 30 days from today, 60 days from today, 90 days from today, 7 days from today, days ahead calculator',
 
   openGraph: {
-    title: 'Days From Now Calculator - Calculate Future Dates',
-    description: 'Instantly calculate what date it will be any number of days from now. Fast and accurate future date calculator.',
-    url: 'https://hoursfromnow.tech/days-from-now',
+    title: 'Days From Today Calculator - Calculate Future Dates',
+    description: 'Instantly calculate what date it will be any number of days from today. Fast and accurate future date calculator.',
+    url: 'https://hoursfromnow.tech/days-from-today',
     type: 'website',
     siteName: 'HoursFromNow.tech',
   },
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Days From Now Calculator - Calculate Future Dates',
-    description: 'Calculate what date it will be any number of days from now with our accurate date calculator.',
+    title: 'Days From Today Calculator - Calculate Future Dates',
+    description: 'Calculate what date it will be any number of days from today with our accurate date calculator.',
   },
 
   robots: {
@@ -47,14 +47,14 @@ export default function DaysFromNowPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'WebApplication',
-            name: 'Days From Now Calculator',
-            url: 'https://hoursfromnow.tech/days-from-now',
-            description: 'Calculate what date it will be any number of days from now. Simple, fast, and accurate free online date calculator.',
+            name: 'Days From Today Calculator',
+            url: 'https://hoursfromnow.tech/days-from-today',
+            description: 'Calculate what date it will be any number of days from today. Simple, fast, and accurate free online date calculator.',
             applicationCategory: 'Utility',
             operatingSystem: 'All',
             mainEntityOfPage: {
               '@type': 'WebPage',
-              '@id': 'https://hoursfromnow.tech/days-from-now'
+              '@id': 'https://hoursfromnow.tech/days-from-today'
             },
             creator: {
               '@type': 'Organization',
@@ -68,8 +68,8 @@ export default function DaysFromNowPage() {
             },
             potentialAction: {
               '@type': 'ViewAction',
-              name: 'Calculate Days From Now',
-              target: 'https://hoursfromnow.tech/days-from-now',
+              name: 'Calculate Days From Today',
+              target: 'https://hoursfromnow.tech/days-from-today',
             },
           }),
         }}
@@ -93,8 +93,8 @@ export default function DaysFromNowPage() {
                   {
                     '@type': 'ListItem',
                     position: 2,
-                    name: 'Days From Now Calculator',
-                    item: 'https://hoursfromnow.tech/days-from-now'
+                    name: 'Days From Today',
+                    item: 'https://hoursfromnow.tech/days-from-today'
                   }
                 ]
               }

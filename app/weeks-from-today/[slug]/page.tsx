@@ -213,10 +213,10 @@ export default function WeeksFromTodayPage({ params }: PageProps) {
                   Weeks From Today Calculator
                 </a>
                 <a
-                  href="/days-from-now"
+                  href="/days-from-today"
                   className="px-4 py-2 bg-gradient-to-r from-green-500 to-emerald-500 text-white font-medium rounded-lg hover:from-green-600 hover:to-emerald-600 transition-all"
                 >
-                  Days From Now
+                  Days From Today
                 </a>
                 <a
                   href="/hours-from-now"
@@ -225,10 +225,10 @@ export default function WeeksFromTodayPage({ params }: PageProps) {
                   Hours From Now
                 </a>
                 <a
-                  href="/months-from-now"
+                  href="/months-from-today"
                   className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all"
                 >
-                  Months From Now
+                  Months From Today
                 </a>
               </div>
             </div>

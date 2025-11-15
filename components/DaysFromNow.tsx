@@ -99,7 +99,7 @@ export default function DaysFromNow() {
             <Calendar className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-3">
-            Days From Now Calculator
+            Days From Today Calculator
           </h1>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Calculate future dates instantly with our live updating days from now calculator. Perfect for planning and scheduling.
@@ -129,7 +129,7 @@ export default function DaysFromNow() {
           <div className="p-6">
             <div className="flex items-center space-x-2 mb-6">
               <Calculator className="w-6 h-6 text-blue-500" />
-              <h2 className="text-2xl font-bold text-gray-800">Calculate Days From Now</h2>
+              <h2 className="text-2xl font-bold text-gray-800">Calculate Days From Today</h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
@@ -206,7 +206,7 @@ export default function DaysFromNow() {
 
         <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
           <div className="bg-gradient-to-r from-blue-500 to-cyan-500 px-6 py-4">
-            <h2 className="text-2xl font-bold text-white text-center">Days From Now Table - {formatShortDate(currentTime)}</h2>
+            <h2 className="text-2xl font-bold text-white text-center">Days From Today Table - {formatShortDate(currentTime)}</h2>
             <p className="text-blue-50 text-sm mt-1 text-center">Below X days added to current date</p>
           </div>
           <DaysFromNowTable/>
@@ -221,7 +221,7 @@ export default function DaysFromNow() {
         <div className="mt-8 text-center">
           <Card className="inline-block p-4 bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-200">
             <p className="text-sm text-gray-600">
-              <span className="font-semibold text-gray-800">Live Updates:</span> This days from now calculator refreshes every second to show accurate dates.
+              <span className="font-semibold text-gray-800">Live Updates:</span> This days from Today calculator refreshes every second to show accurate dates.
               <br />
               All dates are displayed in your local timezone: <span className="font-semibold text-blue-600">{timezone}</span>
             </p>
