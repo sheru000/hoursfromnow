@@ -26,11 +26,7 @@ const calculators = [
     href: '/days-from-today',
     icon: Calendar,
   },
-  {
-    name: 'Weeks From Today',
-    href: '/weeks-from-today',
-    icon: Calendar,
-  },
+  
   {
     name: 'Holidays Countdown',
     href: '/holiday-countdown',

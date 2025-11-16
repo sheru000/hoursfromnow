@@ -36,14 +36,19 @@ const timeCalculators: Calculator[] = [
     url: '/hours-ago',
   },
   {
-    name: 'Days From Now Calculator',
-    description: 'Calculate what the date will be any number of days from now.',
-    url: '/days-from-now',
+    name: 'Days From Today Calculator',
+    description: 'Calculate what the date will be any number of days from today.',
+    url: '/days-from-today',
   },
   {
-    name: 'Months From Now Calculator',
-    description: 'Calculate what the date will be any number of months from now.',
-    url: '/months-from-now',
+    name: 'Months From Today Calculator',
+    description: 'Calculate what the date will be any number of months from today.',
+    url: '/months-from-today',
+  },
+  {
+    name: 'Weeks From Today Calculator',
+    description: 'Calculate what the date will be any number of week from today.',
+    url: '/weeks-from-today',
   },
   {
     name: 'Time Calculator',

@@ -13,7 +13,7 @@ export default function SitemapPage() {
     { href: '/hours-ago', label: 'Hours Ago' },
     { href: '/days-from-today', label: 'Days From Today' },
     { href: '/weeks-from-today', label: 'Weeks From Today' },
-    { href: '/months-from-now', label: 'Months From Now' },
+    { href: '/months-from-today', label: 'Months From Today' },
     { href: '/time-calculator', label: 'Time Calculator' },
     { href: '/hours-calculator', label: 'Hours Calculator' },
     { href: '/time-duration-calculator', label: 'Time Duration Calculator' },
@@ -85,11 +85,11 @@ export default function SitemapPage() {
             </div>
 
             {/* Days From Today Sub-section */}
-            <div className="mb-8">
-              <h3 className="text-xl font-medium text-gray-700 mb-4">
+            <details className="mb-8">
+              <summary className="text-xl font-medium text-gray-700 mb-4 cursor-pointer list-none">
                 Days From Today Pages
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+              </summary>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-4">
                 {daysPages.map((slug) => (
                   <Link
                     key={slug}
@@ -100,14 +100,14 @@ export default function SitemapPage() {
                   </Link>
                 ))}
               </div>
-            </div>
+            </details>
 
             {/* Weeks From Today Sub-section */}
-            <div className="mb-8">
-              <h3 className="text-xl font-medium text-gray-700 mb-4">
+            <details className="mb-8">
+              <summary className="text-xl font-medium text-gray-700 mb-4 cursor-pointer list-none">
                 Weeks From Today Pages
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+              </summary>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-4">
                 {weeksPages.map((slug) => (
                   <Link
                     key={slug}
@@ -118,7 +118,7 @@ export default function SitemapPage() {
                   </Link>
                 ))}
               </div>
-            </div>
+            </details>
           </section>
 
           {/* About Us Section */}
