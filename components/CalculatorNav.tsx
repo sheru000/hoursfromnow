@@ -23,7 +23,12 @@ const calculators = [
   },
   {
     name: 'Days From Today',
-    href: '/days-from-Today',
+    href: '/days-from-today',
+    icon: Calendar,
+  },
+  {
+    name: 'Weeks From Today',
+    href: '/weeks-from-today',
     icon: Calendar,
   },
   {

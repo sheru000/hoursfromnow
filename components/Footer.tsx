@@ -46,6 +46,11 @@ export default function Footer() {
                   Time Calculator
                 </Link>
               </li>
+              <li>
+                <Link href="/sitemap" className="hover:text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded">
+                  Sitemap
+                </Link>
+              </li>
             </ul>
           </nav>
 
