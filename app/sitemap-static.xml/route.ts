@@ -14,37 +14,37 @@ export async function GET() {
     {
       url: `${baseUrl}/hours-ago/`,
       lastmod: currentDate,
-      changefreq: 'monthly',
+      changefreq: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/time-calculator/`,
       lastmod: currentDate,
-      changefreq: 'monthly',
+      changefreq: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/time-calculators/`,
       lastmod: currentDate,
-      changefreq: 'monthly',
+      changefreq: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/time-duration-calculator/`,
       lastmod: currentDate,
-      changefreq: 'monthly',
+      changefreq: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/hours-calculator/`,
       lastmod: currentDate,
-      changefreq: 'monthly',
+      changefreq: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/months-from-today/`,
       lastmod: currentDate,
-      changefreq: 'monthly',
+      changefreq: 'weekly',
       priority: 0.8,
     },
     {
@@ -74,7 +74,7 @@ export async function GET() {
     {
       url: `${baseUrl}/sitemap/`,
       lastmod: currentDate,
-      changefreq: 'monthly',
+      changefreq: 'weekly',
       priority: 0.5,
     },
   ];
