@@ -142,3 +142,10 @@ a {
 img {
   content-visibility: auto;
 }
+
+.prose h1 { @apply text-4xl font-bold; }
+.prose h2 { @apply text-3xl font-semibold; }
+.prose h3 { @apply text-2xl font-semibold; }
+.prose p { @apply leading-7 my-4; }
+.prose strong { @apply font-semibold; }
+.prose ul, .prose ol { @apply my-4 ml-6; }
