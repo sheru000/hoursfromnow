@@ -221,6 +221,10 @@ export default function WeeksFromNow() {
           </div>
         </Card>
 
+         <div className="mb-8 text-center">
+          <p className="text-gray-600 mb-4">Try other related tools: <a href="/days-from-today" className="text-blue-600 hover:text-blue-800 font-medium">Days From Today</a>, <a href="/holiday-countdown" className="text-blue-600 hover:text-blue-800 font-medium">Holidays Countdown Calculator</a></p>
+        </div>
+
         <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
           <div className="bg-gradient-to-r from-blue-500 to-cyan-500 px-6 py-4">
             <h2 className="text-2xl font-bold text-white text-center">Weeks From Today Table - {formatShortDate(currentTime)}</h2>

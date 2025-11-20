@@ -192,6 +192,9 @@ export default function HolidayCountdown() {
             })}
           </div>
         </div>
+         <div className="mb-8 text-center">
+          <p className="text-gray-600 mb-4">Try other related tools: <a href="/" className="text-blue-600 hover:text-blue-800 font-medium">Hours From Now Calculator</a>, <a href="/time-calculator" className="text-blue-600 hover:text-blue-800 font-medium">Time Calculator</a></p>
+        </div>
       </div>
     </div>
   );

@@ -255,6 +255,9 @@ export default function TimeCalculatorComponent() {
             )}
           </div>
         </Card>
+        <div className="mb-8 text-center">
+          <p className="text-gray-600 mb-4">Try other related tools: <a href="/days-from-today" className="text-blue-600 hover:text-blue-800 font-medium">Days From Today</a>, <a href="/time-duration-calculator" className="text-blue-600 hover:text-blue-800 font-medium">Time Duration Calculator</a></p>
+        </div>
 
         <Card className="bg-gradient-to-br from-blue-50 to-cyan-50 border-2 border-blue-200 shadow-lg">
           <div className="p-8">

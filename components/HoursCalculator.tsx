@@ -136,6 +136,10 @@ export default function HoursCalculator() {
           </div>
         </Card>
 
+         <div className="mb-8 text-center">
+          <p className="text-gray-600 mb-4">Try other related tools: <a href="/hours-ago" className="text-blue-600 hover:text-blue-800 font-medium">Hours Ago Calculator</a>, <a href="/time-calculator" className="text-blue-600 hover:text-blue-800 font-medium">Time Calculator</a></p>
+        </div>
+
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Common Hour Conversions</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">

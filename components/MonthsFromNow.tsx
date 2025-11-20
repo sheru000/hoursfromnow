@@ -351,6 +351,10 @@ export default function MonthsFromNow() {
           </div>
         </Card>
 
+         <div className="mb-8 text-center">
+          <p className="text-gray-600 mb-4">Try other related tools: <a href="/hours-ago" className="text-blue-600 hover:text-blue-800 font-medium">Hours Ago Calculator</a>, <a href="/hours-calculator" className="text-blue-600 hover:text-blue-800 font-medium">Hours Calculator</a></p>
+        </div>
+
         <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden mb-8">
           <div className="bg-gradient-to-r from-blue-500 to-cyan-500 px-6 py-4">
             <h2 className="text-2xl font-bold text-white text-center">Months From Today Table</h2>
