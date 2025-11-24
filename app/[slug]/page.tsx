@@ -30,7 +30,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
-  const canonicalUrl = `https://hoursfromnow.tech/hours-from-now/${params.slug}`;
+  const canonicalUrl = `https://hoursfromnow.tech/${params.slug}`;
+;
 
   return {
     title: content.title,
@@ -72,7 +73,7 @@ export default function HoursFromNowPage({ params }: PageProps) {
     notFound();
   }
 
-  const canonicalUrl = `https://hoursfromnow.tech/hours-from-now/${params.slug}`;
+  const canonicalUrl = `https://hoursfromnow.tech/${params.slug}`;
 
   // Calculate future time for specified hours from now
   const futureDate = new Date();
@@ -107,7 +108,6 @@ export default function HoursFromNowPage({ params }: PageProps) {
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: 'https://hoursfromnow.tech' },
-    { name: 'Hours From Now', url: 'https://hoursfromnow.tech/hours-from-now' },
     { name: content.title, url: canonicalUrl },
   ]);
 
@@ -149,7 +149,7 @@ export default function HoursFromNowPage({ params }: PageProps) {
               <div className="text-6xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-4">
                 {formatDateTime(futureDate)}
               </div>
-              <div className="text-xl text-gray-700 font-medium mb-2">{formatShortDate(futureDate)}</div>
+              <div className="text-xl text-gray-700 font-normal mb-2">{formatShortDate(futureDate)}</div>
               <p className="text-gray-600">
                 The current time is {formatDateTime(new Date())}, so {content.hours} {content.hours === 1 ? 'hour' : 'hours'} from now will
                 be {formatDateTime(futureDate)}.

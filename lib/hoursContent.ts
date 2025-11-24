@@ -333,11 +333,19 @@ const hoursContent: Record<string, HourContent> = {
 };
 
 export function getHoursContent(slug: string) {
-  return hoursContent[slug];
+  const hourValue = slug.replace("-hour-from-now", "").replace("-hours-from-now", "");
+
+  return hoursContent[hourValue] || null;
 }
 
+
 export function getAllHoursSlugs() {
-  return Object.keys(hoursContent);
+  return Object.keys(hoursContent).map((hour) =>
+    hour === "1"
+      ? `${hour}-hour-from-now`
+      : `${hour}-hours-from-now`
+  );
 }
+
 
 export default hoursContent;
