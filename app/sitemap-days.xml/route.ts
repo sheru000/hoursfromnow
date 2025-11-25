@@ -10,7 +10,7 @@ export async function GET() {
       url: `${baseUrl}/days-from-today/${i}-days-from-today/`,
       lastmod: currentDate,
       changefreq: 'daily',
-      priority: 0.8,
+      priority: 0.1,
     });
   }
 

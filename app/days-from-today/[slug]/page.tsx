@@ -144,7 +144,7 @@ export default function DaysFromNowPage({ params }: PageProps) {
           {/* Date Result Card */}
           <div className="bg-white rounded-2xl shadow-xl border border-green-100 p-8 mb-8">
             <div className="text-center">
-              <div className="text-6xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-4">
+              <div className="text-5xl font-bold leading-relaxed bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-4">
                 {formatDate(futureDate)}
               </div>
               <div className="text-xl text-gray-700 font-medium mb-2">
@@ -159,7 +159,7 @@ export default function DaysFromNowPage({ params }: PageProps) {
           {/* Content Sections */}
           <div className="space-y-8 mb-12">
             {content.content.map((section: { heading: string; text: string }, index: number) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg border border-green-100 p-6">
+              <div key={index} className="bg-white rounded-xl shadow-sm border border-green-100 p-6">
                 <h2 className="text-2xl font-bold text-gray-800 mb-4">
                   {section.heading}
                 </h2>
@@ -172,7 +172,7 @@ export default function DaysFromNowPage({ params }: PageProps) {
 
           {/* FAQ Section */}
           {content.faq && content.faq.length > 0 && (
-            <div className="bg-white rounded-xl shadow-lg border border-green-100 p-6 mb-8">
+            <div className="bg-white rounded-xl shadow-sm border border-green-100 p-6 mb-8">
               <h2 className="text-2xl font-bold text-gray-800 mb-6">
                 Frequently Asked Questions
               </h2>
@@ -192,7 +192,7 @@ export default function DaysFromNowPage({ params }: PageProps) {
           )}
 
           {/* Calculator Component */}
-          <div className="bg-white rounded-xl shadow-lg border border-green-100 p-6 mb-8">
+          <div className="bg-white rounded-xl shadow-sm border border-green-100 p-6 mb-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
               Interactive Days From Today Calculator
             </h2>

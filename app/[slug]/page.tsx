@@ -146,7 +146,7 @@ export default function HoursFromNowPage({ params }: PageProps) {
           {/* Time Result Card */}
           <div className="bg-white rounded-2xl shadow-xl border border-blue-100 p-8 mb-8">
             <div className="text-center">
-              <div className="text-6xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-4">
+              <div className="text-5xl font-bold leading-relaxed bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-4">
                 {formatDateTime(futureDate)}
               </div>
               <div className="text-xl text-gray-700 font-normal mb-2">{formatShortDate(futureDate)}</div>
@@ -160,7 +160,7 @@ export default function HoursFromNowPage({ params }: PageProps) {
           {/* Content Sections */}
           <div className="space-y-8 mb-12">
             {content.content.map((section, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg border border-blue-100 p-6">
+              <div key={index} className="bg-white rounded-xl shadow-sm border border-blue-100 p-6">
                 <h2 className="text-2xl font-bold text-gray-800 mb-4">{section.heading}</h2>
                 <p className="text-gray-700 leading-relaxed">{section.text}</p>
               </div>
@@ -169,7 +169,7 @@ export default function HoursFromNowPage({ params }: PageProps) {
 
           {/* FAQ Section */}
           {content.faq && content.faq.length > 0 && (
-            <div className="bg-white rounded-xl shadow-lg border border-blue-100 p-6 mb-8">
+            <div className="bg-white rounded-xl shadow-sm border border-blue-100 p-6 mb-8">
               <h2 className="text-2xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h2>
               <div className="space-y-4">
                 {content.faq.map((item, index) => (
@@ -183,7 +183,7 @@ export default function HoursFromNowPage({ params }: PageProps) {
           )}
 
           {/* Hours From Now Table Component */}
-          <div className="bg-white rounded-xl shadow-lg border border-blue-100 p-6 mb-8">
+          <div className="bg-white rounded-xl shadow-sm border border-blue-100 p-6 mb-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Interactive Hours From Now Table</h2>
             <HoursFromNowTable />
           </div>

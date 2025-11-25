@@ -11,3 +11,4 @@ Sitemap: https://hoursfromnow.tech/sitemap-days.xml
 Sitemap: https://hoursfromnow.tech/sitemap-static.xml
 Sitemap: https://hoursfromnow.tech/sitemap-weeks.xml
 Sitemap: https://hoursfromnow.tech/sitemap-posts.xml
+Sitemap: https://hoursfromnow.tech/sitemap-hours.xml

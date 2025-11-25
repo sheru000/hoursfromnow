@@ -7,17 +7,18 @@ export const metadata: Metadata = {
 };
 
 export default function SitemapPage() {
+
   // Main time calculator pages
-  const mainPages = [
-    { href: '/', label: 'Hours From Now' },
-    { href: '/hours-ago', label: 'Hours Ago' },
+  const mainPages: { href: string; label: string }[] = [
     { href: '/days-from-today', label: 'Days From Today' },
     { href: '/weeks-from-today', label: 'Weeks From Today' },
+    { href: '/hours-from-now', label: 'Hours From Now' },
     { href: '/months-from-today', label: 'Months From Today' },
+    { href: '/holiday-countdown', label: 'Holiday Countdown' },
     { href: '/time-calculator', label: 'Time Calculator' },
     { href: '/hours-calculator', label: 'Hours Calculator' },
+    { href: '/hours-ago', label: 'Hours Ago' },
     { href: '/time-duration-calculator', label: 'Time Duration Calculator' },
-    { href: '/holiday-countdown', label: 'Holiday Countdown' },
   ];
 
   // Days from today nested pages
@@ -50,6 +51,12 @@ export default function SitemapPage() {
     '21-weeks-from-today', '22-weeks-from-today', '23-weeks-from-today', '24-weeks-from-today'
   ];
 
+  // Hours from now nested pages
+  const hoursPages = Array.from({ length: 100 }, (_, i) => {
+    const num = i + 1;
+    return `${num}-hour${num === 1 ? '' : 's'}-from-now`;
+  });
+
   // About us pages
   const aboutPages = [
     { href: '/private-policy', label: 'Privacy Policy' },
@@ -72,17 +79,17 @@ export default function SitemapPage() {
               Time Calculator
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-              {mainPages.map((page) => (
-                <Link
-                  key={page.href}
-                  href={page.href}
-                  className="text-blue-600 hover:text-blue-800 hover:underline transition-colors"
-                >
-                  {page.label}
-                </Link>
-              ))}
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+            {mainPages.map((page: { href: string; label: string }) => (
+              <Link
+                key={page.href}
+                href={page.href}
+                className="text-blue-600 hover:text-blue-800 hover:underline transition-colors"
+              >
+                {page.label}
+              </Link>
+            ))}
+          </div>
 
             {/* Days From Today Sub-section */}
             <details className="mb-8">
@@ -112,6 +119,24 @@ export default function SitemapPage() {
                   <Link
                     key={slug}
                     href={`/weeks-from-today/${slug}`}
+                    className="text-blue-600 hover:text-blue-800 hover:underline transition-colors text-sm"
+                  >
+                    {slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
+                  </Link>
+                ))}
+              </div>
+            </details>
+
+            {/* Hours From Now Sub-section */}
+            <details className="mb-8">
+              <summary className="text-xl font-medium text-gray-700 mb-4 cursor-pointer list-none">
+                Hours From Now Pages
+              </summary>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-4 max-h-96 overflow-y-auto">
+                {hoursPages.map((slug) => (
+                  <Link
+                    key={slug}
+                    href={`/${slug}`}
                     className="text-blue-600 hover:text-blue-800 hover:underline transition-colors text-sm"
                   >
                     {slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
