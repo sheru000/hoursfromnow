@@ -8,6 +8,7 @@ export async function GET() {
     { url: `${baseUrl}/sitemap-weeks.xml` },
     { url: `${baseUrl}/sitemap-posts.xml` },
     { url: `${baseUrl}/sitemap-static.xml` },
+    { url: `${baseUrl}/sitemap-hours.xml` },
   ];
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
