@@ -121,9 +121,9 @@ Time awareness isn’t about being more organized. It’s about making decisions
 
 That’s the actual productivity hack.
 
-Want better time awareness? Start simple. Next time someone asks "can you do this in 8 hours?", open a time calculator. See what **8 hours from now** actually means. Then decide.
+Want better time awareness? Start simple. Next time someone asks "can you do this in 8 hours?", open a time calculator. See what 8 hours from now actually means. Then decide.
 
-Because knowing exactly what time it will be **12 hours from now**, **24 hours from now**, or even **180 days from today** isn’t about obsessing over time—it’s about respecting the only resource you can’t get more of.
+Because knowing exactly what time it will be 12 hours from now, 24 hours from now, or even 180 days from today isn’t about obsessing over time—it’s about respecting the only resource you can’t get more of.
 
 
 
