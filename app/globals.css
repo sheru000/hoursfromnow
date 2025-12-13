@@ -143,9 +143,36 @@ img {
   content-visibility: auto;
 }
 
-.prose h1 { @apply text-4xl font-bold; }
-.prose h2 { @apply text-3xl font-semibold; }
-.prose h3 { @apply text-2xl font-semibold; }
-.prose p { @apply leading-7 my-4; }
+.prose {
+  color: hsl(var(--foreground-rgb));
+}
+
+.prose h1 { @apply text-4xl font-bold my-6; }
+.prose h2 { @apply text-3xl font-semibold my-5; }
+.prose h3 { @apply text-2xl font-semibold my-4; }
+.prose p { @apply my-4 leading-7; }
 .prose strong { @apply font-semibold; }
-.prose ul, .prose ol { @apply my-4 ml-6; }
+.prose em { @apply italic; }
+.prose a { @apply text-blue-600 underline hover:text-blue-800; }
+.prose ul, .prose ol { @apply my-4 ml-6 list-inside; }
+.prose li { @apply my-1; }
+.prose blockquote { @apply border-l-4 border-gray-300 pl-4 italic my-4; }
+.prose code { @apply bg-gray-100 px-1 py-0.5 rounded text-sm; }
+.prose pre { @apply bg-gray-100 p-4 rounded overflow-x-auto my-4; }
+.prose img { @apply block mx-auto my-6; max-width: 100%; height: auto; }
+
+/* Tables */
+.prose table { @apply w-full border-collapse my-6; }
+.prose th,
+.prose td { @apply border border-gray-300 px-4 py-2 text-left align-top; }
+.prose th { @apply bg-gray-100 font-semibold; }
+
+/* Dark mode for Markdown content */
+.dark .prose { color: hsl(var(--foreground-rgb)); }
+.dark .prose a { color: #3b82f6; }
+.dark .prose blockquote { border-color: #555; color: #ddd; }
+.dark .prose code { @apply bg-gray-800 text-gray-100; }
+.dark .prose pre { @apply bg-gray-900 text-gray-100; }
+.dark .prose th { @apply bg-gray-800 text-gray-100; }
+.dark .prose td { @apply border-gray-600; }
+
