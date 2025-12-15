@@ -10,7 +10,7 @@ This guide walks through reverse scheduling, vendor coordination, real-time time
 
 
 
-![Wedding Ring](/images/wedding-ring.png)
+![Calcualte time to wear Wedding Ring from hours from now calculator](/images/wedding-ring.png)
 
 
 
@@ -69,7 +69,7 @@ Vendors operate on timelines too — and they depend on clear communication. The
 
 Vendor Scheduling Chart
 
-![vendor scheduling chart](/images/vendor-management.png)
+![Calculate vendor scheduling chart time with hours from now calculator ](/images/vendor-management.png)
 This breakdown gives each vendor clarity and prevents common issues like:
 
 * DJ waiting for florists to finish
@@ -78,7 +78,7 @@ This breakdown gives each vendor clarity and prevents common issues like:
 
 Using consistent time-calculation tools ensures no one uses vague instructions like “afternoon,” “early evening,” or “before the ceremony.” Industry experts consistently recommend assigning exact time slots to each [vendor](https://www.theknot.com/content/wedding-timeline-4pm-ceremony) rather than using vague terms.
 
-![Wedding day timeline](/images/wedding-day-timeline.png)
+![Wedding day timeline calculator with hours from now calculator](/images/wedding-day-timeline.png)
 
 ## The Importance of Buffers
 
@@ -120,7 +120,7 @@ If photos run 20 minutes late, the planner can immediately recalculate how that 
 
 # Sample Timeline (Based on Time Calculations)
 
-![Sample timeline](/images/sample-wedding-time-calculation.png)
+![calculate wedding time](/images/sample-wedding-time-calculation.png)
 
 Every line here comes from adding or subtracting hours  exact hours using an [hours calculator](https://hoursfromnow.tech/hours-calculator/) (ceremony and dinner).
 
