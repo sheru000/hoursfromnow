@@ -13,7 +13,7 @@ const HoursFromNowPage: React.FC = () => {
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
             Whether you're counting down to an important deadline hours from now
-            like what time will it be in 10 hours from now , coordinating across
+            like what time will it be in 10 hours from now, coordinating across
             different time zones, like est,edt,cst or simply planning your day,
             knowing how to calculate time accurately matters. This guide walks
             you through everything you need to understand about measuring time
@@ -40,7 +40,7 @@ const HoursFromNowPage: React.FC = () => {
               entirely on where you are. Someone in New York experiences a
               completely different current time than someone in London, even
               though both are looking at their clocks at the identical moment
-              like what time will it be in 24 hours from now . This is why
+              like what time will it be in 24 hours from now. This is why
               understanding your specific location and timezone matters so much
               when you're trying to figure out how to prepare for what's ahead.
             </p>

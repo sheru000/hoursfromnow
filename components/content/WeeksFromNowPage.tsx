@@ -78,7 +78,7 @@ const WeeksFromNowPage: React.FC = () => {
           <div className="mb-8">
             <h3 className="text-xl font-bold text-gray-800 mb-3">Short-Term Weekly Planning: 1 to 4 Weeks From Today</h3>
             <p className="text-gray-700 leading-relaxed">
-              Short-term weekly planning typically involves dates from one to four weeks ahead. Knowing what date is 1 week from now helps with immediate weekly planning, 2 weeks from today works for sprint cycles, and 4 weeks from today supports monthly planning cycles. These near-term dates are perfect for immediate project phases, upcoming appointments, short-term goals, and regular recurring events that require precise scheduling within the current planning window.
+             Short-term weekly planning typically involves dates from one to four weeks ahead. Knowing what date is 1 week from now helps with immediate weekly planning, 2 weeks from today fits naturally into sprint cycles, and 4 weeks from today supports broader monthly planning cycles. These near-term dates are especially useful for managing immediate project phases, scheduling upcoming appointments, setting short-term goals, and handling regular recurring events that require precise scheduling within the current planning window.
             </p>
           </div>
 
