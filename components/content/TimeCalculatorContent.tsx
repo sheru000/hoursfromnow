@@ -189,11 +189,12 @@ export default function TimeCalculatorContent() {
           <p className="text-gray-700 leading-relaxed">
             The time card calculator also handles break deduction automatically,
             a feature that distinguishes quality tools from basic calculators.
-            Your clock time might show 9 hours from start time to end time, but
-            after accounting for break deduction, your actual work time might be
-            only 8 hours. The calculator manages this distinction, ensuring your
-            timesheet reflects productive work hours rather than total time
-            spent in the office.
+            Your clock time might show 9{" "}
+            <a href="https://hoursfromnow.tech/">hours from</a>{" "}start time to
+            end time, but after accounting for break deduction, your actual work
+            time might be only 8 hours. The calculator manages this distinction,
+            ensuring your timesheet reflects productive work hours rather than
+            total time spent in the office.
           </p>
         </div>
       </section>
@@ -393,8 +394,8 @@ export default function TimeCalculatorContent() {
             reflects the precise sum of all individual entries, without
             transcription mistakes or arithmetic errors. It also gives proper
             answer to these type of terms like for how many hours left for
-            tomorrow, how long till 7am tomorrow, what is 30 minutes from 12
-            45, what is 69 hours from now and how many hours in a year .
+            tomorrow, how long till 7am tomorrow, what is 30 minutes from 12 45,
+            what is 69 hours from now and how many hours in a year .
           </p>
         </div>
 

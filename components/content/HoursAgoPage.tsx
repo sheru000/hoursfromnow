@@ -156,7 +156,8 @@ const HoursAgoPage: React.FC = () => {
           <div className="mb-8">
             <h3 className="text-xl font-bold text-gray-800 mb-3">Understanding the Difference</h3>
             <p className="text-gray-700 leading-relaxed">
-              While hours ago calculations work backward from the present, hours from now calculations project forward into the future. Both serve important but distinct purposes. Hours ago helps you understand the past and track what has already occurred, while hours from now helps with planning and scheduling future events. Together, these tools provide complete temporal awareness.
+              While hours ago calculations work backward from the present, {" "}
+            <a href="https://hoursfromnow.tech/">hours from now</a>{" "} calculations project forward into the future. Both serve important but distinct purposes. Hours ago helps you understand the past and track what has already occurred, while hours from now helps with planning and scheduling future events. Together, these tools provide complete temporal awareness.
             </p>
           </div>
 

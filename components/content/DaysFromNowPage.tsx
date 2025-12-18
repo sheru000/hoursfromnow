@@ -19,7 +19,8 @@ const DaysFromNowPage: React.FC = () => {
           <div className="mb-8">
             <h3 className="text-xl font-bold text-gray-800 mb-3">What Does Days From Today Mean?</h3>
             <p className="text-gray-700 leading-relaxed">
-              Days from today calculations determine what the calendar date will be after adding a specific number of days to today's date. Unlike hour-based calculations that focus on time of day, days from today calculations help you identify future dates for planning events, setting deadlines, scheduling appointments, and organizing long-term projects. This simple yet powerful tool eliminates manual calendar counting and prevents date calculation errors.
+              Days from today calculations determine what the calendar date will be after adding a specific number of days to today's date. Unlike {" "}
+            <a href="https://hoursfromnow.tech/">hours</a>-based calculations that focus on time of day, days from today calculations help you identify future dates for planning events, setting deadlines, scheduling appointments, and organizing long-term projects. This simple yet powerful tool eliminates manual calendar counting and prevents date calculation errors.
             </p>
           </div>
 

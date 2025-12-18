@@ -19,7 +19,8 @@ const TimeDurationPage: React.FC = () => {
           <div className="mb-8">
             <h3 className="text-xl font-bold text-gray-800 mb-3">What is Time Duration?</h3>
             <p className="text-gray-700 leading-relaxed">
-              Time duration represents the length of time between two specific points - a start time and an end time. Unlike simple time calculations that add or subtract hours, duration calculations measure the actual elapsed time, accounting for all the complexities of time measurement including crossing midnight, spanning multiple days, and handling different time formats.
+              Time duration represents the length of time between two specific points - a start time and an end time. Unlike simple time calculations that add or subtract {" "}
+            <a href="https://hoursfromnow.tech/">hours</a>, duration calculations measure the actual elapsed time, accounting for all the complexities of time measurement including crossing midnight, spanning multiple days, and handling different time formats.
             </p>
           </div>
 

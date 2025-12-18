@@ -14,11 +14,15 @@ const HoursFromNowPage: React.FC = () => {
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
             Whether you're counting down to an important deadline hours from now
             like what time will it be in 10 hours from now, coordinating across
-            different time zones, like est,edt,cst or simply planning your day,
-            knowing how to calculate time accurately matters. This guide walks
-            you through everything you need to understand about measuring time
-            calculations and making those calculations work for you—without the
-            confusion.
+            different time zones, like est,edt,cst or simply planning your{" "}
+            <a href="https://hoursfromnow.tech/days-from-today/">day</a>,{" "}
+            knowing how to{" "}
+            <a href="https://hoursfromnow.tech/time-duration-calculator/">
+              calculate time
+            </a>{" "}
+            accurately matters. This guide walks you through everything you need
+            to understand about measuring time calculations and making those
+            calculations work for you—without the confusion.
           </p>
         </section>
 
@@ -70,8 +74,11 @@ const HoursFromNowPage: React.FC = () => {
         {/* Section 2 */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            What Time Should I Expect? Choosing the Right Time Calculator to
-            Figure Out Hours From Now
+            What Time Should I Expect? Choosing the Right{" "}
+            <a href="https://hoursfromnow.tech/time-calculator/">
+              Time Calculator
+            </a>{" "}
+            to Figure Out Hours From Now
           </h2>
 
           <div className="mb-8">
@@ -79,19 +86,13 @@ const HoursFromNowPage: React.FC = () => {
               The Now Calculator: Your Simplest Solution for Hours From Now
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              A{" "}
-              <a
-                href="https://hoursfromnow.tech/time-calculator/"
-                className="text-blue-600 hover:underline"
-              >
-                Now Calculator
-              </a>{" "}
-              strips away the complexity of figuring out hours from now. You
-              enter your current time and your target time, and it instantly
-              shows you the answer. No mental math required, no risk of basic
-              arithmetic errors. For people dealing with multiple tasks or tight
-              schedules, this straightforward tool eliminates the similar manual
-              process that used to eat up time and often produced mistakes.
+              A Now Calculator strips away the complexity of figuring out{" "}
+              <a href="https://hoursfromnow.tech/">hours from now</a>. You enter
+              your current time and your target time, and it instantly shows you
+              the answer. No mental math required, no risk of basic arithmetic
+              errors. For people dealing with multiple tasks or tight schedules,
+              this straightforward tool eliminates the similar manual process
+              that used to eat up time and often produced mistakes.
               Understanding your exact timeline becomes effortless with the
               right calculator.
             </p>
@@ -102,14 +103,14 @@ const HoursFromNowPage: React.FC = () => {
               Beyond the Basics: Other Tools to Calculate Hours From Now
             </h3>
             <p className="text-gray-700 leading-relaxed mb-3">
-              The Time Calculator works for general queries about your timeline,
-              while the Hours Calculator specifically handles hour-based
-              measurements. If you need to measure the duration between two
-              points, the{" "}
-              <a
-                href="https://hoursfromnow.tech/time-calculator/"
-                className="text-blue-600 hover:underline"
-              >
+              The{" "}
+              <a href="https://hoursfromnow.tech/months-from-today/">
+                Time Calculator
+              </a>{" "}
+              works for general queries about your timeline, while the Hours
+              Calculator specifically handles hour-based measurements. If you
+              need to measure the duration between two points, the{" "}
+              <a href="https://hoursfromnow.tech/time-duration-calculator/">
                 Time Duration Calculator
               </a>{" "}
               excels at that job. You'll also find an Age Calculator, Age
@@ -148,18 +149,9 @@ const HoursFromNowPage: React.FC = () => {
               healthcare professionals, and international teams almost always
               use this time format because it removes ambiguity when determining
               hours from now. When someone in healthcare says 14:30, there's no
-              confusion—it's 2:30 in the afternoon, period. For more information
-              about time systems, check out this{" "}
-              <a
-                href="https://en.wikipedia.org/wiki/24-hour_clock"
-                className="text-blue-600 hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                comprehensive guide on 24-hour clock systems
-              </a>
-              . Your time format choice directly affects whether your time
-              calculations will be understood the same way by everyone involved.
+              confusion—it's 2:30 in the afternoon, period. Your time format
+              choice directly affects whether your time calculations will be
+              understood the same way by everyone involved.
             </p>
           </div>
 
@@ -205,16 +197,11 @@ const HoursFromNowPage: React.FC = () => {
               types of queries. People calculate timelines for different
               reasons: coordinating teams across different time zones, hitting
               assignment deadlines with exact precision, or making sure you hit
-              that critical window of opportunity. For event planning and
-              scheduling, consider using dedicated time planning tools{" "}
-              <a
-                href="https://hoursfromnow.tech/time-calculator/"
-                className="text-blue-600 hover:underline"
-              >
-                time schedule calculator
-              </a>{" "}
-              to stay organized. Understanding your available resources
-              dramatically shapes your strategy.
+              that critical window of opportunity. For{" "}
+              <a href="https://hoursfromnow.tech/holiday-countdown/">event</a>{" "}
+              planning and scheduling, consider using dedicated time planning
+              tools time schedule calculator to stay organized. Understanding
+              your available resources dramatically shapes your strategy.
             </p>
           </div>
 
@@ -230,8 +217,9 @@ const HoursFromNowPage: React.FC = () => {
               hour from now . You can count the number of days all you want, but
               often what really matters is the specified number of hours you
               actually have as it also allow how to find total time . A project
-              might look manageable when you say "we have two weeks," but when
-              you realize that's only 240 hours of work time, the real
+              might look manageable when you say "we have two The{" "}
+              <a href="https://hoursfromnow.tech/weeks-from-today/">weeks</a>, "
+              but when you realize that's only 240 hours of work time, the real
               constraints become visible. This is where precise hour time
               calculations reveal truths that day-level thinking misses.
               Understanding your actual hours available is critical for success.
@@ -252,15 +240,17 @@ const HoursFromNowPage: React.FC = () => {
             </h3>
             <p className="text-gray-700 leading-relaxed">
               This is where many people's time calculations fall apart when
-              planning hours from now. Working with teams or partners across
-              different time zones is genuinely complicated. Someone asking
-              "what time is the meeting?" gets a completely different answer
-              depending on whether they're in California or Singapore like 2
-              hours from now est. A Now Chart can help you visualize these
-              differences so you're not constantly doing mental math.
-              Understanding how local time translates across global boundaries
-              keeps your entire team on the same page. The time difference
-              between locations is critical to understand.
+              planning{" "}
+              <a href="https://hoursfromnow.tech/hours-calculator/">hours</a>{" "}
+              from now. Working with teams or partners across different time
+              zones is genuinely complicated. Someone asking "what time is the
+              meeting?" gets a completely different answer depending on whether
+              they're in California or Singapore like 2 hours from now est. A
+              Now Chart can help you visualize these differences so you're not
+              constantly doing mental math. Understanding how local time
+              translates across global boundaries keeps your entire team on the
+              same page. The time difference between locations is critical to
+              understand.
             </p>
           </div>
 
@@ -294,15 +284,16 @@ const HoursFromNowPage: React.FC = () => {
               Tracking, Use of Cookies, and Your Ad Experience
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              Most online time calculator for hours and minutes use of cookies
-              to remember your preferences and improve your ad experience.
-              That's fairly standard in the industry. The tracking tools these
-              sites employ help them understand which features people actually
-              use when calculating hours from now. When you make decisions about
-              Use of Our Content, understand that some sites use web crawler
-              technology and robot exclusion headers to manage data collection.
-              Transparency about this matters—you deserve to know what's
-              happening behind the scenes.
+              Most online time calculator for{" "}
+              <a href="https://hoursfromnow.tech/hours-ago/">hours</a> and
+              minutes use of cookies to remember your preferences and improve
+              your ad experience. That's fairly standard in the industry. The
+              tracking tools these sites employ help them understand which
+              features people actually use when calculating hours from now. When
+              you make decisions about Use of Our Content, understand that some
+              sites use web crawler technology and robot exclusion headers to
+              manage data collection. Transparency about this matters—you
+              deserve to know what's happening behind the scenes.
             </p>
           </div>
 
@@ -416,14 +407,15 @@ const HoursFromNowPage: React.FC = () => {
           </h2>
           <p className="text-gray-700 leading-relaxed">
             Understanding how to calculate time accurately and determine what's
-            coming hours from now gives you control. Whether you're using a
-            calculator tool, building a simple Now Chart to track across time
-            zones, or doing the math yourself, the fundamental principle stays
-            the same: you identify your current time and measure the interval
-            until your target. As your life gets more complex and your
-            coordination spans the globe, these time calculations become
-            increasingly valuable assets. Time is something you can master
-            through clarity and precision.
+            coming hours from now gives you control. Whether you're using a{" "}
+            <a href="https://hoursfromnow.tech/sitemap/">calculator tool</a> ,
+            building a simple Now Chart to track across time zones, or doing the
+            math yourself, the fundamental principle stays the same: you
+            identify your current time and measure the interval until your
+            target. As your life gets more complex and your coordination spans
+            the globe, these time calculations become increasingly valuable
+            assets. Time is something you can master through clarity and
+            precision.
           </p>
         </section>
       </div>

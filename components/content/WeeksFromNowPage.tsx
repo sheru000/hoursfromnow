@@ -67,7 +67,8 @@ const WeeksFromNowPage: React.FC = () => {
           <div>
             <h3 className="text-xl font-bold text-gray-800 mb-3">Understanding Calculator Results</h3>
             <p className="text-gray-700 leading-relaxed">
-              weeks from today calculators provide comprehensive date and time information including the exact calendar date, the day of the week, and precise time when additional hours and minutes are included. This complete information helps you plan more effectively by showing not just what date it will be, but the exact moment that falls weeks from today, accounting for any additional time components you specify.
+              weeks from today calculators provide comprehensive date and time information including the exact calendar date, the day of the week, and precise time when additional {" "}
+              <a href="https://hoursfromnow.tech/">hours</a>{" "} and minutes are included. This complete information helps you plan more effectively by showing not just what date it will be, but the exact moment that falls weeks from today, accounting for any additional time components you specify.
             </p>
           </div>
         </section>
