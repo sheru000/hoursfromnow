@@ -142,7 +142,21 @@ export default function SitemapPage() {
 <a href="https://medium.com/@ar.arian786/8-hours-from-now-the-productivity-technique-every-remote-worker-should-use-274ff45f4544" target="_blank">8 Hours From Now: Remote Worker Productivity Technique</a>
 
 <a href="https://www.linkedin.com/pulse/addition-subtraction-time-complete-guide-examples-m-ali-riaz-oh0xf" target="_blank">Addition & Subtraction of Time — Complete Guide With Examples</a>
+
+<a href="https://hoursfromnow.tech/sitemap.xml" title="Hours From Now Tech Complete Sitemap - Time Calculator Pages & Tools">Hours From Now Sitemap</a>
+
+<a href="https://hoursfromnow.tech/sitemap-static.xml" title="Static Sitemap: Hours From Now Calculator, Time Duration & Holiday Countdown Pages">Static Sitemap (Core Tools)</a>
+
+<a href="https://hoursfromnow.tech/sitemap-days.xml" title="Days from Now Sitemap - Calculate Future Dates & Time with HoursFromNow.tech Tools">Days Sitemap</a>
+
+<a href="https://hoursfromnow.tech/sitemap-weeks.xml" title="Weeks from Now Sitemap - Advanced Time Calculator for Scheduling & Planning">Weeks Sitemap</a>
+
+<a href="https://hoursfromnow.tech/sitemap-hours.xml" title="Hours from Now Sitemap - Live Updating Time Calculator for Deadlines & Events">Hours Sitemap (Live Tools)</a>
+
+<a href="https://hoursfromnow.tech/sitemap-posts.xml" title="Blog Posts Sitemap - Time Management Guides & Hours Calculator Tips">Posts Sitemap</a>
+
 </p>
+
             </details>
 
             {/* Hours From Now Sub-section */}
