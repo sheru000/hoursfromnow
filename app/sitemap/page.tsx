@@ -125,6 +125,24 @@ export default function SitemapPage() {
                   </Link>
                 ))}
               </div>
+              <p><a href="https://www.linkedin.com/in/ali-riaz-developer/" target="_blank">Ali Riaz Developer | LinkedIn Profile</a>
+
+<a href="https://www.linkedin.com/pulse/hours-from-now-productivity-technique-every-remote-worker-m-ali-riaz-ugffc" target="_blank">Hours From Now – Productivity Technique for Remote Workers</a>
+
+<a href="https://www.linkedin.com/pulse/hours-from-now-calculator-your-complete-guide-time-planning-riaz-u2j8c/" target="_blank">Hours From Now Calculator — Complete Guide to Time Planning</a>
+
+<a href="https://www.sitelike.org/similar/hoursfromnow.tech/" target="_blank">Sites Like HoursFromNow.tech | Similar Websites Explorer</a>
+
+<a href="https://www.quora.com/How-do-I-calculate-72-hours-from-Friday-at-5-am" target="_blank">Quora: Calculating 72 Hours From Friday at 5 AM</a>
+
+<a href="https://www.quora.com/How-long-is-72-hours-from-Friday-at-1pm" target="_blank">Quora: Duration of 72 Hours From Friday at 1 PM</a>
+
+<a href="https://cyberkannadig.net/calc-calculator-modern-math-made-effortless/" target="_blank">Modern Math Made Effortless — Online Calc & Calculator Tools</a>
+
+<a href="https://medium.com/@ar.arian786/8-hours-from-now-the-productivity-technique-every-remote-worker-should-use-274ff45f4544" target="_blank">8 Hours From Now: Remote Worker Productivity Technique</a>
+
+<a href="https://www.linkedin.com/pulse/addition-subtraction-time-complete-guide-examples-m-ali-riaz-oh0xf" target="_blank">Addition & Subtraction of Time — Complete Guide With Examples</a>
+</p>
             </details>
 
             {/* Hours From Now Sub-section */}
