@@ -12,7 +12,7 @@ export default function SitemapPage() {
   const mainPages: { href: string; label: string }[] = [
     { href: '/days-from-today', label: 'Days From Today' },
     { href: '/weeks-from-today', label: 'Weeks From Today' },
-    { href: '/hours-from-now', label: 'Hours From Now' },
+    { href: '/', label: 'Hours From Now' },
     { href: '/months-from-today', label: 'Months From Today' },
     { href: '/holiday-countdown', label: 'Holiday Countdown' },
     { href: '/time-calculator', label: 'Time Calculator' },

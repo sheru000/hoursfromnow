@@ -1,6 +1,6 @@
 ---
 title: "Hours From Now Calculator: Why Your Brain Gets Time Wrong (And How It Costs You)"
-date: "2024-01-15"
+date: "2025-10-5"
 description: "Learn about time calculations, productivity tips, and how to make the most of your time with our comprehensive guides."
 ---
 

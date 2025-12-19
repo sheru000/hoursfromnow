@@ -1,4 +1,8 @@
-
+---
+title: Wedding Day Timeline Planning Using Precise Time Calculations
+date: "2025-12-16"
+description: "Learn about time calculations, productivity tips, and how to make the most of your time with our comprehensive guides."
+---
    
 # Wedding Day Timeline Planning Using Precise Time Calculations
 

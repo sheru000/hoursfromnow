@@ -8,49 +8,49 @@ export async function GET() {
     {
       url: `${baseUrl}/`,
       lastmod: currentDate,
-      changefreq: 'weekly',
+      changefreq: 'daily',
       priority: 1.0,
     },
     {
       url: `${baseUrl}/hours-ago/`,
       lastmod: currentDate,
-      changefreq: 'weekly',
+      changefreq: 'daily',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/time-calculator/`,
       lastmod: currentDate,
-      changefreq: 'weekly',
+      changefreq: 'daily',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/time-calculators/`,
       lastmod: currentDate,
-      changefreq: 'weekly',
+      changefreq: 'daily',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/time-duration-calculator/`,
       lastmod: currentDate,
-      changefreq: 'weekly',
+      changefreq: 'daily',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/hours-calculator/`,
       lastmod: currentDate,
-      changefreq: 'weekly',
+      changefreq: 'daily',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/months-from-today/`,
       lastmod: currentDate,
-      changefreq: 'weekly',
+      changefreq: 'daily',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/contact-us/`,
       lastmod: currentDate,
-      changefreq: 'monthly',
+      changefreq: 'weekly',
       priority: 0.6,
     },
     {
@@ -68,14 +68,14 @@ export async function GET() {
     {
       url: `${baseUrl}/holiday-countdown/`,
       lastmod: currentDate,
-      changefreq: 'monthly',
+      changefreq: 'daily',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/sitemap/`,
       lastmod: currentDate,
-      changefreq: 'weekly',
-      priority: 0.5,
+      changefreq: 'daily',
+      priority: 0.9,
     },
   ];
 
