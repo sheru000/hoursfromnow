@@ -13,7 +13,6 @@ Creating a wedding day timeline is not just about order — it’s about calcula
 This guide walks through reverse scheduling, vendor coordination, real-time timeline management, and buffer building, offering a story-driven and practical approach for couples and event planners who want a smooth, stress-free wedding day.
 
 
-
 ![Calcualte time to wear Wedding Ring from hours from now calculator](/images/wedding-ring.png)
 
 
