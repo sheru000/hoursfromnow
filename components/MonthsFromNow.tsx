@@ -1,29 +1,37 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { Card } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
-import { Label } from '@/components/ui/label';
-import { Calendar } from '@/components/ui/calendar';
-import { Clock, Calendar as CalendarIcon, Calculator, Plus, Minus } from 'lucide-react';
-import MonthsFromNowTable from '@/components/content/MonthsFromNowTable';
-import MonthsFromNowContent from '@/components/content/MonthsFromNowContent';
-import { format, addMonths } from 'date-fns';
+import { useState, useEffect } from "react";
+import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
+import { Calendar } from "@/components/ui/calendar";
+import {
+  Clock,
+  Calendar as CalendarIcon,
+  Calculator,
+  Plus,
+  Minus,
+} from "lucide-react";
+import MonthsFromNowTable from "@/components/content/MonthsFromNowTable";
+import MonthsFromNowContent from "@/components/content/MonthsFromNowContent";
+import { format, addMonths } from "date-fns";
 
 export default function MonthsFromNow() {
   const [currentTime, setCurrentTime] = useState<Date>(new Date());
-  const [timezone, setTimezone] = useState<string>('');
-  const [manualMonths, setManualMonths] = useState<string>('');
+  const [timezone, setTimezone] = useState<string>("");
+  const [manualMonths, setManualMonths] = useState<string>("");
   const [calculatedDate, setCalculatedDate] = useState<Date | null>(null);
 
-  const [selectedDate, setSelectedDate] = useState<Date | undefined>(new Date());
-  const [operation, setOperation] = useState<'add' | 'subtract'>('add');
-  const [adjustMonths, setAdjustMonths] = useState<string>('');
-  const [adjustDays, setAdjustDays] = useState<string>('');
-  const [adjustHours, setAdjustHours] = useState<string>('');
-  const [adjustMinutes, setAdjustMinutes] = useState<string>('');
-  const [adjustSeconds, setAdjustSeconds] = useState<string>('');
+  const [selectedDate, setSelectedDate] = useState<Date | undefined>(
+    new Date()
+  );
+  const [operation, setOperation] = useState<"add" | "subtract">("add");
+  const [adjustMonths, setAdjustMonths] = useState<string>("");
+  const [adjustDays, setAdjustDays] = useState<string>("");
+  const [adjustHours, setAdjustHours] = useState<string>("");
+  const [adjustMinutes, setAdjustMinutes] = useState<string>("");
+  const [adjustSeconds, setAdjustSeconds] = useState<string>("");
   const [adjustedResult, setAdjustedResult] = useState<Date | null>(null);
 
   useEffect(() => {
@@ -48,28 +56,28 @@ export default function MonthsFromNow() {
   }, []);
 
   const formatTime = (date: Date) => {
-    return date.toLocaleTimeString('en-US', {
-      hour: '2-digit',
-      minute: '2-digit',
-      second: '2-digit',
-      hour12: true
+    return date.toLocaleTimeString("en-US", {
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: true,
     });
   };
 
   const formatDate = (date: Date) => {
-    return date.toLocaleDateString('en-US', {
-      weekday: 'long',
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
+    return date.toLocaleDateString("en-US", {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
     });
   };
 
   const formatShortDate = (date: Date) => {
-    return date.toLocaleDateString('en-US', {
-      month: 'short',
-      day: 'numeric',
-      year: 'numeric'
+    return date.toLocaleDateString("en-US", {
+      month: "short",
+      day: "numeric",
+      year: "numeric",
     });
   };
 
@@ -90,7 +98,7 @@ export default function MonthsFromNow() {
 
     let result = new Date(selectedDate);
 
-    if (operation === 'add') {
+    if (operation === "add") {
       result = addMonths(result, months);
       result.setDate(result.getDate() + days);
       result.setHours(result.getHours() + hours);
@@ -109,9 +117,9 @@ export default function MonthsFromNow() {
 
   const formatDateTime = (date: Date) => {
     return {
-      date: format(date, 'MMMM dd, yyyy'),
-      time: format(date, 'hh:mm:ss a'),
-      dayOfWeek: format(date, 'EEEE')
+      date: format(date, "MMMM dd, yyyy"),
+      time: format(date, "hh:mm:ss a"),
+      dayOfWeek: format(date, "EEEE"),
     };
   };
 
@@ -126,7 +134,8 @@ export default function MonthsFromNow() {
             Months From Today Calculator
           </h1>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Calculate future dates by adding months to today. Perfect for planning, pregnancy tracking, and long-term scheduling.
+            Calculate future dates by adding months to today. Perfect for
+            planning, pregnancy tracking, and long-term scheduling.
           </p>
         </div>
 
@@ -135,7 +144,9 @@ export default function MonthsFromNow() {
             <div className="flex flex-col items-center space-y-3">
               <div className="flex items-center space-x-3 text-gray-600">
                 <Clock className="w-5 h-5 text-blue-500" />
-                <span className="text-sm font-medium">Current Date & Time ({timezone})</span>
+                <span className="text-sm font-medium">
+                  Current Date & Time ({timezone})
+                </span>
               </div>
               <div className="text-center">
                 <div className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-2">
@@ -153,7 +164,9 @@ export default function MonthsFromNow() {
           <div className="p-6">
             <div className="flex items-center space-x-2 mb-6">
               <Calculator className="w-6 h-6 text-blue-500" />
-              <h2 className="text-2xl font-bold text-gray-800">Calculate Months From Today</h2>
+              <h2 className="text-2xl font-bold text-gray-800">
+                Calculate Months From Today
+              </h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-end">
@@ -202,7 +215,9 @@ export default function MonthsFromNow() {
           <div className="p-6">
             <div className="flex items-center space-x-2 mb-6">
               <CalendarIcon className="w-6 h-6 text-blue-500" />
-              <h2 className="text-2xl font-bold text-gray-800">Add or Subtract Time From a Specific Date</h2>
+              <h2 className="text-2xl font-bold text-gray-800">
+                Add or Subtract Time From a Specific Date
+              </h2>
             </div>
 
             <div className="mb-6">
@@ -211,22 +226,22 @@ export default function MonthsFromNow() {
               </Label>
               <div className="flex space-x-4">
                 <Button
-                  onClick={() => setOperation('add')}
+                  onClick={() => setOperation("add")}
                   className={`flex-1 h-12 ${
-                    operation === 'add'
-                      ? 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    operation === "add"
+                      ? "bg-gradient-to-r from-blue-500 to-cyan-500 text-white"
+                      : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                   }`}
                 >
                   <Plus className="w-5 h-5 mr-2" />
                   Add Time
                 </Button>
                 <Button
-                  onClick={() => setOperation('subtract')}
+                  onClick={() => setOperation("subtract")}
                   className={`flex-1 h-12 ${
-                    operation === 'subtract'
-                      ? 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    operation === "subtract"
+                      ? "bg-gradient-to-r from-blue-500 to-cyan-500 text-white"
+                      : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                   }`}
                 >
                   <Minus className="w-5 h-5 mr-2" />
@@ -253,13 +268,15 @@ export default function MonthsFromNow() {
               <div className="flex flex-col justify-between">
                 <div>
                   <Label className="text-base font-semibold text-gray-800 mb-3 block">
-                    {operation === 'add' ? 'Add Time' : 'Subtract Time'}
+                    {operation === "add" ? "Add Time" : "Subtract Time"}
                   </Label>
 
                   <div className="space-y-4">
                     <div className="grid grid-cols-2 gap-4">
                       <div>
-                        <Label className="text-sm text-gray-600 mb-1 block">Months</Label>
+                        <Label className="text-sm text-gray-600 mb-1 block">
+                          Months
+                        </Label>
                         <Input
                           type="number"
                           min="0"
@@ -270,7 +287,9 @@ export default function MonthsFromNow() {
                         />
                       </div>
                       <div>
-                        <Label className="text-sm text-gray-600 mb-1 block">Days</Label>
+                        <Label className="text-sm text-gray-600 mb-1 block">
+                          Days
+                        </Label>
                         <Input
                           type="number"
                           min="0"
@@ -284,7 +303,9 @@ export default function MonthsFromNow() {
 
                     <div className="grid grid-cols-3 gap-4">
                       <div>
-                        <Label className="text-sm text-gray-600 mb-1 block">Hours</Label>
+                        <Label className="text-sm text-gray-600 mb-1 block">
+                          Hours
+                        </Label>
                         <Input
                           type="number"
                           min="0"
@@ -295,7 +316,9 @@ export default function MonthsFromNow() {
                         />
                       </div>
                       <div>
-                        <Label className="text-sm text-gray-600 mb-1 block">Minutes</Label>
+                        <Label className="text-sm text-gray-600 mb-1 block">
+                          Minutes
+                        </Label>
                         <Input
                           type="number"
                           min="0"
@@ -306,7 +329,9 @@ export default function MonthsFromNow() {
                         />
                       </div>
                       <div>
-                        <Label className="text-sm text-gray-600 mb-1 block">Seconds</Label>
+                        <Label className="text-sm text-gray-600 mb-1 block">
+                          Seconds
+                        </Label>
                         <Input
                           type="number"
                           min="0"
@@ -332,7 +357,9 @@ export default function MonthsFromNow() {
                   {adjustedResult && (
                     <div className="p-6 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg border-2 border-blue-200">
                       <div className="text-center">
-                        <p className="text-sm text-gray-600 mb-2 font-medium">Result:</p>
+                        <p className="text-sm text-gray-600 mb-2 font-medium">
+                          Result:
+                        </p>
                         <p className="text-lg text-gray-700 font-medium mb-1">
                           {formatDateTime(adjustedResult).dayOfWeek}
                         </p>
@@ -351,14 +378,33 @@ export default function MonthsFromNow() {
           </div>
         </Card>
 
-         <div className="mb-8 text-center">
-          <p className="text-gray-600 mb-4">Try other related tools: <a href="/hours-ago" className="text-blue-600 hover:text-blue-800 font-medium">Hours Ago Calculator</a>, <a href="/hours-calculator" className="text-blue-600 hover:text-blue-800 font-medium">Hours Calculator</a></p>
+        <div className="mb-8 text-center">
+          <p className="text-gray-600 mb-4">
+            Try other related tools:{" "}
+            <a
+              href="/hours-ago"
+              className="text-blue-600 hover:text-blue-800 font-medium"
+            >
+              Hours Ago Calculator
+            </a>
+            ,{" "}
+            <a
+              href="/hours-calculator"
+              className="text-blue-600 hover:text-blue-800 font-medium"
+            >
+              Hours Calculator
+            </a>
+          </p>
         </div>
 
         <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden mb-8">
           <div className="bg-gradient-to-r from-blue-500 to-cyan-500 px-6 py-4">
-            <h2 className="text-2xl font-bold text-white text-center">Months From Today Table</h2>
-            <p className="text-blue-50 text-sm mt-1 text-center">Quick reference for common month calculations</p>
+            <h2 className="text-2xl font-bold text-white text-center">
+              Months From Today Table
+            </h2>
+            <p className="text-blue-50 text-sm mt-1 text-center">
+              Quick reference for common month calculations
+            </p>
           </div>
           <MonthsFromNowTable />
         </div>
@@ -372,11 +418,108 @@ export default function MonthsFromNow() {
         <div className="mt-8 text-center">
           <Card className="inline-block p-4 bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-200">
             <p className="text-sm text-gray-600">
-              <span className="font-semibold text-gray-800">Live Updates:</span> This calculator refreshes every second to show accurate times.
+              <span className="font-semibold text-gray-800">Live Updates:</span>{" "}
+              This calculator refreshes every second to show accurate times.
               <br />
-              All times are displayed in your local timezone: <span className="font-semibold text-blue-600">{timezone}</span>
+              All times are displayed in your local timezone:{" "}
+              <span className="font-semibold text-blue-600">{timezone}</span>
             </p>
           </Card>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/ali-riaz-developer/"
+              target="_blank"
+            >
+              Ali Riaz Developer | LinkedIn Profile
+            </a>
+
+            <a
+              href="https://www.sitelike.org/similar/hoursfromnow.tech/"
+              target="_blank"
+            >
+              Sites Like HoursFromNow.tech | Similar Websites Explorer
+            </a>
+
+            <a
+              href="https://medium.com/@ar.arian786/8-hours-from-now-the-productivity-technique-every-remote-worker-should-use-274ff45f4544"
+              target="_blank"
+            >
+              8 Hours From Now: Remote Worker Productivity Technique
+            </a>
+            <a
+              href="https://www.linkedin.com/pulse/addition-subtraction-time-complete-guide-examples-m-ali-riaz-oh0xf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Addition and Subtraction of Time: A Complete Guide with Examples
+            </a>
+
+            <a
+              href="https://www.mathworks.com/matlabcentral/discussions/tips/847921-how-to-create-a-gui"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              How to Create a GUI in MATLAB – Practical Tips
+            </a>
+
+            <a
+              href="https://www.mathworks.com/matlabcentral/answers/2175685-making-a-matrix-calculator"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Making a Matrix Calculator in MATLAB
+            </a>
+
+            <a
+              href="https://www.linkedin.com/pulse/dont-repeat-mistakes-rank-1-google-seo-reality-check-2025-m-ali-riaz-nqvwf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Don’t Repeat These SEO Mistakes to Rank #1 on Google in 2025
+            </a>
+
+            <a
+              href="https://hoursfromnow.tech/sitemap.xml"
+              title="Hours From Now Tech Complete Sitemap - Time Calculator Pages & Tools"
+            >
+              Hours From Now Sitemap
+            </a>
+
+            <a
+              href="https://hoursfromnow.tech/sitemap-static.xml"
+              title="Static Sitemap: Hours From Now Calculator, Time Duration & Holiday Countdown Pages"
+            >
+              Static Sitemap (Core Tools)
+            </a>
+
+            <a
+              href="https://hoursfromnow.tech/sitemap-days.xml"
+              title="Days from Now Sitemap - Calculate Future Dates & Time with HoursFromNow.tech Tools"
+            >
+              Days Sitemap
+            </a>
+
+            <a
+              href="https://hoursfromnow.tech/sitemap-weeks.xml"
+              title="Weeks from Now Sitemap - Advanced Time Calculator for Scheduling & Planning"
+            >
+              Weeks Sitemap
+            </a>
+
+            <a
+              href="https://hoursfromnow.tech/sitemap-hours.xml"
+              title="Hours from Now Sitemap - Live Updating Time Calculator for Deadlines & Events"
+            >
+              Hours Sitemap (Live Tools)
+            </a>
+
+            <a
+              href="https://hoursfromnow.tech/sitemap-posts.xml"
+              title="Blog Posts Sitemap - Time Management Guides & Hours Calculator Tips"
+            >
+              Posts Sitemap
+            </a>
+          </p>
         </div>
       </div>
     </div>
