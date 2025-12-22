@@ -281,4 +281,4 @@ Time management starts with knowing what time it actually is—and what time it 
 
 ---
 
-**Pro tip:** Bookmark your favorite time calculator. You'll use it way more often than you think.
+**Pro tip:** Bookmark your favorite time calculator. You'll use it way more often than you think...
