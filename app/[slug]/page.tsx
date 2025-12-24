@@ -137,11 +137,13 @@ export default function HoursFromNowPage({ params }: PageProps) {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6 0a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-3">
-              {content.hours} {content.hours === 1 ? 'Hour' : 'Hours'} From Now
-            </h1>
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-3">
+             What time is {content.hours} {content.hours === 1 ? 'Hour' : 'Hours'} From Now
+            </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">{content.intro}</p>
           </div>
+
+
 
           {/* Time Result Card */}
           <div className="bg-white rounded-2xl shadow-xl border border-blue-100 p-8 mb-8">
