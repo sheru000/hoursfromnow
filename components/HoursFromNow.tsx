@@ -92,7 +92,7 @@ export default function HoursFromNow() {
             Hours From Now Calculator
           </h1>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Calculate future times instantly with our live updating hour from now calculator. Perfect for scheduling and planning for time in future.
+            Calculate <strong>hours and minutes from now</strong>instantly with our live updating hour from now calculator. This hours from now calculator even calculate time in <em>seconds</em>. Perfect for scheduling and planning for time in future.
           </p>
         </div>
 
@@ -192,12 +192,12 @@ export default function HoursFromNow() {
         </Card>
 
         <div className="mb-8 text-center">
-          <p className="text-gray-600 mb-4">Try other related tools: <a href="/days-from-today" className="text-blue-600 hover:text-blue-800 font-medium">Days From Today</a>, <a href="/time-calculator" className="text-blue-600 hover:text-blue-800 font-medium">Time Calculator</a></p>
+          <h4 className="text-gray-600 mb-4">Try Related Hours Tools: <a href="/days-from-today" className="text-blue-600 hover:text-blue-800 font-medium">Days From Today</a>, <a href="/time-calculator" className="text-blue-600 hover:text-blue-800 font-medium">Time Calculator</a></h4>
         </div>
 
         <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
           <div className="bg-gradient-to-r from-blue-500 to-cyan-500 px-6 py-4">
-            <h2 className="text-2xl font-bold text-white text-center">Hours From Now Table   {formatTime(currentTime)}</h2>
+            <h2 className="text-2xl font-bold text-white text-center">Hours From Now Chart   {formatTime(currentTime)}</h2>
             <p className="text-blue-50 text-sm mt-1 text-center">Below X hours added to current time </p>
             
           </div>

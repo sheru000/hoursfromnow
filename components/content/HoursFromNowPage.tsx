@@ -8,8 +8,7 @@ const HoursFromNowPage: React.FC = () => {
         {/* Hero Section */}
         <section className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Hours From Now Calculator – What Time Will It Be If I Leave Right
-            Now?
+            About Hours From Now Calculator
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
             Whether you're counting down to an important deadline hours from now
