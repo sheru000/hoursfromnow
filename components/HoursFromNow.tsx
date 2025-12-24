@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { Card } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
-import { Clock, Calendar, Calculator } from 'lucide-react';
-import HoursFromNowPage from '@/components/content/HoursFromNowPage';
-import HoursFromNowTable from '@/components/content/HoursfromnowTable';
+import { useState, useEffect } from "react";
+import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Clock, Calendar, Calculator } from "lucide-react";
+import HoursFromNowPage from "@/components/content/HoursFromNowPage";
+import HoursFromNowTable from "@/components/content/HoursfromnowTable";
 interface TimeEntry {
   hours: number;
   futureTime: Date;
@@ -16,10 +16,10 @@ interface TimeEntry {
 export default function HoursFromNow() {
   const [currentTime, setCurrentTime] = useState<Date>(new Date());
   const [timeEntries, setTimeEntries] = useState<TimeEntry[]>([]);
-  const [timezone, setTimezone] = useState<string>('');
-  const [manualHours, setManualHours] = useState<string>('');
-  const [manualMinutes, setManualMinutes] = useState<string>('');
-  const [manualSeconds, setManualSeconds] = useState<string>('');
+  const [timezone, setTimezone] = useState<string>("");
+  const [manualHours, setManualHours] = useState<string>("");
+  const [manualMinutes, setManualMinutes] = useState<string>("");
+  const [manualSeconds, setManualSeconds] = useState<string>("");
   const [calculatedTime, setCalculatedTime] = useState<Date | null>(null);
 
   useEffect(() => {
@@ -40,35 +40,35 @@ export default function HoursFromNow() {
       entries.push({
         hours: i,
         futureTime,
-        label: i === 1 ? '1 hour from now' : `${i} hours from now`
+        label: i === 1 ? "1 hour from now" : `${i} hours from now`,
       });
     }
     setTimeEntries(entries);
   }, [currentTime]);
 
   const formatTime = (date: Date) => {
-    return date.toLocaleTimeString('en-US', {
-      hour: '2-digit',
-      minute: '2-digit',
-      second: '2-digit',
-      hour12: true
+    return date.toLocaleTimeString("en-US", {
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: true,
     });
   };
 
   const formatDate = (date: Date) => {
-    return date.toLocaleDateString('en-US', {
-      weekday: 'long',
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
+    return date.toLocaleDateString("en-US", {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
     });
   };
 
   const formatShortDate = (date: Date) => {
-    return date.toLocaleDateString('en-US', {
-      month: 'short',
-      day: 'numeric',
-      year: 'numeric'
+    return date.toLocaleDateString("en-US", {
+      month: "short",
+      day: "numeric",
+      year: "numeric",
     });
   };
 
@@ -76,7 +76,8 @@ export default function HoursFromNow() {
     const hours = parseInt(manualHours) || 0;
     const minutes = parseInt(manualMinutes) || 0;
     const seconds = parseInt(manualSeconds) || 0;
-    const totalMilliseconds = (hours * 60 * 60 * 1000) + (minutes * 60 * 1000) + (seconds * 1000);
+    const totalMilliseconds =
+      hours * 60 * 60 * 1000 + minutes * 60 * 1000 + seconds * 1000;
     const result = new Date(currentTime.getTime() + totalMilliseconds);
     setCalculatedTime(result);
   };
@@ -88,12 +89,22 @@ export default function HoursFromNow() {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl mb-4 shadow-lg">
             <Clock className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-3">
-            Hours From Now Calculator
-          </h1>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Calculate <strong>hours and minutes from now</strong>instantly with our live updating hour from now calculator. This hours from now calculator even calculate time in <em>seconds</em>. Perfect for scheduling and planning for time in future.
-          </p>
+          <section>
+            {" "}
+            <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-3">
+              Hours From Now Calculator
+            </h1>
+            <h2 className="text-3xl font-semibold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-3">
+              What Time Will It Be Hours From Now?
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Calculate <strong>hours and minutes from now</strong> instantly
+              with our live updating hour from now calculator. This tool even
+              calculates time in <em>seconds</em>, so you can quickly find out
+              the exact time in the future for scheduling, planning, or precise
+              event timing.
+            </p>
+          </section>
         </div>
 
         <div className="mb-8">
@@ -101,7 +112,9 @@ export default function HoursFromNow() {
             <div className="flex flex-col items-center space-y-3">
               <div className="flex items-center space-x-3 text-gray-600">
                 <Calendar className="w-5 h-5 text-blue-500" />
-                <span className="text-sm font-medium">Your Local Time ({timezone})</span>
+                <span className="text-sm font-medium">
+                  Your Local Time ({timezone})
+                </span>
               </div>
               <div className="text-center">
                 <div className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-2">
@@ -119,7 +132,9 @@ export default function HoursFromNow() {
           <div className="p-6">
             <div className="flex items-center space-x-2 mb-6">
               <Calculator className="w-6 h-6 text-blue-500" />
-              <h2 className="text-2xl font-bold text-gray-800">Calculate Hours From Now</h2>
+              <h2 className="text-2xl font-bold text-gray-800">
+                Calculate Hours From Now
+              </h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
@@ -192,16 +207,34 @@ export default function HoursFromNow() {
         </Card>
 
         <div className="mb-8 text-center">
-          <h4 className="text-gray-600 mb-4">Try Related Hours Tools: <a href="/days-from-today" className="text-blue-600 hover:text-blue-800 font-medium">Days From Today</a>, <a href="/time-calculator" className="text-blue-600 hover:text-blue-800 font-medium">Time Calculator</a></h4>
+          <h4 className="text-gray-600 mb-4">
+            Try Related Hours Tools:{" "}
+            <a
+              href="/days-from-today"
+              className="text-blue-600 hover:text-blue-800 font-medium"
+            >
+              Days From Today
+            </a>
+            ,{" "}
+            <a
+              href="/time-calculator"
+              className="text-blue-600 hover:text-blue-800 font-medium"
+            >
+              Time Calculator
+            </a>
+          </h4>
         </div>
 
         <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
           <div className="bg-gradient-to-r from-blue-500 to-cyan-500 px-6 py-4">
-            <h2 className="text-2xl font-bold text-white text-center">Hours From Now Chart   {formatTime(currentTime)}</h2>
-            <p className="text-blue-50 text-sm mt-1 text-center">Below X hours added to current time </p>
-            
+            <h2 className="text-2xl font-bold text-white text-center">
+              Hours From Now Chart {formatTime(currentTime)}
+            </h2>
+            <p className="text-blue-50 text-sm mt-1 text-center">
+              Below X hours added to current time{" "}
+            </p>
           </div>
-<HoursFromNowTable/>
+          <HoursFromNowTable />
           {/* <div className="overflow-x-auto">
             <div className="max-h-[600px] overflow-y-auto">
               <table className="w-full">
@@ -241,7 +274,6 @@ export default function HoursFromNow() {
               </table>
             </div>
           </div> */}
-
         </div>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -252,7 +284,8 @@ export default function HoursFromNow() {
                 Days From Now Calculator
               </h3>
               <p className="text-gray-600 mb-4">
-                Calculate what the date will be any number of days from now. Perfect for planning future events and deadlines.
+                Calculate what the date will be any number of days from now.
+                Perfect for planning future events and deadlines.
               </p>
               <a
                 href="/days-from-now"
@@ -270,7 +303,8 @@ export default function HoursFromNow() {
                 Time Duration Calculator
               </h3>
               <p className="text-gray-600 mb-4">
-                Calculate the duration between two dates and times. Get precise time differences in days, hours, and minutes.
+                Calculate the duration between two dates and times. Get precise
+                time differences in days, hours, and minutes.
               </p>
               <a
                 href="/time-duration-calculator"
@@ -284,16 +318,19 @@ export default function HoursFromNow() {
 
         <div className="mt-12">
           <Card className="bg-gradient-to-br from-blue-50 to-cyan-50 border-2 border-blue-200 shadow-sm">
-              <HoursFromNowPage/>
+            <HoursFromNowPage />
           </Card>
         </div>
 
         <div className="mt-8 text-center">
           <Card className="inline-block p-4 bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-200">
             <p className="text-sm text-gray-600">
-              <span className="font-semibold text-gray-800">Live Updates:</span> This Hours from now calculator refreshes every second to show accurate times.
+              <span className="font-semibold text-gray-800">Live Updates:</span>{" "}
+              This Hours from now calculator refreshes every second to show
+              accurate times.
               <br />
-              All times are displayed in your local timezone: <span className="font-semibold text-blue-600">{timezone}</span>
+              All times are displayed in your local timezone:{" "}
+              <span className="font-semibold text-blue-600">{timezone}</span>
             </p>
           </Card>
         </div>
