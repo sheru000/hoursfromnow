@@ -20,7 +20,7 @@ const hoursContent: Record<string, HourContent> = {
       "time management"
     ],
     intro:
-      "To find out what time it will be 1 hours from now, simply add 1 hours to the current time.This calculator gives you the exact future time, making it easy to plan events, appointments, or important deadlines accurately and efficiently.",
+      "To find out what time it will be 1 hour from now, simply add 1 hour to the current time.This calculator gives you the exact future time, making it easy to plan events, appointments, or important deadlines accurately and efficiently.",
     content: [
       {
         heading: "Exact Time Calculation",

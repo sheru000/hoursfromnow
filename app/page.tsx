@@ -11,7 +11,7 @@ import {
 export const metadata: Metadata = {
   title: "Hours From Now Calculator: Time in Hours and Minutes Later",
   description:
-    "Hours From Now Calculator can calculate any number of hours and minutes from now, Calculate 72 hours from now, 16 hours from now, 8 hours from now with this precise hours from now calculator.",
+    "Hours From Now Calculator can calculate any number of hours and minutes from now. Calculate what time it will be hours from now like 72 hours from now with this precise hours from now calculator.",
   alternates: {
     canonical: "https://hoursfromnow.tech",
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Hours From Now Calculator",
     description:
-      "This Hours From Now Calculator can calculate any number of hours and minutes from now, like 72 hours from now, 16 hours from now, 8 hours from now with this precise hours from now calculator.",
+      "Hours From Now Calculator can calculate any number of hours and minutes from now. Calculate what time it will be hours from now like 72 hours from now with this precise hours from now calculator.",
 
     url: "https://hoursfromnow.tech",
     type: "website",
@@ -62,7 +62,7 @@ export default function Home() {
     name: "Hours From Now Calculator: Time in Hours and Minutes Later",
     url: "https://hoursfromnow.tech",
     description:
-      "This Hours From Now Calculator can calculate any number of hours and minutes from now, like 72 hours from now, 16 hours from now, 8 hours from now with this precise hours from now calculator.",
+      "Hours From Now Calculator can calculate any number of hours and minutes from now. Calculate what time it will be hours from now like 72 hours from now with this precise hours from now calculator.",
   });
 
   const breadcrumbSchema = generateBreadcrumbSchema([

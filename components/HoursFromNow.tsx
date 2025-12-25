@@ -97,13 +97,13 @@ export default function HoursFromNow() {
             <h2 className="text-3xl font-semibold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-3">
               What Time Will It Be Hours From Now?
             </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Calculate <strong>hours and minutes from now</strong> instantly
-              with our live updating hour from now calculator. This tool even
-              calculates time in <em>seconds</em>, so you can quickly find out
-              the exact time in the future for scheduling, planning, or precise
-              event timing.
+            <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+              <strong>Hours from now</strong> means calculating the exact future
+              time by adding a specific number of hours to the current time. An
+              hours from now calculator instantly shows the future time in
+              hours, minutes, and seconds based on the current local time.
             </p>
+         
           </section>
         </div>
 
