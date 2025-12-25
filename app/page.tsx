@@ -5,7 +5,7 @@ import { generateCalculatorSchema, generateBreadcrumbSchema } from '@/lib/schema
 
 export const metadata: Metadata = {
   title: 'Hours From Now Calculator: Time in Hours and Minutes Later',
-  description: 'This Hours From Now Calculator can calculate any number of hours and minutes from now, like 72 hours from now, 16 hours from now, 8 hours from now with this precise hours from now calculator.', 
+  description: 'Hours From Now Calculator can calculate any number of hours and minutes from now, Calculate 72 hours from now, 16 hours from now, 8 hours from now with this precise hours from now calculator.', 
   alternates: {
     canonical: 'https://hoursfromnow.tech',
   },
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
       
     url: 'https://hoursfromnow.tech',
     type: 'website',
-    siteName: 'HoursFromNow.tech',
+    siteName: 'Hours From Now',
     images: [
        {
          url: 'https://hoursfromnow.tech/og-image.png',

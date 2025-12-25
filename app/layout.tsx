@@ -14,12 +14,12 @@
   export const metadata: Metadata = {
     metadataBase: new URL('https://hoursfromnow.tech'),
     title: {
-      default: 'Hours From Now Calculator - Time Calculator Tools',
+      default: 'Hours From Now Calculator: Time in Hours and Minutes Calculator Tool',
       template: '%s | HoursFromNow.tech',
     },
-    description: 'Free online time calculators including hours from now, time duration, days calculator, and more. Fast, accurate, and easy to use time calculation tools.',
-    keywords: 'time calculator, hours from now, hours calculator, time duration calculator, days from now, date calculator, time tools',
-    authors: [{ name: 'HoursFromNow.tech' }],
+    description: 'Hours From Now calculator can calculate any number of hours and minutes from now, including other tools time calculator, time duration calculator, days from today calculator, and more. Fast, accurate, and easy to use time calculation tools.',
+    keywords: 'hours from now calculator, hours from now, time calculator, hours calculator, time duration calculator, days from today, date calculator, time tools',
+    authors: [{ name: 'Hours From Now' }],
     creator: 'HoursFromNow.tech',
     publisher: 'HoursFromNow.tech',
     formatDetection: {
@@ -36,14 +36,14 @@
       type: 'website',
       locale: 'en_US',
       url: 'https://hoursfromnow.tech',
-      siteName: 'HoursFromNow.tech',
+      siteName: 'Hours From Now',
       title: 'Hours From Now Calculator - Time Calculator Tools',
-      description: 'Free online time calculators for all your time calculation needs.',
+      description: 'Hours From Now Calculator can calculate any number of hours and minutes from now',
     },
     twitter: {
       card: 'summary_large_image',
       title: 'Hours From Now Calculator',
-      description: 'Free online time calculators for all your time calculation needs.',
+      description: 'Hours From Now Calculator can calculate any number of hours and minutes from now',
     },
     robots: {
       index: true,
@@ -58,32 +58,58 @@
     },
   };
 
-  const organizationSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'HoursFromNow.tech',
-    url: 'https://hoursfromnow.tech',
-    logo: 'https://hoursfromnow.tech/logo.png',
-    description: 'Free online time calculation tools and calculators',
-    sameAs: [],
-  };
+ const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://hoursfromnow.tech/#organization",
+  "name": "Hours From Now",
+  "url": "https://hoursfromnow.tech",
+  "logo": "https://hoursfromnow.tech/logo.png",
+  "description": "Hours From Now Calculator can calculate any number of hours and minutes from now, Calculate 72 hours from now, 16 hours from now, 8 hours from now with this precise hours from now calculator and have more time calculation tools are days from today, months from today, weeks from today calculators. ",
+  "sameAs": []
+};
+
 
   const websiteSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name: 'HoursFromNow.tech',
-    url: 'https://hoursfromnow.tech',
-    description: 'Free online time calculators including hours from now, time duration, and more',
-    publisher: {
-      '@type': 'Organization',
-      name: 'HoursFromNow.tech',
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://hoursfromnow.tech/#website",
+  "url": "https://hoursfromnow.tech/",
+  "name": "Hours From Now",
+  "alternateName": [
+    "Hours From Now Calculator",
+    "HoursFromNow.tech",
+    "Hours From Now Tool",
+    "Hours From Now Calculator Online",
+    "Later time Calculator",
+    "Hours Calculator"
+  ],
+  "description": "Hours From Now Calculator can calculate any number of hours and minutes from now, Calculate 72 hours from now, 16 hours from now, 8 hours from now with this precise hours from now calculator.",
+  "inLanguage": "en-US",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://hoursfromnow.tech/#organization",
+    "name": "Hours From Now",
+    "url": "https://hoursfromnow.tech",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hoursfromnow.tech/logo.png"
+    }
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://hoursfromnow.tech/?q={search_term_string}"
     },
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: 'https://hoursfromnow.tech/time-calculators?q={search_term_string}',
-      'query-input': 'required name=search_term_string',
-    },
-  };
+    "query-input": "required name=search_term_string"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hoursfromnow.tech/"
+  }
+};
+
 
   export default function RootLayout({
     children,

@@ -6,10 +6,15 @@ export function generateCalculatorSchema(config: {
 }) {
   return {
     '@context': 'https://schema.org',
-    '@type': 'WebApplication',
+     '@type': 'SoftwareApplication',
+    '@id': 'https://hoursfromnow.tech/#hours-from-now',
     name: config.name,
     url: config.url,
     description: config.description,
+     mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://hoursfromnow.tech/',
+    },
     applicationCategory: 'UtilityApplication',
     operatingSystem: 'Any',
     browserRequirements: 'Requires JavaScript. Requires HTML5.',
@@ -27,12 +32,15 @@ export function generateCalculatorSchema(config: {
     },
     author: {
       '@type': 'Organization',
-      name: 'HoursFromNow.tech',
+      '@id': 'https://hoursfromnow.tech/#organization',
+      name: 'Hours From Now',
       url: 'https://hoursfromnow.tech',
     },
+
     publisher: {
       '@type': 'Organization',
-      name: 'HoursFromNow.tech',
+      '@id': 'https://hoursfromnow.tech/#organization',
+      name: 'Hours From Now',
       url: 'https://hoursfromnow.tech',
     },
     inLanguage: 'en-US',
