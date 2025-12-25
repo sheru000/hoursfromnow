@@ -20,15 +20,15 @@
     description: 'Hours From Now calculator can calculate any number of hours and minutes from now, including other tools time calculator, time duration calculator, days from today calculator, and more. Fast, accurate, and easy to use time calculation tools.',
     keywords: 'hours from now calculator, hours from now, time calculator, hours calculator, time duration calculator, days from today, date calculator, time tools',
     authors: [{ name: 'Hours From Now' }],
-    creator: 'HoursFromNow.tech',
-    publisher: 'HoursFromNow.tech',
+    creator: 'Hours From Now',
+    publisher: 'Hours From Now',
     formatDetection: {
       email: false,
       address: false,
       telephone: false,
     },
     icons: {
-      icon: '/favicon.svg',
+      icon: '/favicon.png',
       apple: '/apple-touch-icon.png',
     },
     manifest: '/manifest.json',
@@ -37,7 +37,7 @@
       locale: 'en_US',
       url: 'https://hoursfromnow.tech',
       siteName: 'Hours From Now',
-      title: 'Hours From Now Calculator - Time Calculator Tools',
+      title: 'Hours From Now Calculator: Time Calculator Tool',
       description: 'Hours From Now Calculator can calculate any number of hours and minutes from now',
     },
     twitter: {

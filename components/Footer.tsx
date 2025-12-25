@@ -18,7 +18,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm text-gray-400">
-              Your go-to resource for accurate time calculations and conversions.
+              Hours From Now Calculator calculates accurate time calculations and conversions.
               Fast, reliable, and easy to use.
             </p>
             <nav aria-label="Social media" className="mt-4">
@@ -67,12 +67,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/hours-ago" className="hover:text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded">
-                  Hours Ago
+                  Hours Ago Calculator
                 </Link>
               </li>
               <li>
-                <Link href="/days-from-now" className="hover:text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded">
-                  Days From Now
+                <Link href="/days-from-today" className="hover:text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded">
+                  Days From Today
                 </Link>
               </li>
               <li>
@@ -107,6 +107,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/weeks-from-today" className="hover:text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded">
+                  Weeks From Today
+                </Link>
+              </li>
+              <li>
                 <Link href="/holiday-countdown" className="hover:text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded">
                   Holiday Countdown
                 </Link>
@@ -132,7 +137,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-center text-gray-400">
-          <p>&copy; {currentYear} Hours Calculator. All rights reserved.</p>
+          <p>&copy; {currentYear} Hours From Now Calculator. All rights reserved.</p>
           <nav className="flex flex-wrap justify-center gap-4 md:gap-6 mt-4" aria-label="Legal and support">
             <Link href="/private-policy" className="hover:text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded">
               Privacy Policy
