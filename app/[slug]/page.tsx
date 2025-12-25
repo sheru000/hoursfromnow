@@ -186,7 +186,7 @@ export default function HoursFromNowPage({ params }: PageProps) {
 
           {/* Hours From Now Table Component */}
           <div className="bg-white rounded-xl shadow-sm border border-blue-100 p-6 mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Interactive Hours From Now Table</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Hours From Now Chart</h2>
             <HoursFromNowTable />
           </div>
 
