@@ -12,7 +12,7 @@ const MonthsFromNowComponent = dynamic(() => import('@/components/MonthsFromNow'
 });
 
 export const metadata: Metadata = {
-  title: 'Months From Today Calculator | Calculate Future Dates by Months',
+  title: 'Months From Today Calculator: Calculate Future Dates by Months',
   description: 'Calculate any number of months from today with our precise months-from-today calculator. Find out what date it will be 1, 3, 6, or 12 months from today. Perfect for planning, pregnancy tracking, and scheduling.',
   alternates: {
     canonical: 'https://hoursfromnow.tech/months-from-today',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description: 'Instantly calculate what date it will be any number of months from today. Fast, accurate, and mobile-friendly months-from-today calculator.',
     url: 'https://hoursfromnow.tech/months-from-today',
     type: 'website',
-    siteName: 'HoursFromNow.tech',
+    siteName: 'Hours From Now',
   },
 
   twitter: {

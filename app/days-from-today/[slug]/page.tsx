@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: content.description,
       url: canonicalUrl,
       type: 'website',
-      siteName: 'HoursFromNow.tech',
+      siteName: 'Hours From Now',
     },
     twitter: {
       card: 'summary_large_image',

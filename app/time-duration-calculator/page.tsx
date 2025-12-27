@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: 'Instantly calculate the duration between two times. Free and accurate time duration calculator.',
     url: 'https://hoursfromnow.tech/time-duration-calculator',
     type: 'website',
-    siteName: 'HoursFromNow.tech',
+    siteName: 'Hours From Now',
   },
 
   twitter: {

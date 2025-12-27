@@ -1,24 +1,24 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { Card } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
-import { Label } from '@/components/ui/label';
-import { Calculator, Plus, Minus } from 'lucide-react';
-import TimeCalculatorContent from '@/components/content/TimeCalculatorContent';
+import { useState } from "react";
+import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
+import { Calculator, Plus, Minus } from "lucide-react";
+import TimeCalculatorContent from "@/components/content/TimeCalculatorContent";
 
 export default function TimeCalculatorComponent() {
-  const [operation, setOperation] = useState<'add' | 'subtract'>('add');
-  const [time1Days, setTime1Days] = useState<string>('');
-  const [time1Hours, setTime1Hours] = useState<string>('');
-  const [time1Minutes, setTime1Minutes] = useState<string>('');
-  const [time1Seconds, setTime1Seconds] = useState<string>('');
-  const [time2Days, setTime2Days] = useState<string>('');
-  const [time2Hours, setTime2Hours] = useState<string>('');
-  const [time2Minutes, setTime2Minutes] = useState<string>('');
-  const [time2Seconds, setTime2Seconds] = useState<string>('');
-  const [result, setResult] = useState<string>('');
+  const [operation, setOperation] = useState<"add" | "subtract">("add");
+  const [time1Days, setTime1Days] = useState<string>("");
+  const [time1Hours, setTime1Hours] = useState<string>("");
+  const [time1Minutes, setTime1Minutes] = useState<string>("");
+  const [time1Seconds, setTime1Seconds] = useState<string>("");
+  const [time2Days, setTime2Days] = useState<string>("");
+  const [time2Hours, setTime2Hours] = useState<string>("");
+  const [time2Minutes, setTime2Minutes] = useState<string>("");
+  const [time2Seconds, setTime2Seconds] = useState<string>("");
+  const [result, setResult] = useState<string>("");
 
   const calculateTime = () => {
     const days1 = parseInt(time1Days) || 0;
@@ -31,12 +31,15 @@ export default function TimeCalculatorComponent() {
     const minutes2 = parseInt(time2Minutes) || 0;
     const seconds2 = parseInt(time2Seconds) || 0;
 
-    const totalSeconds1 = days1 * 86400 + hours1 * 3600 + minutes1 * 60 + seconds1;
-    const totalSeconds2 = days2 * 86400 + hours2 * 3600 + minutes2 * 60 + seconds2;
+    const totalSeconds1 =
+      days1 * 86400 + hours1 * 3600 + minutes1 * 60 + seconds1;
+    const totalSeconds2 =
+      days2 * 86400 + hours2 * 3600 + minutes2 * 60 + seconds2;
 
-    let resultSeconds = operation === 'add'
-      ? totalSeconds1 + totalSeconds2
-      : totalSeconds1 - totalSeconds2;
+    let resultSeconds =
+      operation === "add"
+        ? totalSeconds1 + totalSeconds2
+        : totalSeconds1 - totalSeconds2;
 
     const isNegative = resultSeconds < 0;
     resultSeconds = Math.abs(resultSeconds);
@@ -47,25 +50,25 @@ export default function TimeCalculatorComponent() {
     const seconds = resultSeconds % 60;
 
     const parts = [];
-    if (days > 0) parts.push(`${days} day${days !== 1 ? 's' : ''}`);
-    if (hours > 0) parts.push(`${hours} hour${hours !== 1 ? 's' : ''}`);
-    if (minutes > 0) parts.push(`${minutes} minute${minutes !== 1 ? 's' : ''}`);
-    if (seconds > 0) parts.push(`${seconds} second${seconds !== 1 ? 's' : ''}`);
+    if (days > 0) parts.push(`${days} day${days !== 1 ? "s" : ""}`);
+    if (hours > 0) parts.push(`${hours} hour${hours !== 1 ? "s" : ""}`);
+    if (minutes > 0) parts.push(`${minutes} minute${minutes !== 1 ? "s" : ""}`);
+    if (seconds > 0) parts.push(`${seconds} second${seconds !== 1 ? "s" : ""}`);
 
-    const resultText = parts.length > 0 ? parts.join(', ') : '0 seconds';
+    const resultText = parts.length > 0 ? parts.join(", ") : "0 seconds";
     setResult(isNegative ? `-${resultText}` : resultText);
   };
 
   const clearAll = () => {
-    setTime1Days('');
-    setTime1Hours('');
-    setTime1Minutes('');
-    setTime1Seconds('');
-    setTime2Days('');
-    setTime2Hours('');
-    setTime2Minutes('');
-    setTime2Seconds('');
-    setResult('');
+    setTime1Days("");
+    setTime1Hours("");
+    setTime1Minutes("");
+    setTime1Seconds("");
+    setTime2Days("");
+    setTime2Hours("");
+    setTime2Minutes("");
+    setTime2Seconds("");
+    setResult("");
   };
 
   return (
@@ -78,8 +81,12 @@ export default function TimeCalculatorComponent() {
           <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-3">
             Time Calculator
           </h1>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Add or subtract time values with our easy-to-use calculator. Perfect for time tracking and scheduling.
+          <p className="text-gray-600 text-lg max-w-4xl mx-auto">
+            Use this Time Calculator to instantly add or subtract time between
+            dates and times. You can calculate days, hours, minutes, and seconds
+            either forward or backward to get exact results instantly without
+            waiting—perfect for scheduling, planning, or working with time
+            durations.
           </p>
         </div>
 
@@ -91,22 +98,22 @@ export default function TimeCalculatorComponent() {
               </Label>
               <div className="flex space-x-4">
                 <Button
-                  onClick={() => setOperation('add')}
+                  onClick={() => setOperation("add")}
                   className={`flex-1 h-12 ${
-                    operation === 'add'
-                      ? 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    operation === "add"
+                      ? "bg-gradient-to-r from-blue-500 to-cyan-500 text-white"
+                      : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                   }`}
                 >
                   <Plus className="w-5 h-5 mr-2" />
                   Add Time
                 </Button>
                 <Button
-                  onClick={() => setOperation('subtract')}
+                  onClick={() => setOperation("subtract")}
                   className={`flex-1 h-12 ${
-                    operation === 'subtract'
-                      ? 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    operation === "subtract"
+                      ? "bg-gradient-to-r from-blue-500 to-cyan-500 text-white"
+                      : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                   }`}
                 >
                   <Minus className="w-5 h-5 mr-2" />
@@ -122,7 +129,9 @@ export default function TimeCalculatorComponent() {
                 </Label>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   <div>
-                    <Label className="text-sm text-gray-600 mb-1 block">Days</Label>
+                    <Label className="text-sm text-gray-600 mb-1 block">
+                      Days
+                    </Label>
                     <Input
                       type="number"
                       min="0"
@@ -133,7 +142,9 @@ export default function TimeCalculatorComponent() {
                     />
                   </div>
                   <div>
-                    <Label className="text-sm text-gray-600 mb-1 block">Hours</Label>
+                    <Label className="text-sm text-gray-600 mb-1 block">
+                      Hours
+                    </Label>
                     <Input
                       type="number"
                       min="0"
@@ -144,7 +155,9 @@ export default function TimeCalculatorComponent() {
                     />
                   </div>
                   <div>
-                    <Label className="text-sm text-gray-600 mb-1 block">Minutes</Label>
+                    <Label className="text-sm text-gray-600 mb-1 block">
+                      Minutes
+                    </Label>
                     <Input
                       type="number"
                       min="0"
@@ -155,7 +168,9 @@ export default function TimeCalculatorComponent() {
                     />
                   </div>
                   <div>
-                    <Label className="text-sm text-gray-600 mb-1 block">Seconds</Label>
+                    <Label className="text-sm text-gray-600 mb-1 block">
+                      Seconds
+                    </Label>
                     <Input
                       type="number"
                       min="0"
@@ -170,7 +185,7 @@ export default function TimeCalculatorComponent() {
 
               <div className="flex justify-center">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center text-white font-bold text-xl">
-                  {operation === 'add' ? '+' : '-'}
+                  {operation === "add" ? "+" : "-"}
                 </div>
               </div>
 
@@ -180,7 +195,9 @@ export default function TimeCalculatorComponent() {
                 </Label>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   <div>
-                    <Label className="text-sm text-gray-600 mb-1 block">Days</Label>
+                    <Label className="text-sm text-gray-600 mb-1 block">
+                      Days
+                    </Label>
                     <Input
                       type="number"
                       min="0"
@@ -191,7 +208,9 @@ export default function TimeCalculatorComponent() {
                     />
                   </div>
                   <div>
-                    <Label className="text-sm text-gray-600 mb-1 block">Hours</Label>
+                    <Label className="text-sm text-gray-600 mb-1 block">
+                      Hours
+                    </Label>
                     <Input
                       type="number"
                       min="0"
@@ -202,7 +221,9 @@ export default function TimeCalculatorComponent() {
                     />
                   </div>
                   <div>
-                    <Label className="text-sm text-gray-600 mb-1 block">Minutes</Label>
+                    <Label className="text-sm text-gray-600 mb-1 block">
+                      Minutes
+                    </Label>
                     <Input
                       type="number"
                       min="0"
@@ -213,7 +234,9 @@ export default function TimeCalculatorComponent() {
                     />
                   </div>
                   <div>
-                    <Label className="text-sm text-gray-600 mb-1 block">Seconds</Label>
+                    <Label className="text-sm text-gray-600 mb-1 block">
+                      Seconds
+                    </Label>
                     <Input
                       type="number"
                       min="0"
@@ -246,22 +269,37 @@ export default function TimeCalculatorComponent() {
             {result && (
               <div className="mt-8 p-6 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg border-2 border-blue-200">
                 <div className="text-center">
-                  <p className="text-sm text-gray-600 mb-2 font-medium">Result:</p>
-                  <p className="text-3xl font-bold text-blue-600">
-                    {result}
+                  <p className="text-sm text-gray-600 mb-2 font-medium">
+                    Result:
                   </p>
+                  <p className="text-3xl font-bold text-blue-600">{result}</p>
                 </div>
               </div>
             )}
           </div>
         </Card>
         <div className="mb-8 text-center">
-          <p className="text-gray-600 mb-4">Try other related tools: <a href="/days-from-today" className="text-blue-600 hover:text-blue-800 font-medium">Days From Today</a>, <a href="/time-duration-calculator" className="text-blue-600 hover:text-blue-800 font-medium">Time Duration Calculator</a></p>
+          <p className="text-gray-600 mb-4">
+            Try other related tools:{" "}
+            <a
+              href="/days-from-today"
+              className="text-blue-600 hover:text-blue-800 font-medium"
+            >
+              Days From Today
+            </a>
+            ,{" "}
+            <a
+              href="/time-duration-calculator"
+              className="text-blue-600 hover:text-blue-800 font-medium"
+            >
+              Time Duration Calculator
+            </a>
+          </p>
         </div>
 
         <Card className="bg-gradient-to-br from-blue-50 to-cyan-50 border-2 border-blue-200 shadow-lg">
           <div className="p-8">
-           <TimeCalculatorContent/>
+            <TimeCalculatorContent />
           </div>
         </Card>
       </div>

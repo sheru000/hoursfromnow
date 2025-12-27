@@ -4,7 +4,7 @@ import WeeksFromNow from '@/components/WeeksFromNow';
 import { generateCalculatorSchema, generateBreadcrumbSchema } from '@/lib/schemas';
 
 export const metadata: Metadata = {
-  title: 'Weeks From Today | Time Calculator',
+  title: 'Weeks From Today Calculator',
   description: 'Calculate any number of weeks from today, like 4 weeks from today, 8 weeks from today, 12 weeks from today with this precise weeks-from-today calculator.',
   alternates: {
     canonical: 'https://hoursfromnow.tech/weeks-from-today',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
       'Calculate what date it will be any number of weeks from today — find out what date it will be in 4, 8, or 12 weeks from today.',
     url: 'https://hoursfromnow.tech/weeks-from-today',
     type: 'website',
-    siteName: 'HoursFromNow.tech',
+    siteName: 'Hours From Now',
   },
   twitter: {
     card: 'summary_large_image',

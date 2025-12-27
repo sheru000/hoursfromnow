@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description: 'Never miss a holiday! Track exactly how many days until Christmas, Halloween, Thanksgiving, and every major holiday with our live countdown calendar.',
     url: 'https://hoursfromnow.tech/holiday-countdown',
     type: 'website',
-    siteName: 'HoursFromNow.tech',
+    siteName: 'Hours From Now',
   },
 
   twitter: {

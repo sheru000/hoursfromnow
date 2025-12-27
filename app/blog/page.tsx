@@ -5,11 +5,11 @@ import matter from 'gray-matter';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Blog | HoursFromNow.tech',
+  title: 'Blog | Hours From Now',
   description: 'Read our latest articles about time management, productivity tips, and time calculation tools.',
   keywords: 'blog, time management, productivity, time calculator tips',
   openGraph: {
-    title: 'Blog | HoursFromNow.tech',
+    title: 'Blog | Hours From Now',
     description: 'Read our latest articles about time management and productivity.',
     url: 'https://hoursfromnow.tech/blog',
     type: 'website',

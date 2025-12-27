@@ -14,7 +14,7 @@ const HoursCalculator = dynamic(() => import('@/components/HoursCalculator'), {
 });
 
 export const metadata: Metadata = {
-  title: 'Hours Calculator - How Many Hours in a Year, Week, Day | Time Conversion Tool',
+  title: 'Hours Calculator: How Many Hours in a Year, Week, Day',
   description: 'Calculate how many hours in a year (8,760), week (168), day (24), or month. Free hours calculator converts days, weeks, months, and years to hours instantly. Perfect for work hours, project planning, and time management.',
   alternates: {
     canonical: 'https://hoursfromnow.tech/hours-calculator',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description: 'Instantly calculate how many hours in a year, week, day, or month. Free online hours calculator for time conversions and planning.',
     url: 'https://hoursfromnow.tech/hours-calculator',
     type: 'website',
-    siteName: 'HoursFromNow.tech',
+    siteName: 'Hours From Now',
   },
 
   twitter: {
@@ -98,109 +98,30 @@ export default function HoursCalculatorPage() {
       />
 
       <Script
-        id="schema-hours-calculator-faq"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@graph': [
-              {
-                '@type': 'BreadcrumbList',
-                itemListElement: [
-                  {
-                    '@type': 'ListItem',
-                    position: 1,
-                    name: 'Hours From Now',
-                    item: 'https://hoursfromnow.tech/',
-                  },
-                  {
-                    '@type': 'ListItem',
-                    position: 2,
-                    name: 'Hours Calculator',
-                    item: 'https://hoursfromnow.tech/hours-calculator',
-                  },
-                ],
-              },
-              {
-                '@type': 'FAQPage',
-                mainEntity: [
-                  {
-                    '@type': 'Question',
-                    name: 'How many hours in a year?',
-                    acceptedAnswer: {
-                      '@type': 'Answer',
-                      text: 'A standard year contains 8,760 hours (365 days × 24 hours). A leap year has 8,784 hours (366 days × 24 hours).',
-                    },
-                  },
-                  {
-                    '@type': 'Question',
-                    name: 'How many hours in a week?',
-                    acceptedAnswer: {
-                      '@type': 'Answer',
-                      text: 'One week contains 168 hours (7 days × 24 hours). This equals 10,080 minutes or 604,800 seconds.',
-                    },
-                  },
-                  {
-                    '@type': 'Question',
-                    name: 'How many hours in a day?',
-                    acceptedAnswer: {
-                      '@type': 'Answer',
-                      text: 'Every day contains exactly 24 hours. This equals 1,440 minutes or 86,400 seconds.',
-                    },
-                  },
-                  {
-                    '@type': 'Question',
-                    name: 'How many hours in a month?',
-                    acceptedAnswer: {
-                      '@type': 'Answer',
-                      text: 'A month contains approximately 730 hours on average. This varies: 28-day month = 672 hours, 30-day month = 720 hours, 31-day month = 744 hours.',
-                    },
-                  },
-                  {
-                    '@type': 'Question',
-                    name: 'How many work hours in a year?',
-                    acceptedAnswer: {
-                      '@type': 'Answer',
-                      text: 'A standard full-time work year contains approximately 2,080 hours (40 hours/week × 52 weeks), not including holidays and vacation time.',
-                    },
-                  },
-                  {
-                    '@type': 'Question',
-                    name: 'How do you calculate hours from days?',
-                    acceptedAnswer: {
-                      '@type': 'Answer',
-                      text: 'To calculate hours from days, multiply the number of days by 24. For example: 30 days × 24 hours/day = 720 hours.',
-                    },
-                  },
-                ],
-              },
-              {
-                '@type': 'HowTo',
-                name: 'How to Use the Hours Calculator',
-                description: 'Calculate how many hours in any time period using our hours calculator.',
-                step: [
-                  {
-                    '@type': 'HowToStep',
-                    name: 'Enter Value',
-                    text: 'Enter the number of days, weeks, months, or years you want to convert.',
-                  },
-                  {
-                    '@type': 'HowToStep',
-                    name: 'Select Time Unit',
-                    text: 'Choose the time unit (days, weeks, months, or years) from the dropdown menu.',
-                  },
-                  {
-                    '@type': 'HowToStep',
-                    name: 'Calculate',
-                    text: 'Click the Calculate Hours button to see the total hours and conversions to other time units.',
-                  },
-                ],
-              },
-            ],
-          }),
-        }}
-      />
+  id="schema-hours-calculator-breadcrumb"
+  type="application/ld+json"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Hours From Now',
+          item: 'https://hoursfromnow.tech/',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Hours Calculator',
+          item: 'https://hoursfromnow.tech/hours-calculator',
+        },
+      ],
+    }),
+  }}
+/>
 
       <HoursCalculator />
 

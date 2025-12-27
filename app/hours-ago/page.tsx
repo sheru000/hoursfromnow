@@ -3,7 +3,7 @@ import Script from 'next/script';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Hours Ago Calculator | Time Calculator - Calculate Past Times',
+  title: 'Hours Ago Calculator: Calculate Past Times',
   description: 'Calculate what time it was any number of hours ago with our precise hours ago calculator. Find out the exact time from 1 hour ago to 100 hours ago instantly.',
   alternates: {
     canonical: 'https://hoursfromnow.tech/hours-ago',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: 'Instantly calculate what time it was any number of hours ago. Fast and accurate hours ago calculator.',
     url: 'https://hoursfromnow.tech/hours-ago',
     type: 'website',
-    siteName: 'HoursFromNow.tech',
+    siteName: 'Hours From Now',
   },
 
   twitter: {

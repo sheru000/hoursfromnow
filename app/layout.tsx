@@ -28,7 +28,7 @@
       telephone: false,
     },
     icons: {
-      icon: '/favicon.png',
+      icon: '/browser-icon.png',
       apple: '/apple-touch-icon.png',
     },
     manifest: '/manifest.json',
@@ -136,10 +136,11 @@
             strategy="beforeInteractive"
           />
           <Header />
-          <CalculatorNav />
+         <CalculatorNav />
           <main id="main-content">
             {children}
           </main>
+           
           <Footer />
         </body>
       </html>

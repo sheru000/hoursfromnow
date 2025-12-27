@@ -4,8 +4,7 @@ import HoursFromNow from "@/components/HoursFromNow";
 import {
   generateCalculatorSchema,
   generateBreadcrumbSchema,
-  generateFAQSchema,
-  generateHowToSchema,
+
 } from "@/lib/schemas";
 
 export const metadata: Metadata = {
@@ -16,7 +15,7 @@ export const metadata: Metadata = {
     canonical: "https://hoursfromnow.tech",
   },
   keywords:
-    "hours from now calculator, time calculator, hours calculator, hours from now calculator, days calculator days from now, 72 hours from now, 16 hours from now, 8 hours from now, 6 hours from now, 20 hours from now, 14 hours from now, 48 hours from now, 12 hours from now is what time, 15 hours from now, 17 hours from now, 19 hours from now, 18 hours from now, 10 hours from now, 11 hours from now, 13 hours from now, 18 hours from now what time is it, 10 hours from now what time is it, 19 hours ago from now, 20 hours ago from now, 21 hours ago from now, 22 hours ago from now, 4 hours ago from now, 24 hours from now what time is it, 24 hours from now, what is 8 hours from now, 36 hours from now what time is it, what is 48 hours from now, what is 12 hours from now,15 hours ago from now,36 hours from now,18 hours ago from now is what time​,16 hours ago from now time,four hours from now,what is 16 hours from now,what is 18 hours from now,what is 24 hours from now​,what was 6 hours ago from now​,13 hours ago from now",
+    "hours from now calculator, hours from now, what time it will be hours from now, hours, calculate future hours, hours and minutes later.",
 
   openGraph: {
     title: "Hours From Now Calculator",
@@ -59,7 +58,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const calculatorSchema = generateCalculatorSchema({
-    name: "Hours From Now Calculator: Time in Hours and Minutes Later",
+    name: "Hours From Now",
     url: "https://hoursfromnow.tech",
     description:
       "Hours From Now Calculator can calculate any number of hours and minutes from now. Calculate what time it will be hours from now like 72 hours from now with this precise hours from now calculator.",
@@ -69,140 +68,7 @@ export default function Home() {
     { name: "Home", url: "https://hoursfromnow.tech" },
   ]);
 
-  const faqs = [
-    {
-      question: "What time is 8 hours from now?",
-      answer: "8 hours from now will be 6:00 PM if it is currently 10:00 AM.",
-    },
-    {
-      question: "What time is 24 hours from now?",
-      answer: "24 hours from now is the same time tomorrow.",
-    },
-    {
-      question: "How do I calculate hours from now?",
-      answer:
-        "Use the Hours From Now Calculator on our homepage to calculate any number of hours and minutes.",
-    },
-    {
-      question: "Can I calculate fractional hours?",
-      answer:
-        "Yes, the calculator supports minutes as well, so you can calculate partial hours.",
-    },
-    {
-      question: "8 hours from now is what time?",
-      answer:
-        "Use the Hours From Now Calculator to find the exact time 8 hours from now.",
-    },
-    {
-      question: "18 hours from now is what time?",
-      answer:
-        "Use the Hours From Now Calculator to find the exact time 18 hours from now.",
-    },
-    {
-      question: "16 hours from now is what time?",
-      answer:
-        "Use the Hours From Now Calculator to find the exact time 16 hours from now.",
-    },
-    {
-      question: "72 hours from now?",
-      answer:
-        "Use the Hours From Now Calculator to find the exact time 72 hours from now.",
-    },
-    {
-      question: "8 hours from now is what time?",
-      answer:
-        "Use the Hours From Now Calculator to find the exact time 8 hours from now.",
-    },
-    {
-      question: "8 hours from now",
-      answer:
-        "Use the Hours From Now Calculator to find the exact time 8 hours from now.",
-    },
-    {
-      question: "48 hours from now",
-      answer:
-        "Use the Hours From Now Calculator to find the exact time 48 hours from now.",
-    },
-    {
-      question: "12 hours from now",
-      answer:
-        "Use the Hours From Now Calculator to find the exact time 12 hours from now.",
-    },
-    {
-      question: "16 hours from now",
-      answer:
-        "Use the Hours From Now Calculator to find the exact time 16 hours from now.",
-    },
-    {
-      question: "15 hours from now",
-      answer:
-        "Use the Hours From Now Calculator to find the exact time 15 hours from now.",
-    },
-    {
-      question: "18 hours from now is what time",
-      answer:
-        "Use the Hours From Now Calculator to find the exact time 18 hours from now.",
-    },
-    {
-      question: "14 hours from now",
-      answer:
-        "Use the Hours From Now Calculator to find the exact time 14 hours from now.",
-    },
-    {
-      question: "13 hours from now",
-      answer:
-        "Use the Hours From Now Calculator to find the exact time 13 hours from now.",
-    },
-    {
-      question: "18 hours from now",
-      answer:
-        "Use the Hours From Now Calculator to find the exact time 18 hours from now.",
-    },
-    {
-      question: "10 hours from now",
-      answer:
-        "Use the Hours From Now Calculator to find the exact time 10 hours from now.",
-    },
-    {
-      question: "11 hours from now",
-      answer:
-        "Use the Hours From Now Calculator to find the exact time 11 hours from now.",
-    },
-    {
-      question: "19 hours from now",
-      answer:
-        "Use the Hours From Now Calculator to find the exact time 19 hours from now.",
-    },
-  ];
-
-  const faqSchema = generateFAQSchema(faqs);
-
-  const steps = [
-    {
-      name: "Open the Hours From Now Calculator",
-      text: "Go to https://hoursfromnow.tech and open the calculator.",
-    },
-    {
-      name: "Enter hours",
-      text: "Type the number of hours, minutes and seconds you want to calculate.",
-    },
-    {
-      name: "Click Calculate",
-      text: "Press the calculate button to see the result.",
-    },
-    {
-      name: "Read the result",
-      text: "The calculator will display the exact time and date after the specified hours, minutes and seconds.",
-    },
-  ];
-
-  const howToSchema = generateHowToSchema({
-    name: "How to calculate hours from now",
-    description:
-      "Step-by-step guide to calculate any number of hours from now using the calculator.",
-    steps: steps,
-  });
-
+ 
   return (
     <>
       <Script
@@ -219,16 +85,7 @@ export default function Home() {
           __html: JSON.stringify(breadcrumbSchema),
         }}
       />
-      <Script
-        type="application/ld+json"
-        id="faq-schema"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <Script
-        type="application/ld+json"
-        id="howto-schema"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
-      />
+      
       <HoursFromNow />
     </>
   );
