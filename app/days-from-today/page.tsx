@@ -4,11 +4,11 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Days From Today Calculator: Calculate Future Dates From Today',
-  description: 'Calculate what date it will be any number of days from today with our free days from today calculator. Find future dates from 1 day to 365 days from today instantly.',
+  description: 'Calculate what date it will be any number of days from today with our free days from today calculator. Find future dates from 1 day to any days from today instantly.',
   alternates: {
     canonical: 'https://hoursfromnow.tech/days-from-today',
   },
-  keywords: 'days from today, days from today calculator, days from today calculator, what date will it be, future date calculator, date calculator, 30 days from today, 60 days from today, 90 days from today, 7 days from today, days ahead calculator',
+  keywords: 'days from today, days from today calculator, days from now calculator, what date will it be, future date calculator, days calculator, 30 days from today, 60 days from today, 90 days from today, 7 days from today, days ahead calculator',
 
   openGraph: {
     title: 'Days From Today Calculator: Calculate Future Dates',

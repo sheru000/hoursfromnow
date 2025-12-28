@@ -13,11 +13,11 @@ const MonthsFromNowComponent = dynamic(() => import('@/components/MonthsFromNow'
 
 export const metadata: Metadata = {
   title: 'Months From Today Calculator: Calculate Future Dates by Months',
-  description: 'Calculate any number of months from today with our precise months-from-today calculator. Find out what date it will be 1, 3, 6, or 12 months from today. Perfect for planning, pregnancy tracking, and scheduling.',
+  description: 'Calculate any number of months from today with our precise months from today calculator. Find out what date it will be 1, 3, 6, or 12 months from today. Perfect for planning, pregnancy tracking, and scheduling.',
   alternates: {
     canonical: 'https://hoursfromnow.tech/months-from-today',
   },
-  keywords: 'months from today, months calculator, future date calculator, date calculator, 1 month from today, 2 months from today, 3 months from today, 6 months from today, 12 months from today, pregnancy calculator, planning tool, months from today, what date will it be, calculate months ahead, months from today calculator, date planning tool',
+  keywords: 'months from today, months calculator, future date calculator, months calculator, 1 month from today, 2 months from today, 3 months from today, 6 months from today, 12 months from today, pregnancy calculator, planning tool, months from today, what date will it be, calculate months ahead, months from today calculator, date planning tool',
 
   openGraph: {
     title: 'Months From today Calculator - Calculate Future Dates',
