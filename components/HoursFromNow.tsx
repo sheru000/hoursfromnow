@@ -207,7 +207,7 @@ export default function HoursFromNow() {
         </Card>
 
         <div className="mb-8 text-center">
-          <h4 className="text-gray-600 mb-4">
+          <h3 className="text-gray-600 mb-4">
             Try Related Hours Tools:{" "}
             <a
               href="/days-from-today"
@@ -222,7 +222,7 @@ export default function HoursFromNow() {
             >
               Time Calculator
             </a>
-          </h4>
+          </h3>
         </div>
 
         <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">

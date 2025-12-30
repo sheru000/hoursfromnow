@@ -73,11 +73,8 @@ const HoursFromNowPage: React.FC = () => {
         {/* Section 2 */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            What Time Should I Expect? Choosing the Right{" "}
-            <a href="https://hoursfromnow.tech/time-calculator/">
-              Time Calculator
-            </a>{" "}
-            to Figure Out Hours From Now
+            What Time Should I Expect? Choosing the Right Time Calculator to
+            Figure Out Hours From Now
           </h2>
 
           <div className="mb-8">
@@ -417,23 +414,26 @@ const HoursFromNowPage: React.FC = () => {
         {/* Conclusion */}
         <section>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-  Making Hours From Now Work for You: "What Time Will It Be 1 Hour From Now"
-</h2>
+            Making Hours From Now Work for You: "What Time Will It Be 1 Hour
+            From Now"
+          </h2>
 
-{/* Featured Snippet Answer */}
-<p className="text-gray-700 leading-relaxed">
-  To find out what time it will be 1 hour from now, simply add one hour to 
-  your current local time. Using a calculator tool or manually calculating ensures you know the exact future time instantly.
-</p>
+          {/* Featured Snippet Answer */}
+          <p className="text-gray-700 leading-relaxed">
+            To find out what time it will be 1 hour from now, simply add one
+            hour to your current local time. Using a calculator tool or manually
+            calculating ensures you know the exact future time instantly.
+          </p>
 
-{/* Optional Extended Explanation */}
-<p className="text-gray-700 leading-relaxed mt-3">
-  Understanding how to calculate future time accurately gives you control 
-  over scheduling and planning. You can use a simple Now Chart to <a href="https://hoursfromnow.tech/sitemap/">track time </a>across different time zones, or do the math yourself. As your activities 
-  span globally, mastering these calculations helps you coordinate tasks, 
-  events, and deadlines with clarity and precision.
-</p>
-
+          {/* Optional Extended Explanation */}
+          <p className="text-gray-700 leading-relaxed mt-3">
+            Understanding how to calculate future time accurately gives you
+            control over scheduling and planning. You can use a simple Now Chart
+            to <a href="https://hoursfromnow.tech/sitemap/">track time </a>
+            across different time zones, or do the math yourself. As your
+            activities span globally, mastering these calculations helps you
+            coordinate tasks, events, and deadlines with clarity and precision.
+          </p>
         </section>
       </div>
     </>
