@@ -435,6 +435,60 @@ const HoursFromNowPage: React.FC = () => {
             coordinate tasks, events, and deadlines with clarity and precision.
           </p>
         </section>
+        <section
+          aria-labelledby="faq-heading"
+          className="mt-12 max-w-4xl mx-auto px-4"
+        >
+          <h2
+            id="faq-heading"
+            className="text-2xl md:text-3xl font-semibold text-gray-900 mb-6"
+          >
+            Frequently Asked Questions
+          </h2>
+
+          <div className="space-y-6">
+            {/* FAQ 1 */}
+            <article>
+              <h3 className="text-lg font-medium text-gray-900">
+                What time will it be a specific number of hours from now?
+              </h3>
+              <p className="mt-2 text-gray-700 leading-relaxed">
+                To find out what time it will be a specific number of hours from
+                now, simply add the selected hours to the current local time.
+                Whether you are calculating 9 hours, 10 hours, 16 hours, or 24
+                hours from now, the exact future time depends on your current
+                time zone. This calculator shows the correct result instantly
+                without manual calculation.
+              </p>
+            </article>
+
+            {/* FAQ 2 */}
+            <article>
+              <h3 className="text-lg font-medium text-gray-900">
+                What time will it be if I leave right now?
+              </h3>
+              <p className="mt-2 text-gray-700 leading-relaxed">
+                If you leave right now, the arrival time is calculated by adding
+                the chosen number of hours to the current moment. Since the
+                calculation starts from the exact time you check, the result
+                updates in real time and always stays accurate.
+              </p>
+            </article>
+
+            {/* FAQ 3 */}
+            <article>
+              <h3 className="text-lg font-medium text-gray-900">
+                How many hours and minutes are left until tomorrow?
+              </h3>
+              <p className="mt-2 text-gray-700 leading-relaxed">
+                The remaining hours and minutes until tomorrow are calculated
+                based on the current time today. As time passes, the countdown
+                updates automatically, showing exactly how much time is left
+                until the next day begins.
+              </p>
+            </article>
+          </div>
+        </section>
       </div>
     </>
   );
