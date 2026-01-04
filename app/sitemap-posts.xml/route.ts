@@ -4,7 +4,7 @@ import path from 'path';
 import matter from 'gray-matter';
 
 export async function GET() {
-  const baseUrl = 'https://hoursfromnow.tech';
+  const baseUrl = 'https://hoursfromnow.tech/';
   const postsDirectory = path.join(process.cwd(), 'content/posts');
 
   const filenames = fs.readdirSync(postsDirectory).filter(file => file.endsWith('.md'));

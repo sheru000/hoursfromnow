@@ -108,7 +108,7 @@ export default function HoursFromNowPage({ params }: PageProps) {
   });
 
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Hours From Now", url: "https://hoursfromnow.tech" },
+    { name: "Hours From Now", url: "https://hoursfromnow.tech/" },
     { name: content.title, url: canonicalUrl },
   ]);
 

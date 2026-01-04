@@ -2,7 +2,6 @@ import Script from "next/script";
 import type { Metadata } from "next";
 import HoursFromNow from "@/components/HoursFromNow";
 import {
-  generateCalculatorSchema,
   generateBreadcrumbSchema,
 } from "@/lib/schemas";
 
@@ -11,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Hours From Now Calculator can calculate any number of hours and minutes from now. Calculate what time it will be hours from now like 72 hours from now with this precise hours from now calculator.",
   alternates: {
-    canonical: "https://hoursfromnow.tech",
+    canonical: "https://hoursfromnow.tech/",
   },
   keywords:
     "hours from now calculator, hours from now, what time it will be hours from now, hours, calculate future hours, hours and minutes later.",
@@ -21,7 +20,7 @@ export const metadata: Metadata = {
     description:
       "Hours From Now Calculator can calculate any number of hours and minutes from now. Calculate what time it will be hours from now like 72 hours from now with this precise hours from now calculator.",
 
-    url: "https://hoursfromnow.tech",
+    url: "https://hoursfromnow.tech/",
     type: "website",
     siteName: "Hours From Now",
     images: [
@@ -56,15 +55,34 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const calculatorSchema = generateCalculatorSchema({
-    name: "Hours From Now",
-    url: "https://hoursfromnow.tech",
-    description:
-      "Hours From Now Calculator can calculate any number of hours and minutes from now. Calculate what time it will be hours from now like 72 hours from now with this precise hours from now calculator.",
-  });
-
+  const softwareApplicationSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Hours From Now Calculator",
+    "url": "https://hoursfromnow.tech/",
+    "description": "Hours From Now Calculator can calculate any number of hours and minutes from now. Calculate what time it will be hours from now like 72 hours from now with this precise hours from now calculator.",
+    "applicationCategory": "Utility",
+    "operatingSystem": "All",
+    "author": {
+      "@type": "Organization",
+      "name": "Hours From Now",
+      "url": "https://hoursfromnow.tech/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hours From Now",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://hoursfromnow.tech/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://hoursfromnow.tech/"
+    }
+  };
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://hoursfromnow.tech" },
+    { name: "Home", url: "https://hoursfromnow.tech/" },
   ]);
   const faqSchema = {
     "@context": "https://schema.org",
@@ -99,12 +117,13 @@ export default function Home() {
 
   return (
     <>
-      <Script
-        id="calculator-schema"
+    <Script
+        id="software-application-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(calculatorSchema),
+          __html: JSON.stringify(softwareApplicationSchema),
         }}
+        strategy="afterInteractive"
       />
       <Script
         id="breadcrumb-schema"

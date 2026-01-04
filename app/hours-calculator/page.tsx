@@ -17,14 +17,14 @@ export const metadata: Metadata = {
   title: 'Hours Calculator: How Many Hours in a Year, Week, Day',
   description: 'Calculate how many hours in a year (8,760), week (168), day (24), or month. Free hours calculator converts days, weeks, months, and years to hours instantly. Perfect for work hours, project planning, and time management.',
   alternates: {
-    canonical: 'https://hoursfromnow.tech/hours-calculator',
+    canonical: 'https://hoursfromnow.tech/hours-calculator/',
   },
   keywords: 'how many hours in a year, hours in a year, how many hours are in a year, hours calculator, how many hours in a week, hours in a week, how many hours in a day, hours in a day, how many hours in a month, hours in a month, calculate hours, time to hours converter, days to hours, weeks to hours, convert days to hours, work hours calculator, annual hours calculator, hours per year, hours per week, hours per day, how many work hours in a year, 8760 hours in a year',
 
   openGraph: {
     title: 'Hours Calculator - Calculate Hours in Days, Weeks, Months & Years',
     description: 'Instantly calculate how many hours in a year, week, day, or month. Free online hours calculator for time conversions and planning.',
-    url: 'https://hoursfromnow.tech/hours-calculator',
+    url: 'https://hoursfromnow.tech/hours-calculator/',
     type: 'website',
     siteName: 'Hours From Now',
   },
@@ -60,7 +60,7 @@ export default function HoursCalculatorPage() {
             '@context': 'https://schema.org',
             '@type': 'WebApplication',
             name: 'Hours Calculator',
-            url: 'https://hoursfromnow.tech/hours-calculator',
+            url: 'https://hoursfromnow.tech/hours-calculator/',
             description: 'Calculate how many hours in a year, week, day, or month. Convert any time unit to hours instantly with our free hours calculator.',
             applicationCategory: 'Utility',
             operatingSystem: 'All',
@@ -76,22 +76,22 @@ export default function HoursCalculatorPage() {
             },
             mainEntityOfPage: {
               '@type': 'WebPage',
-              '@id': 'https://hoursfromnow.tech/hours-calculator',
+              '@id': 'https://hoursfromnow.tech/hours-calculator/',
             },
             creator: {
               '@type': 'Organization',
               name: 'Hours From Now',
-              url: 'https://hoursfromnow.tech',
+              url: 'https://hoursfromnow.tech/',
             },
             publisher: {
               '@type': 'Organization',
               name: 'Hours From Now',
-              url: 'https://hoursfromnow.tech',
+              url: 'https://hoursfromnow.tech/',
             },
             potentialAction: {
               '@type': 'UseAction',
               name: 'Calculate Hours',
-              target: 'https://hoursfromnow.tech/hours-calculator',
+              target: 'https://hoursfromnow.tech/hours-calculator/',
             },
           }),
         }}
@@ -116,7 +116,7 @@ export default function HoursCalculatorPage() {
           '@type': 'ListItem',
           position: 2,
           name: 'Hours Calculator',
-          item: 'https://hoursfromnow.tech/hours-calculator',
+          item: 'https://hoursfromnow.tech/hours-calculator/',
         },
       ],
     }),

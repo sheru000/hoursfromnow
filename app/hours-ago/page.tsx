@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   title: 'Hours Ago Calculator: Calculate Past Times',
   description: 'Calculate what time it was any number of hours ago with our precise hours ago calculator. Find out the exact time from 1 hour ago to 100 hours ago instantly.',
   alternates: {
-    canonical: 'https://hoursfromnow.tech/hours-ago',
+    canonical: 'https://hoursfromnow.tech/hours-ago/',
   },
   keywords: 'hours ago, hours ago calculator, time calculator, what time was it hours ago, time ago calculator, past time calculator, 24 hours ago, 12 hours ago, 8 hours ago, 48 hours ago, hours back calculator, time tracker',
 
   openGraph: {
     title: 'Hours Ago Calculator - Calculate Past Times',
     description: 'Instantly calculate what time it was any number of hours ago. Fast and accurate hours ago calculator.',
-    url: 'https://hoursfromnow.tech/hours-ago',
+    url: 'https://hoursfromnow.tech/hours-ago/',
     type: 'website',
     siteName: 'Hours From Now',
   },
@@ -48,28 +48,28 @@ export default function HoursAgoPage() {
             '@context': 'https://schema.org',
             '@type': 'WebApplication',
             name: 'Hours Ago Calculator',
-            url: 'https://hoursfromnow.tech/hours-ago',
+            url: 'https://hoursfromnow.tech/hours-ago/',
             description: 'Calculate what time it was any number of hours ago. Simple, fast, and accurate free online time calculator for past times.',
             applicationCategory: 'Utility',
             operatingSystem: 'All',
             mainEntityOfPage: {
               '@type': 'WebPage',
-              '@id': 'https://hoursfromnow.tech/hours-ago'
+              '@id': 'https://hoursfromnow.tech/hours-ago/'
             },
             creator: {
               '@type': 'Organization',
               name: 'Hours From Now',
-              url: 'https://hoursfromnow.tech',
+              url: 'https://hoursfromnow.tech/',
             },
             publisher: {
               '@type': 'Organization',
               name: 'Hours From Now',
-              url: 'https://hoursfromnow.tech'
+              url: 'https://hoursfromnow.tech/'
             },
             potentialAction: {
               '@type': 'ViewAction',
               name: 'Calculate Hours Ago',
-              target: 'https://hoursfromnow.tech/hours-ago',
+              target: 'https://hoursfromnow.tech/hours-ago/',
             },
           }),
         }}
@@ -94,7 +94,7 @@ export default function HoursAgoPage() {
                     '@type': 'ListItem',
                     position: 2,
                     name: 'Hours Ago Calculator',
-                    item: 'https://hoursfromnow.tech/hours-ago'
+                    item: 'https://hoursfromnow.tech/hours-ago/'
                   }
                 ]
               }

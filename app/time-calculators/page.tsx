@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: 'Time Calculators - Free Online Time Calculation Tools',
   description: 'Collection of free online time calculators including hours from now, time calculator, and more time-related calculation tools.',
   alternates: {
-    canonical: 'https://hoursfromnow.tech/time-calculators',
+    canonical: 'https://hoursfromnow.tech/time-calculators/',
   },
   keywords: 'time calculators, time calculation tools, hours calculator, time converter, online time tools',
   openGraph: {
     title: 'Time Calculators - Free Online Tools',
     description: 'Collection of free online time calculators for all your time calculation needs.',
-    url: 'https://hoursfromnow.tech/time-calculators',
+    url: 'https://hoursfromnow.tech/time-calculators/',
     type: 'website',
     siteName: 'HoursFromNow.tech',
   },

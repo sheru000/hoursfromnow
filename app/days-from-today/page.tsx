@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Calculate what date it will be any number of days from today with our free days from today calculator. Find future dates from 1 day to any days from today instantly.",
   alternates: {
-    canonical: "https://hoursfromnow.tech/days-from-today",
+    canonical: "https://hoursfromnow.tech/days-from-today/",
   },
   keywords:
     "days from today, days from today calculator, days from now calculator, what date will it be, future date calculator, days calculator, 30 days from today, 60 days from today, 90 days from today, 7 days from today, days ahead calculator",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Days From Today Calculator: Calculate Future Dates",
     description:
       "Instantly calculate what date it will be any number of days from today. Fast and accurate future date calculator.",
-    url: "https://hoursfromnow.tech/days-from-today",
+    url: "https://hoursfromnow.tech/days-from-today/",
     type: "website",
     siteName: "Hours From Now",
   },
@@ -66,29 +66,29 @@ export default function DaysFromNowPage() {
             "@context": "https://schema.org",
             "@type": "WebApplication",
             name: "Days From Today Calculator",
-            url: "https://hoursfromnow.tech/days-from-today",
+            url: "https://hoursfromnow.tech/days-from-today/",
             description:
               "Calculate what date it will be any number of days from today. Simple, fast, and accurate free online date calculator.",
             applicationCategory: "Utility",
             operatingSystem: "All",
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": "https://hoursfromnow.tech/days-from-today",
+              "@id": "https://hoursfromnow.tech/days-from-today/",
             },
             creator: {
               "@type": "Organization",
               name: "Hours From Now",
-              url: "https://hoursfromnow.tech",
+              url: "https://hoursfromnow.tech/",
             },
             publisher: {
               "@type": "Organization",
               name: "Hours From Now",
-              url: "https://hoursfromnow.tech",
+              url: "https://hoursfromnow.tech/",
             },
             potentialAction: {
               "@type": "ViewAction",
               name: "Calculate Days From Today",
-              target: "https://hoursfromnow.tech/days-from-today",
+              target: "https://hoursfromnow.tech/days-from-today/",
             },
           }),
         }}
@@ -113,7 +113,7 @@ export default function DaysFromNowPage() {
                     "@type": "ListItem",
                     position: 2,
                     name: "Days From Today",
-                    item: "https://hoursfromnow.tech/days-from-today",
+                    item: "https://hoursfromnow.tech/days-from-today/",
                   },
                 ],
               },

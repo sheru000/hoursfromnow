@@ -1,9 +1,10 @@
 # *
 User-agent: *
 Disallow: /api/
+/cgi-bin/
 
 # Host
-Host: https://hoursfromnow.tech
+Host: https://hoursfromnow.tech/
 
 # Sitemaps
 Sitemap: https://hoursfromnow.tech/sitemap.xml

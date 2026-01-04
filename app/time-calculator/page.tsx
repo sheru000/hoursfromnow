@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   title: 'Time Calculator, Add and Subtract Time',
   description: 'Use this time calculator to find out the number of days, hours, minutes, and seconds between the times on two different dates. Perfect for add or subtract time between values, time tracking, scheduling or any other event which need to calculate the time instantly.',
    alternates: {
-    canonical: 'https://hoursfromnow.tech/time-calculator',
+    canonical: 'https://hoursfromnow.tech/time-calculator/',
   },
   keywords: 'time calculator, add time, subtract time, time duration calculator',
   openGraph: {
     title: 'Time Calculator: Add or Subtract Days, Hours, Minutes, and Seconds',
      description:
       'Time calculator to add or subtract time between values. Calculate days, hours, minutes, and seconds with accurace and fast results.',
-    url: 'https://hoursfromnow.tech/time-calculator',
+    url: 'https://hoursfromnow.tech/time-calculator/',
     type: 'website',
        siteName: "Hours From Now",
   },
@@ -49,29 +49,29 @@ export default function TimeCalculatorPage() {
             "@context": "https://schema.org",
             "@type": "WebApplication",
             name: "Time Calculator",
-            url: "https://hoursfromnow.tech/time-calculator",
+            url: "https://hoursfromnow.tech/time-calculator/",
             description:
               "Free time calculator to add or subtract time between values. Calculate days, hours, minutes, and seconds from now to targeted future or past date. like 30 days from now or 90 days from now or 60 days from now or 45 days from now or 90 days ago. Best online free tool with instant results and 100% accuracy. Perfect for time tracking, scheduling or any other event which need to calculate the time instantly.",
             applicationCategory: "Utility",
             operatingSystem: "All",
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": "https://hoursfromnow.tech/time-calculator",
+              "@id": "https://hoursfromnow.tech/time-calculator/",
             },
             creator: {
               "@type": "Organization",
               name: "Hours From Now",
-              url: "https://hoursfromnow.tech",
+              url: "https://hoursfromnow.tech/",
             },
             publisher: {
               "@type": "Organization",
               name: "Hours From Now",
-              url: "https://hoursfromnow.tech",
+              url: "https://hoursfromnow.tech/",
             },
             potentialAction: {
               "@type": "ViewAction",
               name: "Use Time Calculator",
-              target: "https://hoursfromnow.tech/time-calculator",
+              target: "https://hoursfromnow.tech/time-calculator/",
             },
           }),
         }}
@@ -96,7 +96,7 @@ export default function TimeCalculatorPage() {
           "@type": "ListItem",
           "position": 2,
           "name": "Time Calculator",
-          "item": "https://hoursfromnow.tech/time-calculator"
+          "item": "https://hoursfromnow.tech/time-calculator/"
         }
       ]
     }),

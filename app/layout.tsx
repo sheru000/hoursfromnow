@@ -12,7 +12,7 @@
   });
 
   export const metadata: Metadata = {
-    metadataBase: new URL('https://hoursfromnow.tech'),
+    metadataBase: new URL('https://hoursfromnow.tech/'),
     title: {
       default: 'Hours From Now Calculator: Time in Hours and Minutes Calculator Tool',
       template: '%s | HoursFromNow.tech',
@@ -35,7 +35,7 @@
     openGraph: {
       type: 'website',
       locale: 'en_US',
-      url: 'https://hoursfromnow.tech',
+      url: 'https://hoursfromnow.tech/',
       siteName: 'Hours From Now',
       title: 'Hours From Now Calculator: Time Calculator Tool',
       description: 'Hours From Now Calculator can calculate any number of hours and minutes from now',
@@ -63,7 +63,7 @@
   "@type": "Organization",
   "@id": "https://hoursfromnow.tech/#organization",
   "name": "Hours From Now",
-  "url": "https://hoursfromnow.tech",
+  "url": "https://hoursfromnow.tech/",
   "logo": "https://hoursfromnow.tech/logo.png",
   "description": "Hours From Now Calculator can calculate any number of hours and minutes from now, Calculate 72 hours from now, 16 hours from now, 8 hours from now with this precise hours from now calculator and have more time calculation tools are days from today, months from today, weeks from today calculators. ",
   "sameAs": []
@@ -90,7 +90,7 @@
     "@type": "Organization",
     "@id": "https://hoursfromnow.tech/#organization",
     "name": "Hours From Now",
-    "url": "https://hoursfromnow.tech",
+    "url": "https://hoursfromnow.tech/",
     "logo": {
       "@type": "ImageObject",
       "url": "https://hoursfromnow.tech/logo.png"

@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { getAllHoursSlugs } from '../../lib/hoursContent';
 
 export async function GET() {
-  const baseUrl = 'https://hoursfromnow.tech';
+  const baseUrl = 'https://hoursfromnow.tech/';
   const currentDate = new Date().toISOString();
 
   const urls = [];

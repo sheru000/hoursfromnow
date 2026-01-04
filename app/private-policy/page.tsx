@@ -4,7 +4,7 @@ export const metadata = {
   description:
     "Read the Privacy Policy for HoursFromNow.tech. Learn how we collect, use, and protect your information while using our time and date calculators.",
      alternates: {
-    canonical: 'https://hoursfromnow.tech/private-policy',
+    canonical: 'https://hoursfromnow.tech/private-policy/',
   },
 };
 

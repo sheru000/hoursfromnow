@@ -81,8 +81,8 @@ export default function WeeksFromTodayPage({ params }: PageProps) {
   });
 
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: 'Home', url: 'https://hoursfromnow.tech' },
-    { name: 'Weeks From Today', url: 'https://hoursfromnow.tech/weeks-from-today' },
+    { name: 'Home', url: 'https://hoursfromnow.tech/' },
+    { name: 'Weeks From Today', url: 'https://hoursfromnow.tech/weeks-from-today/' },
     { name: content.title, url: canonicalUrl },
   ]);
 

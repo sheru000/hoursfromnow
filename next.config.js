@@ -20,6 +20,57 @@ const nextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
+  async redirects() {
+    return [
+      // redirect www → non-www
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.hoursfromnow.tech',
+          },
+        ],
+        destination: 'https://hoursfromnow.tech/:path*',
+        permanent: true,
+      },
+
+      // redirect ALL query parameters to clean homepage
+      {
+        source: '/',
+        has: [
+          {
+            type: 'query',
+            key: 'SA',
+          },
+        ],
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/',
+        has: [
+          {
+            type: 'query',
+            key: 'MA',
+          },
+        ],
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/',
+        has: [
+          {
+            type: 'query',
+            key: 'ND',
+          },
+        ],
+        destination: '/',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
