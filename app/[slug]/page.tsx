@@ -7,7 +7,7 @@ import {
   generateBreadcrumbSchema,
 } from "@/lib/schemas";
 import HoursFromNowTable from "@/components/content/HoursfromnowTable";
-
+import MarkdownContent from "@/components/MarkdownContent";
 interface PageProps {
   params: {
     slug: string;
@@ -169,7 +169,7 @@ export default function HoursFromNowPage({ params }: PageProps) {
           </div>
 
           {/* Time Result Card */}
-          <div className="bg-white rounded-2xl shadow-xl border border-blue-100 p-8 mb-8">
+          <div className=" rounded-2xl shadow-lg border-2 border-green-400 p-8 mb-8">
             <div className="text-center">
               <div className="text-5xl font-bold leading-relaxed bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-4">
                 {formatDateTime(futureTime)}
@@ -190,18 +190,18 @@ export default function HoursFromNowPage({ params }: PageProps) {
             {content.content.map((section, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl shadow-sm border border-blue-100 p-6"
+                className=" p-6"
               >
                 <h2 className="text-2xl font-bold text-gray-800 mb-4">
                   {section.heading}
                 </h2>
-                <p className="text-gray-700 leading-relaxed">{section.text}</p>
+               <div className="article" dangerouslySetInnerHTML={{ __html: section.text }} /> 
               </div>
             ))}
           </div>
 
           {/* Hours From Now Table Component */}
-          <div className="bg-white rounded-xl shadow-sm border border-blue-100 p-6 mb-8">
+          <div className="rounded-xl shadow-sm border border-blue-100 p-6 mb-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
               Hours From Now Chart
             </h2>
@@ -209,7 +209,7 @@ export default function HoursFromNowPage({ params }: PageProps) {
           </div>
           {/* FAQ Section */}
           {content.faq && content.faq.length > 0 && (
-            <div className="bg-white rounded-xl shadow-sm border border-blue-100 p-6 mb-8">
+            <div className="shadow-sm  bg-blue-50 rounded-xl border border-blue-100 p-6 mb-8">
               <h2 className="text-2xl font-bold text-gray-800 mb-6">
                 Frequently Asked Questions
               </h2>
@@ -264,7 +264,7 @@ export default function HoursFromNowPage({ params }: PageProps) {
           </div>
 
           {/* Related Links */}
-          <div className="text-center">
+          {/* <div className="text-center">
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 border border-blue-200">
               <h3 className="text-xl font-bold text-gray-800 mb-4">
                 Explore More Date & Time Calculators
@@ -290,7 +290,7 @@ export default function HoursFromNowPage({ params }: PageProps) {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

@@ -176,3 +176,7 @@ img {
 .dark .prose th { @apply bg-gray-800 text-gray-100; }
 .dark .prose td { @apply border-gray-600; }
 
+.article a {  /* .article = your content wrapper class */
+  color: #2563eb;
+  text-decoration: underline;
+}
