@@ -32,9 +32,9 @@ This guide walks through reverse scheduling, vendor coordination, real-time time
 * First dance
 * Open dance floor
 
-Though these moments feel magical, they need clear, clock-accurate timing behind the scenes. Many couples assume that having a general idea of the order is enough — but without exact times, transitions become rushed or delayed. As leading [wedding](https://www.brides.com/wedding-day-getting-ready-timeline-11804098) planning resources also explain, a detailed wedding day timeline is essential to avoid delays and missed moments. Wedding planning follows the same structured principles used in professional event planning, where timing, sequencing, and coordination are essential.
+Though these moments feel magical, they need clear, clock-accurate timing behind the scenes. Many couples assume that having a general idea of the order is enough — but without exact times, transitions become rushed or delayed. As leading wedding planning resources also explain, a detailed wedding day timeline is essential to avoid delays and missed moments. Wedding planning follows the same structured principles used in professional event planning, where timing, sequencing, and coordination are essential.
 
-For example, if the ceremony is at 4:00 PM and dinner is at 7:00 PM, everything between those times must be calculated backward and forward to ensure nothing overlaps or runs over time. A [wedding](https://en.wikipedia.org/wiki/Event_planning) timeline is truly a math puzzle — and it’s a puzzle worth solving early.
+For example, if the ceremony is at 4:00 PM and dinner is at 7:00 PM, everything between those times must be calculated backward and forward to ensure nothing overlaps or runs over time. A wedding timeline is truly a math puzzle — and it’s a puzzle worth solving early.
 
 ## A Story That Shows Why Timing Matters
 
@@ -64,7 +64,7 @@ Let’s use a realistic example:
 * Ceremony: Lasts 1 hour → must start at 4:00 PM to allow photos afterward
 * Bridal hair & makeup: Takes 3 hours → must begin by 1:00 PM if the bride needs to be photo-ready by 4
 
-Reverse scheduling eliminates assumptions and ensures every task has enough time. Many planners recommend calculating the entire wedding this way so no part of the schedule falls through the cracks. Professional event [management](https://www.statista.com/statistics/909790/most-difficult-aspects-of-wedding-planning-united-kingdom-uk/) data shows that structured scheduling significantly reduces operational delays. Reverse scheduling becomes much easier when using a [time calculator](https://hoursfromnow.tech/time-calculator) to work backward from fixed events like the ceremony and dinner.
+Reverse scheduling eliminates assumptions and ensures every task has enough time. Many planners recommend calculating the entire wedding this way so no part of the schedule falls through the cracks. Professional event management data shows that structured scheduling significantly reduces operational delays. Reverse scheduling becomes much easier when using a [time calculator](https://hoursfromnow.tech/time-calculator) to work backward from fixed events like the ceremony and dinner.
 
 ## Coordinating Vendors and Tasks
 
@@ -79,7 +79,7 @@ This breakdown gives each vendor clarity and prevents common issues like:
 * Caterers arriving during photos
 * Photographers missing key lighting windows
 
-Using consistent time-calculation tools ensures no one uses vague instructions like “afternoon,” “early evening,” or “before the ceremony.” Industry experts consistently recommend assigning exact time slots to each [vendor](https://www.theknot.com/content/wedding-timeline-4pm-ceremony) rather than using vague terms.
+Using consistent time-calculation tools ensures no one uses vague instructions like “afternoon,” “early evening,” or “before the ceremony.” Industry experts consistently recommend assigning exact time slots to each vendor rather than using vague terms.
 
 ![Wedding day timeline calculator with hours from now calculator](/images/wedding-day-timeline.png)
 
@@ -108,7 +108,7 @@ When adding buffer periods, a [time duration calculator](https://hoursfromnow.te
 ## Running the Day With a Calendar
 
 Once the schedule is set, using a live calendar on the wedding day keeps everything on track.
-Whether using a printed sheet, a shared digital [Google Calendar](https://calendar.google.com/calendar/u/0/r?pli=1), or a wedding-specific app, the timeline 
+Whether using a printed sheet, a shared digital Google Calendar, or a wedding-specific app, the timeline 
 should be accessible to:
 
 * Bridal party
@@ -149,6 +149,8 @@ Couples who use time-based planning enjoy their day far more because:
 * No one asks “What’s next?” every ten minutes
 
 Precise scheduling transforms the atmosphere from chaotic to confident.
+
+You may also find this article helpful on [Addition and Subtraction](https://hoursfromnow.tech/blog/addition-and-subtraction-of-time).
 
 ## Conclusion
 

@@ -45,7 +45,7 @@ See? Not scary at all.
 
 ## Subtracting Time: Finding Out "How Long Did That Take?"
 
-This is where you [calculate the time difference](https://hoursfromnow.tech/) between two points. Super handy for tracking how long you actually spent on something.
+This is where you [calculate the time difference](https://hoursfromnow.tech/time-duration-calculator) between two points. Super handy for tracking how long you actually spent on something.
 
 **The method:**
 1. Subtract hours first
@@ -140,6 +140,9 @@ Time calculations aren't rocket science, but they do require paying attention to
 Whether you're tracking work hours, planning your day, or just trying to figure out when you can finally chill, these skills are genuinely useful. The more you practice, the faster you'll get, until eventually you're doing this stuff without even thinking about it.
 
 Now stop reading and go practice with some real-world examples. Set a timer, track an activity, calculate when something ends. That's how you actually learn this stuff - by using it, not just reading about it.
+
+You may also find this article helpful on [Wedding day](https://hoursfromnow.tech/blog/Wedding-Day-Timeline-Planning-Using-Precise-Time-Calculations).
+
 
 **Quick FAQ Because You're Definitely Wondering:**
 

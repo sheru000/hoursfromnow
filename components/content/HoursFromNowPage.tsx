@@ -253,7 +253,7 @@ const HoursFromNowPage: React.FC = () => {
               from now. Working with teams or partners across different time
               zones is genuinely complicated. Someone asking "what time is the
               meeting?" gets a completely different answer depending on whether
-              they're in California or Singapore like 2 hours from now est. A
+              they're in California or Singapore like <a href="https://hoursfromnow.tech/2-hours-from-now" className="text-blue-600 underline hover:text-blue-800">2 hours from now</a> est. A
               Now Chart can help you visualize these differences so you're not
               constantly doing mental math. Understanding how local time
               translates across global boundaries keeps your entire team on the
@@ -420,7 +420,7 @@ const HoursFromNowPage: React.FC = () => {
 
           {/* Featured Snippet Answer */}
           <p className="text-gray-700 leading-relaxed">
-            To find out what time it will be 1 hour from now, simply add one
+            To find out what time it will be <a href="https://hoursfromnow.tech/1-hour-from-now" className="text-blue-600 underline hover:text-blue-800">1 hour from now</a>, simply add one
             hour to your current local time. Using a calculator tool or manually
             calculating ensures you know the exact future time instantly.
           </p>
