@@ -7,7 +7,7 @@ export async function GET() {
   const urls = [];
   for (let i = 1; i <= 24; i++) {
     urls.push({
-      url: `${baseUrl}/weeks-from-today/${i}-weeks-from-today/`,
+      url: `${baseUrl}/weeks-from-today/${i}-weeks-from-today`,
       lastmod: currentDate,
       changefreq: 'daily',
       priority: 0.9,

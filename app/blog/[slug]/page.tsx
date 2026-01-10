@@ -57,12 +57,12 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   if (!post) {
     return {
-      title: 'Post Not Found | HoursFromNow.tech',
+      title: 'Post Not Found | Hours From Now',
     };
   }
 
   return {
-    title: `${post.title} | Blog | HoursFromNow.tech`,
+    title: `${post.title} | Blog | Hours From Now`,
     description: post.description,
     keywords: 'blog, time management, productivity',
     openGraph: {

@@ -15,7 +15,7 @@
     metadataBase: new URL('https://hoursfromnow.tech/'),
     title: {
       default: 'Hours From Now Calculator: Time in Hours and Minutes Calculator Tool',
-      template: '%s | HoursFromNow.tech',
+      template: '%s | Hours From Now',
     },
     description: 'Hours From Now calculator can calculate any number of hours and minutes from now, including other tools time calculator, time duration calculator, days from today calculator, and more. Fast, accurate, and easy to use time calculation tools.',
     keywords: 'hours from now calculator, hours from now, time calculator, hours calculator, time duration calculator, days from today, date calculator, time tools',

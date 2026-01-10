@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Read the Terms and Conditions for HoursFromNow.tech, outlining the use of our website, services, and your rights and responsibilities.",
      alternates: {
-    canonical: 'https://hoursfromnow.tech/terms-and-conditions/',
+    canonical: 'https://hoursfromnow.tech/terms-and-conditions',
   },
 };
 

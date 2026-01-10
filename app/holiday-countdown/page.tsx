@@ -17,14 +17,14 @@ export const metadata: Metadata = {
   title: 'Holiday Countdown Calendar | How Many Days Until Christmas, Halloween, Thanksgiving',
   description: 'Track how many days until Christmas, Halloween, Thanksgiving, Valentine\'s Day, and all major holidays. Real-time countdown to every federal and cultural holiday with days, hours, minutes, and seconds remaining.',
   alternates: {
-    canonical: 'https://hoursfromnow.tech/holiday-countdown/',
+    canonical: 'https://hoursfromnow.tech/holiday-countdown',
   },
   keywords: 'how many days until christmas, days till christmas, countdown to christmas, how many days until halloween, days till halloween, countdown to halloween, how many days until thanksgiving, days till thanksgiving, countdown to thanksgiving, how many days until valentines day, days till valentine, how many days until new year, countdown to new year, how many days until easter, days till easter, how many days until mothers day, days till mothers day, how many days until fathers day, days till fathers day, how many days until july 4th, days till 4th of july, holiday countdown, days until holidays, christmas countdown, halloween countdown, thanksgiving countdown',
 
   openGraph: {
     title: 'Holiday Countdown Calendar - Days Until Christmas, Halloween & More',
     description: 'Never miss a holiday! Track exactly how many days until Christmas, Halloween, Thanksgiving, and every major holiday with our live countdown calendar.',
-    url: 'https://hoursfromnow.tech/holiday-countdown/',
+    url: 'https://hoursfromnow.tech/holiday-countdown',
     type: 'website',
     siteName: 'Hours From Now',
   },
@@ -60,13 +60,13 @@ export default function HolidayCountdownPage() {
             '@context': 'https://schema.org',
             '@type': 'WebApplication',
             name: 'Holiday Countdown Calendar',
-            url: 'https://hoursfromnow.tech/holiday-countdown/',
+            url: 'https://hoursfromnow.tech/holiday-countdown',
             description: 'Track how many days until Christmas, Halloween, Thanksgiving, and all major holidays with real-time countdown timers.',
             applicationCategory: 'Utility',
             operatingSystem: 'All',
             mainEntityOfPage: {
               '@type': 'WebPage',
-              '@id': 'https://hoursfromnow.tech/holiday-countdown/',
+              '@id': 'https://hoursfromnow.tech/holiday-countdown',
             },
             creator: {
               '@type': 'Organization',
@@ -81,7 +81,7 @@ export default function HolidayCountdownPage() {
             potentialAction: {
               '@type': 'ViewAction',
               name: 'View Holiday Countdown',
-              target: 'https://hoursfromnow.tech/holiday-countdown/',
+              target: 'https://hoursfromnow.tech/holiday-countdown',
             },
           }),
         }}
@@ -108,7 +108,7 @@ export default function HolidayCountdownPage() {
                     '@type': 'ListItem',
                     position: 2,
                     name: 'Holiday Countdown',
-                    item: 'https://hoursfromnow.tech/holiday-countdown/',
+                    item: 'https://hoursfromnow.tech/holiday-countdown',
                   },
                 ],
               },

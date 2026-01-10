@@ -7,6 +7,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Blog | Hours From Now',
   description: 'Read our latest articles about time management, productivity tips, and time calculation tools.',
+  alternates: {
+    canonical: 'https://hoursfromnow.tech/blog',
+  },
   keywords: 'blog, time management, productivity, time calculator tips',
   openGraph: {
     title: 'Blog | Hours From Now',

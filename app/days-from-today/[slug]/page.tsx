@@ -82,7 +82,7 @@ export default function DaysFromNowPage({ params }: PageProps) {
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: 'https://hoursfromnow.tech/' },
-    { name: 'Days From Today', url: 'https://hoursfromnow.tech/days-from-today/' },
+    { name: 'Days From Today', url: 'https://hoursfromnow.tech/days-from-today' },
     { name: content.title, url: canonicalUrl },
   ]);
 
