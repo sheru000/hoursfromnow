@@ -51,7 +51,7 @@ Imagine that same scenario with precise calculations:
 * Dinner at 7:30 PM
 * Caterer needs 2 hours for setup → must arrive by 5:30 PM
 
-If the planner had calculated that using a scheduling tool or a simple time calculator, the entire delay could have been avoided. Tools like [hours from now](https://hoursfromnow.tech) help planners quickly determine exact backward and forward time intervals, removing the guesswork from scheduling. 
+If the planner had calculated that using a scheduling tool or a simple time calculator, the entire delay could have been avoided. Tools like [hours from now](https://hoursfromnow.tech/) help planners quickly determine exact backward and forward time intervals, removing the guesswork from scheduling. 
 
 ## Reverse Scheduling: Start From the Fixed Points
 
@@ -64,7 +64,7 @@ Let’s use a realistic example:
 * Ceremony: Lasts 1 hour → must start at 4:00 PM to allow photos afterward
 * Bridal hair & makeup: Takes 3 hours → must begin by 1:00 PM if the bride needs to be photo-ready by 4
 
-Reverse scheduling eliminates assumptions and ensures every task has enough time. Many planners recommend calculating the entire wedding this way so no part of the schedule falls through the cracks. Professional event [management](https://www.statista.com/statistics/909790/most-difficult-aspects-of-wedding-planning-united-kingdom-uk/) data shows that structured scheduling significantly reduces operational delays. Reverse scheduling becomes much easier when using a [time calculator](https://hoursfromnow.tech/time-calculator/) to work backward from fixed events like the ceremony and dinner.
+Reverse scheduling eliminates assumptions and ensures every task has enough time. Many planners recommend calculating the entire wedding this way so no part of the schedule falls through the cracks. Professional event [management](https://www.statista.com/statistics/909790/most-difficult-aspects-of-wedding-planning-united-kingdom-uk/) data shows that structured scheduling significantly reduces operational delays. Reverse scheduling becomes much easier when using a [time calculator](https://hoursfromnow.tech/time-calculator) to work backward from fixed events like the ceremony and dinner.
 
 ## Coordinating Vendors and Tasks
 
@@ -103,7 +103,7 @@ Buffers are especially useful because they:
 * Prevent rushed photos or speeches
 * Maintain a calm, organized flow
 
-When adding buffer periods, a [time duration calculator](https://hoursfromnow.tech/time-duration-calculator/) helps determine realistic gaps between setup, transitions, and key moments.
+When adding buffer periods, a [time duration calculator](https://hoursfromnow.tech/time-duration-calculator) helps determine realistic gaps between setup, transitions, and key moments.
 
 ## Running the Day With a Calendar
 
@@ -125,7 +125,7 @@ If photos run 20 minutes late, the planner can immediately recalculate how that 
 
 ![calculate wedding time](/images/sample-wedding-time-calculation.png)
 
-Every line here comes from adding or subtracting hours  exact hours using an [hours calculator](https://hoursfromnow.tech/hours-calculator/) (ceremony and dinner).
+Every line here comes from adding or subtracting hours  exact hours using an [hours calculator](https://hoursfromnow.tech/hours-calculator) (ceremony and dinner).
 
 ## Ensuring a Smooth Day
 
@@ -152,7 +152,7 @@ Precise scheduling transforms the atmosphere from chaotic to confident.
 
 ## Conclusion
 
-A wedding day will always be filled with emotion — excitement, joy, nervousness — but it shouldn’t be filled with time-related stress. By using reverse scheduling, coordinating vendors with exact slots, adding buffer time, and relying on real-time tools, couples and planners can ensure a perfectly flowing celebration. Planning milestones in the weeks before the wedding often involves calculating important dates [days from today](https://hoursfromnow.tech/days-from-today/) to avoid last-minute stress.
+A wedding day will always be filled with emotion — excitement, joy, nervousness — but it shouldn’t be filled with time-related stress. By using reverse scheduling, coordinating vendors with exact slots, adding buffer time, and relying on real-time tools, couples and planners can ensure a perfectly flowing celebration. Planning milestones in the weeks before the wedding often involves calculating important dates [days from today](https://hoursfromnow.tech/days-from-today) to avoid last-minute stress.
 
 The magic of a well-timed wedding isn’t about luck; it’s about intention, calculation, and communication. With the right timeline, every moment unfolds naturally, giving the couple space to enjoy what the day is truly about: love, celebration, and memories that last a lifetime...
 

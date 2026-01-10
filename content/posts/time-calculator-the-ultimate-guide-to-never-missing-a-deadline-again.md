@@ -26,7 +26,7 @@ From 3:00 PM, adding 2 hours 30 minutes gives you 5:30 PM today.
 
 ## What Exactly Is a Time Calculator?
 ![Time Calculator tool picture](/images/time-calculator-tool.png)
-Alright, let's break this down like you're explaining it to your roommate. A **[Time Calculator](https://hoursfromnow.tech/time-calculator/)** is basically your digital time-keeping assistant that does all the annoying math for you. Whether you need to figure out what time it'll be in 5 hours or calculate how much time passed between two events, this tool's got your back.
+Alright, let's break this down like you're explaining it to your roommate. A **[Time Calculator](https://hoursfromnow.tech/time-calculator)** is basically your digital time-keeping assistant that does all the annoying math for you. Whether you need to figure out what time it'll be in 5 hours or calculate how much time passed between two events, this tool's got your back.
 
 ### What It Can Actually Do
 
@@ -230,7 +230,7 @@ Yes. Online calculators use your device's system clock and precise algorithms. W
 Absolutely. It automatically handles midnight crossovers, date changes, month transitions, and even year boundaries.
 
 **Is it free to use?**  
-Most online time calculators like [hoursfromnow.tech](https://hoursfromnow.tech) are completely free with no signup required.
+Most online time calculators like [hoursfromnow.tech](https://hoursfromnow.tech/) are completely free with no signup required.
 
 **Does it support time zones?**  
 Yes, it uses your device's local timezone automatically. For conversions between zones, you'll need a dedicated timezone converter.
@@ -275,7 +275,7 @@ A **time calculator** isn't just a convenience—it's genuinely essential for an
 
 Stop second-guessing your time math. Use a proper **time duration calculator** and focus your brain power on things that actually matter—like acing that exam or nailing that presentation.
 
-The best part? Tools like [hoursfromnow.tech](https://hoursfromnow.tech) make this ridiculously simple. Punch in your numbers, get your answer, move on with your life.
+The best part? Tools like [hoursfromnow.tech](https://hoursfromnow.tech/) make this ridiculously simple. Punch in your numbers, get your answer, move on with your life.
 
 Time management starts with knowing what time it actually is—and what time it will be. Master that, and you're already ahead of half your competition.
 
