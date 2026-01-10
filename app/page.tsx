@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "hours from now calculator, hours from now, what time it will be hours from now, hours, calculate future hours, hours and minutes later.",
 
   openGraph: {
-    title: "Hours From Now Calculator",
+    title: "Hours From Now",
     description:
       "Hours From Now Calculator can calculate any number of hours and minutes from now. Calculate what time it will be hours from now like 72 hours from now with this precise hours from now calculator.",
 
@@ -38,7 +38,13 @@ export const metadata: Metadata = {
     title: "Hours From Now Calculator",
     description:
       "Instantly calculate what time it will be any number of hours from now, like 72 hours from now. Fast and accurate hours from now calculator.",
-    images: ["https://hoursfromnow.tech/og-image.png"],
+    images: [{
+    url: 'https://hoursfromnow.tech/og-image.png',  // ✅ Match your OG image
+    alt: 'Hours From Now Calculator',
+    width: 1200,
+    height: 630
+  }],
+  creator: '@hourfromnow'
   },
 
   robots: {
@@ -58,7 +64,8 @@ export default function Home() {
   const softwareApplicationSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Hours From Now Calculator",
+    "name": "Hours From Now",
+    "alternateName": ["Hours From Now Calculator"],
     "url": "https://hoursfromnow.tech/",
     "description": "Hours From Now Calculator can calculate any number of hours and minutes from now. Calculate what time it will be hours from now like 72 hours from now with this precise hours from now calculator.",
     "applicationCategory": "Utility",

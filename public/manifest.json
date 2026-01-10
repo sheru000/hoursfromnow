@@ -1,6 +1,6 @@
 {
   "name": "Hours From Now Calculator",
-  "short_name": "HoursFromNow",
+  "short_name": "Hours From Now",
   "description": "Free online time calculator tools for calculating hours from now, time duration, days from today, weeks from todays, and everything related to time calculation.",
   "start_url": "/",
   "display": "standalone",

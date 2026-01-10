@@ -27,10 +27,14 @@
       address: false,
       telephone: false,
     },
-    icons: {
-      icon: '/browser-icon.png',
-      apple: '/apple-touch-icon.png',
-    },
+    icons: {  // ✅ FIXED: Added proper sizes & multiple formats
+    icon: [
+      { url: '/browser-icon.png', sizes: '48x48 72x72 96x96 128x128', type: 'image/png' },
+      { url: '/favicon.ico', sizes: 'any' }
+    ],
+    shortcut: '/browser-icon.png',
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }]
+  },
     manifest: '/manifest.json',
     openGraph: {
       type: 'website',
@@ -39,12 +43,26 @@
       siteName: 'Hours From Now',
       title: 'Hours From Now Calculator: Time Calculator Tool',
       description: 'Hours From Now Calculator can calculate any number of hours and minutes from now',
+      images: [{
+    url: 'https://hoursfromnow.tech/og-image.png',  // Add this image
+    width: 1200,
+    height: 630,
+    alt: 'Hours From Now Calculator'
+  }]
     },
     twitter: {
-      card: 'summary_large_image',
-      title: 'Hours From Now Calculator',
-      description: 'Hours From Now Calculator can calculate any number of hours and minutes from now',
-    },
+      card: "summary_large_image",
+    title: "Hours From Now Calculator",
+    description:
+      "Instantly calculate what time it will be any number of hours from now, like 72 hours from now. Fast and accurate hours from now calculator.",
+    images: [{
+    url: 'https://hoursfromnow.tech/og-image.png',  // 1200x630px image (create this)
+    alt: 'Hours From Now Calculator',
+    width: 1200,
+    height: 630
+  }],
+  creator: '@hourfromnow'
+  },
     robots: {
       index: true,
       follow: true,
@@ -77,12 +95,7 @@
   "url": "https://hoursfromnow.tech/",
   "name": "Hours From Now",
   "alternateName": [
-    "Hours From Now Calculator",
-    "HoursFromNow.tech",
-    "Hours From Now Tool",
-    "Hours From Now Calculator Online",
-    "Later time Calculator",
-    "Hours Calculator"
+    "Hours From Now Calculator"
   ],
   "description": "Hours From Now Calculator can calculate any number of hours and minutes from now, Calculate 72 hours from now, 16 hours from now, 8 hours from now with this precise hours from now calculator.",
   "inLanguage": "en-US",
