@@ -6,7 +6,7 @@ description: "Learn about time calculations, productivity tips, and how to make 
 
 # Hours From Now Calculator: Why Your Brain Gets Time Wrong (And How It Costs You)
 
-I once promised a client that I would finish a project *in 8 hours.* It seemed feasible. It was easy math. However, it was two in the morning when I did the math for eight hours from now. Dinner, a planned call, and the fact that I'm useless after 10 PM had all slipped my mind.
+I once promised a client that I would finish a project *in 8 hours.* It seemed feasible. It was easy math. However, it was two in the morning when I did the math for eight [hours from now](https://hoursfromnow/). Dinner, a planned call, and the fact that I'm useless after 10 PM had all slipped my mind.
 
 That's when I realized that time management isn't the issue. It's awareness of time.
 
@@ -125,11 +125,12 @@ Want better time awareness? Start simple. Next time someone asks "can you do thi
 
 Because knowing exactly what time it will be 12 hours from now, 24 hours from now, or even 180 days from today isn’t about obsessing over time—it’s about respecting the only resource you can’t get more of.
 
+You may also find this article helpful on [Time Calculator](https://hoursfromnow.tech/blog/time-calculator-the-ultimate-guide-to-never-missing-a-deadline-again).
 
 
 
 
 
 ---
-*Published on January 15, 2024*
+
   

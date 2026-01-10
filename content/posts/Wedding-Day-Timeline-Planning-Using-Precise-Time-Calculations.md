@@ -150,7 +150,7 @@ Couples who use time-based planning enjoy their day far more because:
 
 Precise scheduling transforms the atmosphere from chaotic to confident.
 
-You may also find this article helpful on [Addition and Subtraction](https://hoursfromnow.tech/blog/addition-and-subtraction-of-time).
+You may also find this article helpful on [Days](https://hoursfromnow.tech/blog/days-from-today) from today.
 
 ## Conclusion
 

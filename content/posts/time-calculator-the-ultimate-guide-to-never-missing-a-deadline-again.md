@@ -275,10 +275,11 @@ A **time calculator** isn't just a convenience—it's genuinely essential for an
 
 Stop second-guessing your time math. Use a proper **time duration calculator** and focus your brain power on things that actually matter—like acing that exam or nailing that presentation.
 
-The best part? Tools like [hoursfromnow.tech](https://hoursfromnow.tech/) make this ridiculously simple. Punch in your numbers, get your answer, move on with your life.
+The best part? Tools like hours from now calculator make this ridiculously simple. Punch in your numbers, get your answer, move on with your life.
 
 Time management starts with knowing what time it actually is—and what time it will be. Master that, and you're already ahead of half your competition.
 
 ---
+You may also find this article helpful on [Addition and Substraction](https://hoursfromnow.tech/blog/addition-and-subtraction-of-time).
 
 **Pro tip:** Bookmark your favorite time calculator. You'll use it way more often than you think...
