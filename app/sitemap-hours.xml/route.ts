@@ -9,7 +9,7 @@ export async function GET() {
   for (let i = 1; i <= 100; i++) {
     const slug = i === 1 ? '1-hour-from-now' : `${i}-hours-from-now`;
     urls.push({
-      url: `${baseUrl}/${slug}`,
+      url: `${baseUrl}${slug}`,
       lastmod: currentDate,
       changefreq: 'daily',
       priority: 1.0,

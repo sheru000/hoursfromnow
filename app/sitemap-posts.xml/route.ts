@@ -17,7 +17,7 @@ export async function GET() {
     const lastmod = data.date ? new Date(data.date).toISOString() : new Date().toISOString();
 
     return {
-      url: `${baseUrl}/blog/${slug}`,
+      url: `${baseUrl}blog/${slug}`,
       lastmod,
       changefreq: 'weekly',
       priority: 0.7,

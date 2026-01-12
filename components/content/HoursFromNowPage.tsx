@@ -295,8 +295,7 @@ const HoursFromNowPage: React.FC = () => {
               Online time calculators for{" "}
               <a href="https://hoursfromnow.tech/hours-ago">hours </a>
               and minutes use cookies to remember preferences and improve
-              functionality. When calculating what time it will be 24 hours from
-              now, these tools track your inputs and provide precise future
+              functionality. When calculating what time it will be <a href="https://hoursfromnow.tech/24-hours-from-now" >24 hours from now</a>, these tools track your inputs and provide precise future
               times while ensuring a smooth, personalized experience.
             </p>
 
