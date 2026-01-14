@@ -1,0 +1,30 @@
+User-Agent: *
+Allow: /
+
+Docs: https://hoursfromnow.tech/
+Page: https://hoursfromnow.tech/time-calculator
+Page: https://hoursfromnow.tech/time-duration-calculator
+Page: https://hoursfromnow.tech/holiday-countdown
+Page: https://hoursfromnow.tech/days-from-today
+Page: https://hoursfromnow.tech/hours-ago
+Page: https://hoursfromnow.tech/months-from-today
+Page: https://hoursfromnow.tech/weeks-from-today
+Page: https://hoursfromnow.tech/hours-calculator
+Page: https://hoursfromnow.tech/blog
+Page: https://hoursfromnow.tech/blog/addition-and-subtraction-of-time
+Page: https://hoursfromnow.tech/blog/Wedding-Day-Timeline-Planning-Using-Precise-Time-Calculations
+Page: https://hoursfromnow.tech/blog/days-from-today
+Page: https://hoursfromnow.tech/blog/hours-from-now
+Page: https://hoursfromnow.tech/blog/time-calculator-the-ultimate-guide-to-never-missing-a-deadline-again
+Sitemap: https://hoursfromnow.tech/sitemap.xml
+Sitemap: https://hoursfromnow.tech/sitemap-days.xml
+Sitemap: https://hoursfromnow.tech/sitemap-weeks.xml
+Sitemap: https://hoursfromnow.tech/sitemap-posts.xml
+Sitemap: https://hoursfromnow.tech/sitemap-static.xml
+Sitemap: https://hoursfromnow.tech/sitemap-hours.xml
+
+
+
+
+License: https://hoursfromnow.tech/terms
+Attribution: https://hoursfromnow.tech/
