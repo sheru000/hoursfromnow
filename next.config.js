@@ -21,14 +21,24 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
   },
   async redirects() {
-  return [
-    {
-      source: '',
-      destination: '/',
-      permanent: true,
-    },
-  ];
-}
+    return [
+      // redirect www → non-www
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.hoursfromnow.tech',
+          },
+        ],
+        destination: 'https://hoursfromnow.tech/:path*',
+        permanent: true,
+      }
+
+      
+    ];
+    
+  },
 
  
 };
