@@ -35,40 +35,7 @@ const nextConfig = {
         permanent: true,
       },
 
-      // redirect ALL query parameters to clean homepage
-      {
-        source: '/',
-        has: [
-          {
-            type: 'query',
-            key: 'SA',
-          },
-        ],
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/',
-        has: [
-          {
-            type: 'query',
-            key: 'MA',
-          },
-        ],
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/',
-        has: [
-          {
-            type: 'query',
-            key: 'ND',
-          },
-        ],
-        destination: '/',
-        permanent: true,
-      },
+      
     ];
   },
 };
