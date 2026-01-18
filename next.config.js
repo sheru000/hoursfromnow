@@ -19,7 +19,17 @@ const nextConfig = {
   swcMinify: true,
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
-  }
+  },
+  async redirects() {
+  return [
+    {
+      source: '',
+      destination: '/',
+      permanent: true,
+    },
+  ];
+}
+
  
 };
 
