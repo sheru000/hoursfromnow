@@ -33,8 +33,7 @@ const nextConfig = {
         ],
         destination: 'https://hoursfromnow.tech/:path*',
         permanent: true,
-      }
-
+      },
       
     ];
     
