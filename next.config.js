@@ -19,25 +19,8 @@ const nextConfig = {
   swcMinify: true,
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
-  },
-  async redirects() {
-    return [
-      // redirect www → non-www
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'host',
-            value: 'www.hoursfromnow.tech',
-          },
-        ],
-        destination: 'https://hoursfromnow.tech/:path*',
-        permanent: true,
-      },
-
-      
-    ];
-  },
+  }
+ 
 };
 
 module.exports = nextConfig;
